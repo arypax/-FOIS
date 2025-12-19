@@ -1,3723 +1,13746 @@
-// questions.js - Все 248 вопросов из PDF
+// questions.js - BLOCKCHAIN PART 1 + PART 2 (generated from PDFs via pdftotext)
 const questions = [
     {
-        id: 1,
-        section: "INTERACTION DESIGN INTRO",
-        text: "According to the course, technology should bring people:",
-        options: [
-            { id: "a", text: "Apathy." },
-            { id: "b", text: "Dependence." },
-            { id: "c", text: "Joy." },
-            { id: "d", text: "Confusion." },
-            { id: "e", text: "Frustration." },
-            { id: "f", text: "Complexity." }
-        ],
-        correctAnswer: "c",
-        difficulty: "EASY"
-    },
-    {
-        id: 2,
-        section: "INTERACTION DESIGN INTRO",
-        text: "Collaborative Software helps designers:",
-        options: [
-            { id: "a", text: "Share and iterate on designs with distributed teams." },
-            { id: "b", text: "Mine cryptocurrency." },
-            { id: "c", text: "Automate the entire design process." },
-            { id: "d", text: "Replace the need for human communication." },
-            { id: "e", text: "Prevent others from viewing their work." },
-            { id: "f", text: "Encrypt files for security only." }
-        ],
-        correctAnswer: "a",
-        difficulty: "EASY"
-    },
-    {
-        id: 3,
-        section: "INTERACTION DESIGN INTRO",
-        text: "Good interaction design relies on understanding principles of:",
-        options: [
-            { id: "a", text: "Corporate finance." },
-            { id: "b", text: "Compiler optimization." },
-            { id: "c", text: "Microprocessor architecture." },
-            { id: "d", text: "Network latency." },
-            { id: "e", text: "Global supply chains." },
-            { id: "f", text: "Perception and cognition." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 4,
-        section: "INTERACTION DESIGN INTRO",
-        text: "In the context of Interaction Design, why is 'prototyping' considered essential?",
-        options: [
-            { id: "a", text: "It is the only way to generate final production code." },
-            { id: "b", text: "It allows designers to quickly test ideas and get feedback from users and teammates." },
-            { id: "c", text: "It increases the cost of development significantly." },
-            { id: "d", text: "It eliminates the need for any user research." },
-            { id: "e", text: "It guarantees that the first design idea will be the correct one." },
-            { id: "f", text: "It serves as the final documentation for the project." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 5,
-        section: "INTERACTION DESIGN INTRO",
-        text: "Interaction Design focuses on designing user experiences that are:",
-        options: [
-            { id: "a", text: "Designed primarily for automated bots." },
-            { id: "b", text: "Based entirely on legacy systems." },
-            { id: "c", text: "Solely functional with no regard for aesthetics." },
-            { id: "d", text: "Complex and feature-heavy." },
-            { id: "e", text: "Difficult to master but powerful." },
-            { id: "f", text: "Joyful and frustration-free." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 6,
-        section: "INTERACTION DESIGN INTRO",
-        text: "Statistical Analysis is relevant to Interaction Design for:",
-        options: [
-            { id: "a", text: "Determining the salary of designers." },
-            { id: "b", text: "Analyzing data from user experiments and A/B tests." },
-            { id: "c", text: "Writing CSS stylesheets." },
-            { id: "d", text: "Calculating the color values of pixels." },
-            { id: "e", text: "Configuring web servers." },
-            { id: "f", text: "Designing vector icons." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 7,
-        section: "INTERACTION DESIGN INTRO",
-        text: "Telecommuting tools are studied in Interaction Design to:",
-        options: [
-            { id: "a", text: "Monitor employee keystrokes." },
-            { id: "b", text: "Reduce internet bandwidth." },
-            { id: "c", text: "Improve the experience of remote collaboration." },
-            { id: "d", text: "Replace video conferencing with text only." },
-            { id: "e", text: "Eliminate the need for managers." },
-            { id: "f", text: "Force everyone to work from the office." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 8,
-        section: "INTERACTION DESIGN INTRO",
-        text: "The concept of 'Needfinding' involves:",
-        options: [
-            { id: "a", text: "Reviewing outdated documentation." },
-            { id: "b", text: "Ignoring user complaints." },
-            { id: "c", text: "Guessing what users want." },
-            { id: "d", text: "Copying features from other apps." },
-            { id: "e", text: "Observing and observing users to discover unmet needs." },
-            { id: "f", text: "Asking developers what is easiest to build." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 9,
-        section: "INTERACTION DESIGN INTRO",
-        text: "The specialization emphasizes that design ideas should originate from:",
-        options: [
-            { id: "a", text: "Real-world needs and user observations." },
-            { id: "b", text: "Guesswork without data." },
-            { id: "c", text: "Direct orders from upper management only." },
-            { id: "d", text: "Random generation." },
-            { id: "e", text: "Strict adherence to legacy software patterns." },
-            { id: "f", text: "The designer's personal preference only." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 10,
-        section: "INTERACTION DESIGN INTRO",
-        text: "User Experience Design encompasses:",
-        options: [
-            { id: "a", text: "Only the checkout process." },
-            { id: "b", text: "Only the logo design." },
-            { id: "c", text: "All aspects of the end-user's interaction with the company and its services." },
-            { id: "d", text: "Only the packaging of the product." },
-            { id: "e", text: "Only the color scheme of the website." },
-            { id: "f", text: "Only the customer support phone line." }
-        ],
-        correctAnswer: "c",
-        difficulty: "EASY"
-    },
-    {
-        id: 11,
-        section: "INTERACTION DESIGN INTRO",
-        text: "What distinguishes 'User Experience (UX) Design' from pure 'Visual Design'?",
-        options: [
-            { id: "a", text: "Visual Design focuses on usability testing." },
-            { id: "b", text: "UX Design does not involve users." },
-            { id: "c", text: "They are exactly the same thing." },
-            { id: "d", text: "UX is only about coding, Visual Design is only about art." },
-            { id: "e", text: "Visual design is more important than UX." },
-            { id: "f", text: "UX covers the entire user journey and functionality, not just the look." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 12,
-        section: "INTERACTION DESIGN INTRO",
-        text: "What is 'Ideation' in the context of Interaction Design?",
-        options: [
-            { id: "a", text: "The legal protection of intellectual property." },
-            { id: "b", text: "The process of generating broad concepts and design ideas." },
-            { id: "c", text: "The phase of final bug fixing." },
-            { id: "d", text: "The calculation of project budgets." },
-            { id: "e", text: "The rigid implementation of a single specification." },
-            { id: "f", text: "The installation of software dependencies." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 13,
-        section: "INTERACTION DESIGN INTRO",
-        text: "What is a 'Mockup'?",
-        options: [
-            { id: "a", text: "A coding error." },
-            { id: "b", text: "A static visual representation of a design often used for feedback." },
-            { id: "c", text: "A database schema diagram." },
-            { id: "d", text: "A type of user interview." },
-            { id: "e", text: "A fully functional production app." },
-            { id: "f", text: "A marketing strategy." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 14,
-        section: "INTERACTION DESIGN INTRO",
-        text: "What is the 'Capstone Project' in the specialization intended to demonstrate?",
-        options: [
-            { id: "a", text: "Ability to write a 100-page academic thesis." },
-            { id: "b", text: "Certification in project management software." },
-            { id: "c", text: "Memorization of historical dates." },
-            { id: "d", text: "Skill in hardware assembly." },
-            { id: "e", text: "Application of skills from needfinding to visual design on a comprehensive project." },
-            { id: "f", text: "Proficiency in advanced calculus." }
-        ],
-        correctAnswer: "e",
-        difficulty: "EASY"
-    },
-    {
-        id: 15,
-        section: "INTERACTION DESIGN INTRO",
-        text: "What is the key takeaway from the specialization's introduction?",
-        options: [
-            { id: "a", text: "Design is a linear process with no backtracking." },
-            { id: "b", text: "Users should adapt to the software." },
-            { id: "c", text: "Prototyping is a waste of time." },
-            { id: "d", text: "Technology is more important than people." },
-            { id: "e", text: "Design should be human-centered and iterative." },
-            { id: "f", text: "The first idea is always the best." }
-        ],
-        correctAnswer: "e",
-        difficulty: "EASY"
-    },
-    {
-        id: 16,
-        section: "INTERACTION DESIGN INTRO",
-        text: "What is the main benefit of 'Storyboarding' in interaction design?",
-        options: [
-            { id: "a", text: "It serves as a legally binding contract." },
-            { id: "b", text: "It generates production-ready graphics." },
-            { id: "c", text: "It proves the mathematical correctness of an algorithm." },
-            { id: "d", text: "It optimizes database query performance." },
-            { id: "e", text: "It replaces the need for coding." },
-            { id: "f", text: "It helps visualize the user's journey and context of use." }
-        ],
-        correctAnswer: "f",
-        difficulty: "EASY"
-    },
-    {
-        id: 17,
-        section: "INTERACTION DESIGN INTRO",
-        text: "What is the primary goal of Interaction Design as defined in the specialization?",
-        options: [
-            { id: "a", text: "To maximize the commercial revenue of a digital product." },
-            { id: "b", text: "To design technologies that bring people joy rather than frustration." },
-            { id: "c", text: "To create the most aesthetically pleasing interfaces possible." },
-            { id: "d", text: "To minimize the amount of code required for a user interface." },
-            { id: "e", text: "To focus solely on the hardware constraints of the device." },
-            { id: "f", text: "To strictly follow the latest visual trends without deviation." }
-        ],
-        correctAnswer: "b",
-        difficulty: "EASY"
-    },
-    {
-        id: 18,
-        section: "INTERACTION DESIGN INTRO",
-        text: "What is the primary output of the 'Ideation' phase?",
-        options: [
-            { id: "a", text: "A termination letter." },
-            { id: "b", text: "A single perfect solution." },
-            { id: "c", text: "A final bill for the client." },
-            { id: "d", text: "A completed codebase." },
-            { id: "e", text: "A large quantity of diverse design ideas." },
-            { id: "f", text: "A bug report." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 19,
-        section: "INTERACTION DESIGN INTRO",
-        text: "What is the relationship between 'visual design' and 'interaction design'?",
-        options: [
-            { id: "a", text: "Visual design principles inform effective interaction design by aiding perception." },
-            { id: "b", text: "Visual design is the final step and does not affect usability." },
-            { id: "c", text: "They are completely separate disciplines with no overlap." },
-            { id: "d", text: "Interaction design is strictly code-based, while visual design is art." },
-            { id: "e", text: "Visual design is only about marketing, not interaction." },
-            { id: "f", text: "Interaction design replaces the need for visual design." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 20,
-        section: "INTERACTION DESIGN INTRO",
-        text: "What role does 'cognition' play in effective interaction design?",
-        options: [
-            { id: "a", text: "It is irrelevant to the visual layout of a screen." },
-            { id: "b", text: "It restricts the use of color in user interfaces." },
-            { id: "c", text: "It acts as a substitute for visual design principles." },
-            { id: "d", text: "It only applies to mobile device interfaces." },
-            { id: "e", text: "It informs how users perceive and understand interfaces, guiding intuitive design." },
-            { id: "f", text: "It determines the processing speed of the application." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 21,
-        section: "INTERACTION DESIGN INTRO",
-        text: "When should 'Usability Testing' ideally occur?",
-        options: [
-            { id: "a", text: "Throughout the design process, including early prototypes." },
-            { id: "b", text: "It is generally unnecessary for modern apps." },
-            { id: "c", text: "Only after the product has launched." },
-            { id: "d", text: "Before any design work has started." },
-            { id: "e", text: "Only by the developers themselves." },
-            { id: "f", text: "Solely during the final quality assurance phase." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 22,
-        section: "INTERACTION DESIGN INTRO",
-        text: "Which of the following best describes the 'Iterative Design' process?",
-        options: [
-            { id: "a", text: "Focusing only on the first idea generated." },
-            { id: "b", text: "Designing once and releasing the product immediately." },
-            { id: "c", text: "Copying the design of a competitor exactly." },
-            { id: "d", text: "Changing the design randomly without user feedback." },
-            { id: "e", text: "Refusing to make changes after the initial mockup." },
-            { id: "f", text: "Designing, prototyping, testing, and refining in cycles." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 23,
-        section: "INTERACTION DESIGN INTRO",
-        text: "Which of the following is a key component of the Interaction Design process mentioned in the curriculum?",
-        options: [
-            { id: "a", text: "Writing production-ready code from the very first draft." },
-            { id: "b", text: "Designing in isolation to preserve artistic integrity." },
-            { id: "c", text: "Avoiding low-fidelity mockups in favor of high-fidelity designs." },
-            { id: "d", text: "Ignoring user feedback until the final release." },
-            { id: "e", text: "Rapid prototyping to get feedback from stakeholders." },
-            { id: "f", text: "Focusing exclusively on back-end server logic." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 24,
-        section: "INTERACTION DESIGN INTRO",
-        text: "Which of the following is an example of an Interaction Design deliverable?",
-        options: [
-            { id: "a", text: "Compiler Warning" },
-            { id: "b", text: "Legal Disclaimer." },
-            { id: "c", text: "Interactive Prototype." },
-            { id: "d", text: "Hardware Spec." },
-            { id: "e", text: "Server Log." },
-            { id: "f", text: "Financial Statement." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 25,
-        section: "INTERACTION DESIGN INTRO",
-        text: "Which prototyping technique involves simulating a working system without writing code?",
-        options: [
-            { id: "a", text: "Object-Oriented Programming." },
-            { id: "b", text: "Load Balancing." },
-            { id: "c", text: "Database Sharding." },
-            { id: "d", text: "Wizard of Oz Prototyping." },
-            { id: "e", text: "Continuous Integration." },
-            { id: "f", text: "Unit Testing." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 26,
-        section: "INTERACTION DESIGN INTRO",
-        text: "Which skill is NOT categorized under 'Interaction Design' in the specialization introduction?",
-        options: [
-            { id: "a", text: "User Experience Design." },
-            { id: "b", text: "Storyboarding." },
-            { id: "c", text: "Prototyping." },
-            { id: "d", text: "Database normalization." },
-            { id: "e", text: "Heuristic evaluation." },
-            { id: "f", text: "Usability Testing." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 27,
-        section: "INTERACTION DESIGN INTRO",
-        text: "Which stakeholder group is NOT typically a primary source of feedback for prototypes?",
-        options: [
-            { id: "a", text: "Potential or actual users." },
-            { id: "b", text: "The design team itself." },
-            { id: "c", text: "Teammates and colleagues." },
-            { id: "d", text: "Product managers." },
-            { id: "e", text: "Clients or business stakeholders." },
-            { id: "f", text: "Competitors' legal teams." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 28,
-        section: "INTERACTION DESIGN INTRO",
-        text: "Why do interaction designers use 'A/B Testing'?",
-        options: [
-            { id: "a", text: "To verify the battery life of a mobile device." },
-            { id: "b", text: "To assign difficulty levels to different features." },
-            { id: "c", text: "To test the alphabetical ordering of database records." },
-            { id: "d", text: "To compare two versions of a design to see which performs better with users." },
-            { id: "e", text: "To check for syntax errors in the backend code." },
-            { id: "f", text: "To audit the security vulnerabilities of an app." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 29,
-        section: "INTERACTION DESIGN INTRO",
-        text: "Why is 'Design Thinking' valuable?",
-        options: [
-            { id: "a", text: "It focuses solely on the aesthetics of the logo." },
-            { id: "b", text: "It eliminates the need for any thinking." },
-            { id: "c", text: "It prioritizes business goals over user needs." },
-            { id: "d", text: "It provides a problem-solving framework focused on user needs." },
-            { id: "e", text: "It restricts creativity to predefined templates." },
-            { id: "f", text: "It is a rigid set of rules that cannot be broken." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 30,
-        section: "INTERACTION DESIGN INTRO",
-        text: "Why study 'Perception' in Interaction Design?",
-        options: [
-            { id: "a", text: "To understand how users physically see and process visual elements." },
-            { id: "b", text: "To learn how to draw realistic portraits." },
-            { id: "c", text: "To reduce electricity consumption." },
-            { id: "d", text: "To improve server downtime." },
-            { id: "e", text: "To measure the brightness of screens." },
-            { id: "f", text: "To encrypt user passwords." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 31,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "A 'Low-Fidelity Mockup' is useful for:",
-        options: [
-            { id: "a", text: "Testing server load capacity." },
-            { id: "b", text: "Checking font rendering on different browsers." },
-            { id: "c", text: "Testing specific color shades." },
-            { id: "d", text: "Testing high-level concepts without getting distracted by visual details." },
-            { id: "e", text: "Selling the final visual design to the client." },
-            { id: "f", text: "Verifying pixel-perfect alignment." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 32,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "According to the course, when should you start getting feedback on design ideas?",
-        options: [
-            { id: "a", text: "As early as possible, even on rough concepts." },
-            { id: "b", text: "Never, designers know best." },
-            { id: "c", text: "Only when the beta version is released." },
-            { id: "d", text: "Once the code is fully optimized." },
-            { id: "e", text: "When the client approves the budget." },
-            { id: "f", text: "After the marketing campaign begins." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 33,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "Does the course suggest that prototypes must always follow needfinding?",
-        options: [
-            { id: "a", text: "While beneficial, it's not strictly required; effective design can start various ways." },
-            { id: "b", text: "Prototypes should never be based on needfinding." },
-            { id: "c", text: "Prototypes are the only thing that matters." },
-            { id: "d", text: "Needfinding is practically optional." },
-            { id: "e", text: "Yes, it is a rigid law of nature." },
-            { id: "f", text: "No, needfinding is useless." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 34,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "Effective interaction design focuses on 'real people', meaning:",
-        options: [
-            { id: "a", text: "Designing for people who don't use technology." },
-            { id: "b", text: "Designing for the CEO's preferences only." },
-            { id: "c", text: "Understanding the actual users, not just assumed 'average' users." },
-            { id: "d", text: "Designing for theoretical robots." },
-            { id: "e", text: "Ignoring user demographics." },
-            { id: "f", text: "Only designing for the developers themselves." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 35,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "HCD stands for:",
-        options: [
-            { id: "a", text: "Host-Client Data." },
-            { id: "b", text: "Hybrid-Cloud Deployment." },
-            { id: "c", text: "Human-Centered Design." },
-            { id: "d", text: "High-Component Design." },
-            { id: "e", text: "Human-Computer Development." },
-            { id: "f", text: "Hardware-Central Development." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 36,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "Helping people 'recover from errors' refers to which heuristic concept?",
-        options: [
-            { id: "a", text: "Preventing the user from ever making a mistake." },
-            { id: "b", text: "Creating unrecoverable fatal errors." },
-            { id: "c", text: "Blaming the user for the mistake." },
-            { id: "d", text: "Hiding errors so the user doesn't see them." },
-            { id: "e", text: "Good error messages and undo functions." },
-            { id: "f", text: "Automatically rebooting the computer." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 37,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "Heuristic Evaluation involves:",
-        options: [
-            { id: "a", text: "Evaluating a user interface against a set of established usability principles." },
-            { id: "b", text: "Running automated unit tests." },
-            { id: "c", text: "Asked users to score the design." },
-            { id: "d", text: "Calculating the financial ROI." },
-            { id: "e", text: "Checking the code for syntax errors." },
-            { id: "f", text: "Measuring the time to load a page." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 38,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "Heuristics in interaction design are:",
-        options: [
-            { id: "a", text: "Rules of thumb or guidelines for good design." },
-            { id: "b", text: "Arbitrary opinions of the boss." },
-            { id: "c", text: "Strict laws that can never be broken." },
-            { id: "d", text: "Marketing slogans." },
-            { id: "e", text: "Complex mathematical formulas." },
-            { id: "f", text: "Hardware specifications." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 39,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "In HCD, 'Interviewing Skills' are crucial for:",
-        options: [
-            { id: "a", text: "Speaking to the press." },
-            { id: "b", text: "Extracting unbiased and useful information from users." },
-            { id: "c", text: "Hiring new employees." },
-            { id: "d", text: "Teaching a class." },
-            { id: "e", text: "Interrogating suspects." },
-            { id: "f", text: "Debating with colleagues." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 40,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "Interaction Design Specialization includes a focus on:",
-        options: [
-            { id: "a", text: "Designing technologies that are hard to use." },
-            { id: "b", text: "Designing compiler infrastructure." },
-            { id: "c", text: "Designing technologies that bring joy." },
-            { id: "d", text: "Designing technologies for machines only." },
-            { id: "e", text: "Designing hardware circuits." },
-            { id: "f", text: "Designing technologies that manipulate users." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 41,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "Iterative design implies that you should:",
-        options: [
-            { id: "a", text: "Release the first draft as the final product." },
-            { id: "b", text: "Avoid testing until the end." },
-            { id: "c", text: "Stick to your original plan no matter what." },
-            { id: "d", text: "Change the design everyday for no reason." },
-            { id: "e", text: "Never show incomplete work to anyone." },
-            { id: "f", text: "Revise your ideas as much as you like based on feedback." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 42,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "One of the key heuristics mentioned is 'Feedback'. What does this mean?",
-        options: [
-            { id: "a", text: "The system should clearly communicate what is happening to the user." },
-            { id: "b", text: "The system sends error logs to the server." },
-            { id: "c", text: "The user should give feedback to the developer." },
-            { id: "d", text: "The microphone creates a loud noise." },
-            { id: "e", text: "The screen vibrates constantly." },
-            { id: "f", text: "The user feedback form is visible." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 43,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "Polishing a design is meant to:",
-        options: [
-            { id: "a", text: "Hide the flaws." },
-            { id: "b", text: "Make it run slower." },
-            { id: "c", text: "Make it look expensive." },
-            { id: "d", text: "Confuse individual users." },
-            { id: "e", text: "Double the price." },
-            { id: "f", text: "Get the design right after finding the right design." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 44,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "The course states that good ideas come from:",
-        options: [
-            { id: "a", text: "Lots of places, but especially observation and talking to people." },
-            { id: "b", text: "A random number generator." },
-            { id: "c", text: "Strictly from copying competitors." },
-            { id: "d", text: "Only from textbooks." },
-            { id: "e", text: "Only from senior management." },
-            { id: "f", text: "Divination." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 45,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "User Research is categorized as:",
-        options: [
-            { id: "a", text: "A technical engineering task." },
-            { id: "b", text: "An optional add-on." },
-            { id: "c", text: "A legal requirement." },
-            { id: "d", text: "A marketing activity only." },
-            { id: "e", text: "A visual design task." },
-            { id: "f", text: "A fundamental skill for understanding user needs." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 46,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "What does 'Needfinding' directly inform?",
-        options: [
-            { id: "a", text: "The choice of programming language." },
-            { id: "b", text: "The server architecture." },
-            { id: "c", text: "The office seating chart." },
-            { id: "d", text: "The generation of design goals and ideas." },
-            { id: "e", text: "The payroll system." },
-            { id: "f", text: "The legal terms of service." }
-        ],
-        correctAnswer: "d",
-        difficulty: "EASY"
-    },
-    {
-        id: 47,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "What is 'Participant Observation'?",
-        options: [
-            { id: "a", text: "Watching people in their real-world context to understand their needs." },
-            { id: "b", text: "Reading books about user behavior." },
-            { id: "c", text: "Analyzing server logs." },
-            { id: "d", text: "Asked people to fill out a written survey." },
-            { id: "e", text: "Watching video tutorials." },
-            { id: "f", text: "Observing other designers at work." }
-        ],
-        correctAnswer: "a",
-        difficulty: "EASY"
-    },
-    {
-        id: 48,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "What is a major benefit of 'Paper Prototyping'?",
-        options: [
-            { id: "a", text: "It looks exactly like the final app." },
-            { id: "b", text: "It can be compiled into code." },
-            { id: "c", text: "It is resistant to physical damage." },
-            { id: "d", text: "It is low-cost and allows for easy changes during early stages." },
-            { id: "e", text: "It requires expensive software licenses." },
-            { id: "f", text: "It supports complex animations naturally." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 49,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "What is the 'Wizard of Oz' prototyping technique?",
-        options: [
-            { id: "a", text: "An automated AI testing framework." },
-            { id: "b", text: "A design style based on fantasy movies." },
-            { id: "c", text: "A way to build fully functional backends quickly." },
-            { id: "d", text: "A rigorous statistical method." },
-            { id: "e", text: "A method where a human simulates the response of a system behind the scenes." },
-            { id: "f", text: "A magical software tool that generates code." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 50,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "What is the difference between 'Needfinding' and 'Prototyping'?",
-        options: [
-            { id: "a", text: "Prototyping comes before Needfinding." },
-            { id: "b", text: "Needfinding is expensive; Prototyping is free." },
-            { id: "c", text: "Prototyping is for users; Needfinding is for managers." },
-            { id: "d", text: "Needfinding identifies the problem; Prototyping explores the solution." },
-            { id: "e", text: "They are synonymous." },
-            { id: "f", text: "Needfinding is for code; Prototyping is for design." }
-        ],
-        correctAnswer: "d",
-        difficulty: "EASY"
-    },
-    {
-        id: 51,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "What is the main goal of 'Brainstorming'?",
-        options: [
-            { id: "a", text: "To finalize the budget." },
-            { id: "b", text: "To document existing features." },
-            { id: "c", text: "To create a silent working environment." },
-            { id: "d", text: "To generate a large volume of ideas without immediate judgment." },
-            { id: "e", text: "To criticize every idea immediately." },
-            { id: "f", text: "To find the one correct answer." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 52,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "What is the purpose of 'Storyboarding' in an HCD context?",
-        options: [
-            { id: "a", text: "To describe the user experience flow over time." },
-            { id: "b", text: "To plan the company retreat." },
-            { id: "c", text: "To design the database schema." },
-            { id: "d", text: "To create marketing billboards." },
-            { id: "e", text: "To write the dialogue for a movie." },
-            { id: "f", text: "To detailedly document the code functions." }
-        ],
-        correctAnswer: "a",
-        difficulty: "EASY"
-    },
-    {
-        id: 53,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "What is the relationship between 'Prototypes' and 'Stakeholders'?",
-        options: [
-            { id: "a", text: "Prototypes help achieve common ground and facilitate communication." },
-            { id: "b", text: "Stakeholders build the prototypes." },
-            { id: "c", text: "Prototypes confuse stakeholders." },
-            { id: "d", text: "Stakeholders should never see prototypes." },
-            { id: "e", text: "Prototypes are only for user testing, not business checks." },
-            { id: "f", text: "Stakeholders only care about the final code." }
-        ],
-        correctAnswer: "a",
-        difficulty: "EASY"
-    },
-    {
-        id: 54,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "What is the role of 'Fieldwork' in HCD?",
-        options: [
-            { id: "a", text: "Planting trees in a field." },
-            { id: "b", text: "Testing Wi-Fi signal strength outdoors." },
-            { id: "c", text: "Working remotely from a park." },
-            { id: "d", text: "Going out into the real world to observe users in their environment." },
-            { id: "e", text: "Reading textbooks in a library." },
-            { id: "f", text: "Writing code in a coffee shop." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 55,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "Which is NOT a module in the HCD course?",
-        options: [
-            { id: "a", text: "Advanced Kernel compilation." },
-            { id: "b", text: "Heuristics." },
-            { id: "c", text: "Needfinding." },
-            { id: "d", text: "Design Principles (is a separate course)." },
-            { id: "e", text: "Prototyping." },
-            { id: "f", text: "Input and Interaction (is a separate course)." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 56,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "Which is a valid deliverable for 'Storyboarding'?",
-        options: [
-            { id: "a", text: "A UML class diagram." },
-            { id: "b", text: "A 3D printed model." },
-            { id: "c", text: "A compiled Java JAR file." },
-            { id: "d", text: "A SQL database script." },
-            { id: "e", text: "A financial spreadsheet." },
-            { id: "f", text: "A comic-strip style sequence of user actions." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 57,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "Which of the following describes a 'Wizard of Oz' experiment?",
-        options: [
-            { id: "a", text: "A computer generates random responses." },
-            { id: "b", text: "A fully automated AI handles the interaction." },
-            { id: "c", text: "The interface is controlled by eye tracking." },
-            { id: "d", text: "A user watches a movie about a wizard." },
-            { id: "e", text: "A user interacts with a voice system, but a human types the responses." },
-            { id: "f", text: "The user is hypnotized." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 58,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "Why combine 'Observation' with 'Interviewing'?",
-        options: [
-            { id: "a", text: "Observation is not reliable on its own." },
-            { id: "b", text: "It creates more paperwork." },
-            { id: "c", text: "Observation shows what people do; interviewing reveals why they do it." },
-            { id: "d", text: "It fills up the time allotted for research." },
-            { id: "e", text: "Interviewing distracts the user during observation." },
-            { id: "f", text: "It is required for IRB approval only." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 59,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "Why do we create 'Design Goals'?",
-        options: [
-            { id: "a", text: "To choose the font family first." },
-            { id: "b", text: "To inflate the project scope." },
-            { id: "c", text: "To determine the lunch menu." },
-            { id: "d", text: "To satisfy bureaucratic requirements." },
-            { id: "e", text: "To bridge the gap between high-level needs and concrete ideas." },
-            { id: "f", text: "To restrict the creativity of the team." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 60,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "Why is 'Rapid Prototyping' essential to Human-Centered Design?",
-        options: [
-            { id: "a", text: "It allows for evaluating multiple alternatives quickly." },
-            { id: "b", text: "It creates the final product in one step." },
-            { id: "c", text: "It eliminates the need for user testing." },
-            { id: "d", text: "It is required by law." },
-            { id: "e", text: "It uses the most expensive materials." },
-            { id: "f", text: "It guarantees zero bugs." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 61,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "Why is it recommended to generate 'multiple interface alternatives'?",
-        options: [
-            { id: "a", text: "To keep the design team busy." },
-            { id: "b", text: "To delay the project launch." },
-            { id: "c", text: "To use up the budget." },
-            { id: "d", text: "Because the first idea is rarely the best, and comparison reveals strengths." },
-            { id: "e", text: "To ensure job security." },
-            { id: "f", text: "To confuse the client." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 62,
-        section: "HUMAN-CENTERED DESIGN",
-        text: "Why use 'Video' in prototyping?",
-        options: [
-            { id: "a", text: "To test the camera hardware." },
-            { id: "b", text: "To ensure high frame rates." },
-            { id: "c", text: "To demonstrate the context and flow of usage simply." },
-            { id: "d", text: "To win an Oscar." },
-            { id: "e", text: "To record meetings." },
-            { id: "f", text: "To replace the user manual." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 63,
-        section: "DESIGN PRINCIPLES",
-        text: "'Layout' in design refers to:",
-        options: [
-            { id: "a", text: "The folder structure of the code." },
-            { id: "b", text: "The network topology." },
-            { id: "c", text: "The seating arrangement in the office." },
-            { id: "d", text: "The manufacturing process." },
-            { id: "e", text: "The database schema." },
-            { id: "f", text: "The spatial arrangement of elements on the screen." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 64,
-        section: "DESIGN PRINCIPLES",
-        text: "'Usability Testing' often involves tasks that:",
-        options: [
-            { id: "a", text: "Test the durability of the mouse." },
-            { id: "b", text: "Ask users to complete specific actions while observing difficulties." },
-            { id: "c", text: "Measure the user's typing speed only." },
-            { id: "d", text: "Ask users to pay for the software." },
-            { id: "e", text: "Ask users to redesign the logo." },
-            { id: "f", text: "Require users to write code." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 65,
-        section: "DESIGN PRINCIPLES",
-        text: "A 'Grid System' helps in:",
-        options: [
-            { id: "a", text: "Encrypting passwords." },
-            { id: "b", text: "Blocking spam." },
-            { id: "c", text: "Creating balanced and aligned layouts." },
-            { id: "d", text: "Generating electricity." },
-            { id: "e", text: "Locking the screen." },
-            { id: "f", text: "Compressing video files." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 66,
-        section: "DESIGN PRINCIPLES",
-        text: "Cognition in interaction design refers to:",
-        options: [
-            { id: "a", text: "The battery capacity of the device." },
-            { id: "b", text: "The physical durability of the screen." },
-            { id: "c", text: "The heat generated by the CPU." },
-            { id: "d", text: "The refresh rate of the monitor." },
-            { id: "e", text: "The compilation time of the software." },
-            { id: "f", text: "How users process, remember, and make decisions based on information." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 67,
-        section: "DESIGN PRINCIPLES",
-        text: "Design Research typically includes:",
-        options: [
-            { id: "a", text: "Checking stock prices." },
-            { id: "b", text: "Understanding user behaviors, needs, and motivations." },
-            { id: "c", text: "Finding the cheapest hosting provider." },
-            { id: "d", text: "Looking up syntax in documentation." },
-            { id: "e", text: "Reading sci-fi novels." },
-            { id: "f", text: "Researching new processor speeds." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 68,
-        section: "DESIGN PRINCIPLES",
-        text: "Design principles apply to:",
-        options: [
-            { id: "a", text: "Any technology, not just the web." },
-            { id: "b", text: "Only print media." },
-            { id: "c", text: "Only hardware devices." },
-            { id: "d", text: "Only desktop software." },
-            { id: "e", text: "Only mobile apps." },
-            { id: "f", text: "Only websites." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 69,
-        section: "DESIGN PRINCIPLES",
-        text: "Design principles help organize information to reduce:",
-        options: [
-            { id: "a", text: "Developer salary." },
-            { id: "b", text: "Electricity usage." },
-            { id: "c", text: "User confusion and cognitive load." },
-            { id: "d", text: "The number of users." },
-            { id: "e", text: "Network traffic." },
-            { id: "f", text: "Server disk space." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 70,
-        section: "DESIGN PRINCIPLES",
-        text: "Effectively evaluating work with users helps to:",
-        options: [
-            { id: "a", text: "Prove the users are wrong." },
-            { id: "b", text: "Reduce the software quality." },
-            { id: "c", text: "Generate artificial traffic." },
-            { id: "d", text: "Increase the development time." },
-            { id: "e", text: "Validate design decisions and identify usability issues." },
-            { id: "f", text: "Hide features from the public." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 71,
-        section: "DESIGN PRINCIPLES",
-        text: "Evaluating 'whether one design works better than another' typically involves:",
-        options: [
-            { id: "a", text: "Counting the number of pixels." },
-            { id: "b", text: "A/B testing or comparative evaluation." },
-            { id: "c", text: "Asked the CEO." },
-            { id: "d", text: "Flipping a coin." },
-            { id: "e", text: "Checking the file size." },
-            { id: "f", text: "Guessing." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 72,
-        section: "DESIGN PRINCIPLES",
-        text: "How does 'Typography' influence the user interface?",
-        options: [
-            { id: "a", text: "It affects readability, tone, and the hierarchy of information." },
-            { id: "b", text: "It is only decorative and has no functional value." },
-            { id: "c", text: "It automatically generates content." },
-            { id: "d", text: "It prevents security breaches." },
-            { id: "e", text: "It replaces using images entirely." },
-            { id: "f", text: "It increases the download speed of the app." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 73,
-        section: "DESIGN PRINCIPLES",
-        text: "In the context of design principles, why is 'Perception' important?",
-        options: [
-            { id: "a", text: "It is a legal requirement for copyright." },
-            { id: "b", text: "It controls the speed of the internet connection." },
-            { id: "c", text: "It is only relevant for virtual reality." },
-            { id: "d", text: "It replaces the need for user testing." },
-            { id: "e", text: "It is used to calculate the budget." },
-            { id: "f", text: "It determines how users physically register information from the interface." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 74,
-        section: "DESIGN PRINCIPLES",
-        text: "In visual design, 'Contrast' is used to:",
-        options: [
-            { id: "a", text: "Reduce the file size of images." },
-            { id: "b", text: "Hide important information." },
-            { id: "c", text: "Make the text unreadable." },
-            { id: "d", text: "Make everything look the same." },
-            { id: "e", text: "Distinguish elements and direct attention." },
-            { id: "f", text: "Blur the background." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 75,
-        section: "DESIGN PRINCIPLES",
-        text: "Perception and Cognition informs:",
-        options: [
-            { id: "a", text: "Office aesthetics." },
-            { id: "b", text: "Supply chain logistics." },
-            { id: "c", text: "Legal compliance." },
-            { id: "d", text: "Effective interaction design decisions." },
-            { id: "e", text: "Hardware pricing." },
-            { id: "f", text: "Customer support scripts." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 76,
-        section: "DESIGN PRINCIPLES",
-        text: "The principle of 'Feedback' ensures that:",
-        options: [
-            { id: "a", text: "The screen turns off to save power." },
-            { id: "b", text: "The system automatically shuts down." },
-            { id: "c", text: "The sound volume is always at maximum." },
-            { id: "d", text: "The developer receives a bug report." },
-            { id: "e", text: "The user knows the outcome of their action immediately." },
-            { id: "f", text: "The user is forced to rate the app." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 77,
-        section: "DESIGN PRINCIPLES",
-        text: "The ultimate goal of applying design principles is to:",
-        options: [
-            { id: "a", text: "Make the product expensive." },
-            { id: "b", text: "Confuse the user." },
-            { id: "c", text: "Use the most colors possible." },
-            { id: "d", text: "Create art for galleries." },
-            { id: "e", text: "Create excellent interfaces with any technology." },
-            { id: "f", text: "Win design awards only." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 78,
-        section: "DESIGN PRINCIPLES",
-        text: "Understanding 'Perception' helps designers:",
-        options: [
-            { id: "a", text: "Fix hardware bugs." },
-            { id: "b", text: "Ensure key information is noticed and legible." },
-            { id: "c", text: "Manage project timelines." },
-            { id: "d", text: "Write better database queries." },
-            { id: "e", text: "Negotiate contracts." },
-            { id: "f", text: "Predict stock market trends." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 79,
-        section: "DESIGN PRINCIPLES",
-        text: "Visual Design principles are essential because:",
-        options: [
-            { id: "a", text: "They make the file size larger." },
-            { id: "b", text: "They are required by the government." },
-            { id: "c", text: "They allow the designer to show off." },
-            { id: "d", text: "They facilitate communication and usability through clear presentation." },
-            { id: "e", text: "They prevent the software from crashing." },
-            { id: "f", text: "They increase battery usage." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 80,
-        section: "DESIGN PRINCIPLES",
-        text: "Web technologies are mentioned in the course primarily to:",
-        options: [
-            { id: "a", text: "Replace native app development." },
-            { id: "b", text: "Discourage mobile usage." },
-            { id: "c", text: "Promote a specific browser." },
-            { id: "d", text: "Focus solely on backend logic." },
-            { id: "e", text: "Support the goal of building general human-centered design skills." },
-            { id: "f", text: "Teach advanced JavaScript frameworks." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 81,
-        section: "DESIGN PRINCIPLES",
-        text: "What defines a 'Human-Centered' approach compared to 'Technology-Centered'?",
-        options: [
-            { id: "a", text: "It prioritizes system efficiency over usability." },
-            { id: "b", text: "It adapts technology to people, rather than forcing people to adapt to technology." },
-            { id: "c", text: "It requires users to learn complex code." },
-            { id: "d", text: "It designs for machines first." },
-            { id: "e", text: "It ignores accessibility." },
-            { id: "f", text: "It focuses on using the newest features regardless of need." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 82,
-        section: "DESIGN PRINCIPLES",
-        text: "What does 'Affordance' refer to in design?",
-        options: [
-            { id: "a", text: "The legal ownership of the code." },
-            { id: "b", text: "Clues about how an object should be used (e.g., a button looks clickable)." },
-            { id: "c", text: "The salary of the designer." },
-            { id: "d", text: "The price of the software." },
-            { id: "e", text: "The load capacity of the server." },
-            { id: "f", text: "The backward compatibility of the OS." }
-        ],
-        correctAnswer: "b",
-        difficulty: "EASY"
-    },
-    {
-        id: 83,
-        section: "DESIGN PRINCIPLES",
-        text: "What does 'Experimentation' allow designers to do?",
-        options: [
-            { id: "a", text: "Ignore user needs." },
-            { id: "b", text: "Delay the release indefinitely." },
-            { id: "c", text: "Avoid making any decisions." },
-            { id: "d", text: "Make random changes for fun." },
-            { id: "e", text: "Increase the bug count." },
-            { id: "f", text: "Test hypotheses about design effectiveness with data." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 84,
-        section: "DESIGN PRINCIPLES",
-        text: "What does a 'Human-Centered Design' approach primarily prioritize?",
-        options: [
-            { id: "a", text: "Strict adherence to legacy software manuals." },
-            { id: "b", text: "The cheapest possible manufacturing method." },
-            { id: "c", text: "The personal artistic vision of the CEO." },
-            { id: "d", text: "The needs, abilities, and limitations of the human users." },
-            { id: "e", text: "The aesthetics of the code structure." },
-            { id: "f", text: "The preferences of the database administrator." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 85,
-        section: "DESIGN PRINCIPLES",
-        text: "What is the goal of an 'Intuitive Interface'?",
-        options: [
-            { id: "a", text: "To allow users to operate it effectively with minimal instruction." },
-            { id: "b", text: "To require a thick user manual." },
-            { id: "c", text: "To look as complex as possible." },
-            { id: "d", text: "To force users to memorize keyboard shortcuts." },
-            { id: "e", text: "To hide all functionality behind varying menus." },
-            { id: "f", text: "To prevent unauthorized access." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 86,
-        section: "DESIGN PRINCIPLES",
-        text: "What is the primary purpose of 'Controlled Experiments' in design?",
-        options: [
-            { id: "a", text: "To stress test the server hardware." },
-            { id: "b", text: "To create chaos in the database." },
-            { id: "c", text: "To scientifically compare design alternatives under specific conditions." },
-            { id: "d", text: "To manipulate users into buying products." },
-            { id: "e", text: "To hack into competitor systems." },
-            { id: "f", text: "To replace the need for designers." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 87,
-        section: "DESIGN PRINCIPLES",
-        text: "When organizing information, 'Proximity' means:",
-        options: [
-            { id: "a", text: "Overlapping all text." },
-            { id: "b", text: "Putting everything far apart." },
-            { id: "c", text: "Making all fonts the same size." },
-            { id: "d", text: "Grouping related items close together." },
-            { id: "e", text: "Using the same color for everything." },
-            { id: "f", text: "Hiding items in submenus." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 88,
-        section: "DESIGN PRINCIPLES",
-        text: "Which design principle helps users organize and understand information efficiently?",
-        options: [
-            { id: "a", text: "Visual Hierarchy." },
-            { id: "b", text: "Randomization." },
-            { id: "c", text: "Compression." },
-            { id: "d", text: "Encryption." },
-            { id: "e", text: "Obfuscation." },
-            { id: "f", text: "Virtualization." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 89,
-        section: "DESIGN PRINCIPLES",
-        text: "Which element is crucial for establishing 'Visual Design' consistency?",
-        options: [
-            { id: "a", text: "Using every color available in the spectrum." },
-            { id: "b", text: "Using a different font on every page." },
-            { id: "c", text: "A consistent color palette and grid system." },
-            { id: "d", text: "Avoiding alignment of elements." },
-            { id: "e", text: "Changing the logo size arbitrarily." },
-            { id: "f", text: "Randomizing button locations." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 90,
-        section: "DESIGN PRINCIPLES",
-        text: "Which factor relates to 'Cognitive Load'?",
-        options: [
-            { id: "a", text: "The electricity bill." },
-            { id: "b", text: "The weight of the computer." },
-            { id: "c", text: "The number of lines of code." },
-            { id: "d", text: "The speed of the processor." },
-            { id: "e", text: "The number of pixels on the screen." },
-            { id: "f", text: "The amount of mental effort required to use the interface." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 91,
-        section: "DESIGN PRINCIPLES",
-        text: "Which is NOT a fundamental principle of visual design?",
-        options: [
-            { id: "a", text: "Contrast." },
-            { id: "b", text: "Repetition." },
-            { id: "c", text: "Proximity." },
-            { id: "d", text: "Alignment." },
-            { id: "e", text: "Balance." },
-            { id: "f", text: "Compiler Optimization." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 92,
-        section: "DESIGN PRINCIPLES",
-        text: "Which of the following describes 'Mental Models'?",
-        options: [
-            { id: "a", text: "A 3D printed prototype." },
-            { id: "b", text: "A psychological disorder." },
-            { id: "c", text: "A legal contract between designer and client." },
-            { id: "d", text: "A flowchart of the backend architecture." },
-            { id: "e", text: "A feature of the CPU." },
-            { id: "f", text: "A user's internal understanding of how a system works based on prior experience." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 93,
-        section: "DESIGN PRINCIPLES",
-        text: "Why is 'Information Architecture' important?",
-        options: [
-            { id: "a", text: "It designs the aesthetic logo." },
-            { id: "b", text: "It manages the payroll." },
-            { id: "c", text: "It writes the marketing copy." },
-            { id: "d", text: "It structures content so users can find what they need easily." },
-            { id: "e", text: "It compiles the source code." },
-            { id: "f", text: "It builds the physical servers." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 94,
-        section: "DESIGN PRINCIPLES",
-        text: "Why use 'Web Design' as an anchoring domain for learning interaction design?",
-        options: [
-            { id: "a", text: "Because web browsers are the only software in existence." },
-            { id: "b", text: "Because the web is the only platform that matters." },
-            { id: "c", text: "Because web design is easier than everything else." },
-            { id: "d", text: "Because the instructors only know HTML." },
-            { id: "e", text: "Because mobile apps are becoming obsolete." },
-            { id: "f", text: "Because web examples are ubiquitous and the principles apply universally." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 95,
-        section: "SOCIAL COMPUTING",
-        text: "A key issue in 'Remote Access Systems' for work is:",
-        options: [
-            { id: "a", text: "Providing free coffee." },
-            { id: "b", text: "Buying comfortable chairs." },
-            { id: "c", text: "Parking space allocation." },
-            { id: "d", text: "Cleaning the office." },
-            { id: "e", text: "Office temperature control." },
-            { id: "f", text: "Maintaining productivity and connection without physical oversight." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 96,
-        section: "SOCIAL COMPUTING",
-        text: "A professional crowdworker's perspective is valuable to:",
-        options: [
-            { id: "a", text: "Trick them into working for free." },
-            { id: "b", text: "Ignore their complaints." },
-            { id: "c", text: "Reduce their pay." },
-            { id: "d", text: "Ban them from the platform." },
-            { id: "e", text: "Understand what makes tasks successful and fair." },
-            { id: "f", text: "Exploit them more effectively." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 97,
-        section: "SOCIAL COMPUTING",
-        text: "Being 'instantly reachable from anywhere' differs from 'being there' because:",
-        options: [
-            { id: "a", text: "It is faster." },
-            { id: "b", text: "It lacks the rich context and nuance of physical presence." },
-            { id: "c", text: "It is illegal." },
-            { id: "d", text: "It uses more data." },
-            { id: "e", text: "It requires a passport." },
-            { id: "f", text: "It is more expensive." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 98,
-        section: "SOCIAL COMPUTING",
-        text: "Collaborative software goes beyond 'being there' by:",
-        options: [
-            { id: "a", text: "Teleporting molecules." },
-            { id: "b", text: "Creating a physical hologram." },
-            { id: "c", text: "Replacing humans with AI entirely." },
-            { id: "d", text: "Enabling asynchronous work and global reach." },
-            { id: "e", text: "Stopping time." },
-            { id: "f", text: "Cloning employees." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 99,
-        section: "SOCIAL COMPUTING",
-        text: "Crowdsourcing can be limited by:",
-        options: [
-            { id: "a", text: "The unlimited intelligence of the crowd." },
-            { id: "b", text: "The infinite speed of the internet." },
-            { id: "c", text: "The lack of computers in the world." },
-            { id: "d", text: "The absence of electricity." },
-            { id: "e", text: "The complexity of tasks that cannot be easily broken down." },
-            { id: "f", text: "The flawless nature of all humans." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 100,
-        section: "SOCIAL COMPUTING",
-        text: "Crowdsourcing involves:",
-        options: [
-            { id: "a", text: "Slicing challenging problems into pieces and distributing them to many people." },
-            { id: "b", text: "Creating a large crowd in a virtual reality game." },
-            { id: "c", text: "Running a computer cluster in the cloud." },
-            { id: "d", text: "Funding a project through banks." },
-            { id: "e", text: "Asking a single expert for help." },
-            { id: "f", text: "Hosting a physical conference." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 101,
-        section: "SOCIAL COMPUTING",
-        text: "Designing for 'this reality' of distance involves:",
-        options: [
-            { id: "a", text: "Using only paper mail." },
-            { id: "b", text: "Pretending everyone is in the same room." },
-            { id: "c", text: "Forcing everyone to move to one city." },
-            { id: "d", text: "Ignoring the distance." },
-            { id: "e", text: "Stopping all remote work." },
-            { id: "f", text: "Creating tools that bridge the gap of physical separation." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 102,
-        section: "SOCIAL COMPUTING",
-        text: "In crowdsourcing, a 'microtask' is:",
-        options: [
-            { id: "a", text: "A very small computer." },
-            { id: "b", text: "A task that takes 1 microsecond." },
-            { id: "c", text: "A hidden background process." },
-            { id: "d", text: "A microscope analysis." },
-            { id: "e", text: "A task for ants." },
-            { id: "f", text: "A tiny piece of a larger problem distributed to workers." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 103,
-        section: "SOCIAL COMPUTING",
-        text: "One assignment in Social Computing involves:",
-        options: [
-            { id: "a", text: "Hacking a website." },
-            { id: "b", text: "Building a server farm." },
-            { id: "c", text: "Mining Bitcoin." },
-            { id: "d", text: "Installing Windows." },
-            { id: "e", text: "Repairing a keyboard." },
-            { id: "f", text: "Trying out crowdsourcing yourself." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 104,
-        section: "SOCIAL COMPUTING",
-        text: "Online communities allow for:",
-        options: [
-            { id: "a", text: "Connections across geographic boundaries." },
-            { id: "b", text: "Sharing physical food." },
-            { id: "c", text: "Smelling the environment." },
-            { id: "d", text: "Direct physical conflict." },
-            { id: "e", text: "Physical handshakes." },
-            { id: "f", text: "Touch-based healing." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 105,
-        section: "SOCIAL COMPUTING",
-        text: "Social Computing design must consider:",
-        options: [
-            { id: "a", text: "Social norms and group dynamics." },
-            { id: "b", text: "Only the color blue." },
-            { id: "c", text: "Only database schema efficiency." },
-            { id: "d", text: "Only offline modes." },
-            { id: "e", text: "Only single-user scenarios." },
-            { id: "f", text: "Only hardware drivers." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 106,
-        section: "SOCIAL COMPUTING",
-        text: "Social Impact of computing refers to:",
-        options: [
-            { id: "a", text: "How technology affects society and human relationships." },
-            { id: "b", text: "The sound of the keyboard." },
-            { id: "c", text: "The brand of the monitor." },
-            { id: "d", text: "The color of the computer case." },
-            { id: "e", text: "The heat output of the server farm." },
-            { id: "f", text: "The physical weight of the computer on a desk." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 107,
-        section: "SOCIAL COMPUTING",
-        text: "Social Network Analysis focuses on:",
-        options: [
-            { id: "a", text: "Hacking social media accounts." },
-            { id: "b", text: "Critiquing the UI of Facebook." },
-            { id: "c", text: "Analyzing the structures and relationships within social groups." },
-            { id: "d", text: "Installing routers." },
-            { id: "e", text: "Counting the number of likes manually." },
-            { id: "f", text: "Repairing network cables." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 108,
-        section: "SOCIAL COMPUTING",
-        text: "Social Network Analysis helps visualize:",
-        options: [
-            { id: "a", text: "The traffic on a highway." },
-            { id: "b", text: "The flow of information and influence between nodes (people)." },
-            { id: "c", text: "The flow of water." },
-            { id: "d", text: "The logic of a CPU." },
-            { id: "e", text: "The memory usage of an app." },
-            { id: "f", text: "The flow of electricity." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 109,
-        section: "SOCIAL COMPUTING",
-        text: "Successful crowdsourcing requires:",
-        options: [
-            { id: "a", text: "Using a single worker." },
-            { id: "b", text: "Paying zero money." },
-            { id: "c", text: "Banning all communication." },
-            { id: "d", text: "Hiding the instructions." },
-            { id: "e", text: "Strategies for quality control and worker motivation." },
-            { id: "f", text: "Ignoring the results." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 110,
-        section: "SOCIAL COMPUTING",
-        text: "Technology has made collaboration at a distance:",
-        options: [
-            { id: "a", text: "Impossible." },
-            { id: "b", text: "Worse than ever." },
-            { id: "c", text: "Possible in new ways." },
-            { id: "d", text: "Illegal globally." },
-            { id: "e", text: "Non-existent." },
-            { id: "f", text: "Unnecessary." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 111,
-        section: "SOCIAL COMPUTING",
-        text: "The 'Modern Internet' reflects that humans are:",
-        options: [
-            { id: "a", text: "Disconnected entities." },
-            { id: "b", text: "Solitary beings." },
-            { id: "c", text: "Purely logical machines." },
-            { id: "d", text: "Identical clones." },
-            { id: "e", text: "Social creatures." },
-            { id: "f", text: "Silent observers." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 112,
-        section: "SOCIAL COMPUTING",
-        text: "The 'universe of social media' described in the course includes:",
-        options: [
-            { id: "a", text: "Only email." },
-            { id: "b", text: "Only SMS." },
-            { id: "c", text: "Only LinkedIn." },
-            { id: "d", text: "Much more than just Facebook and Twitter." },
-            { id: "e", text: "Only Facebook." },
-            { id: "f", text: "Only Twitter." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 113,
-        section: "SOCIAL COMPUTING",
-        text: "The course asks: What are the challenges to success for:",
-        options: [
-            { id: "a", text: "Single-player games." },
-            { id: "b", text: "Digital watches." },
-            { id: "c", text: "Microwaves." },
-            { id: "d", text: "Calculators." },
-            { id: "e", text: "Traffic lights." },
-            { id: "f", text: "Collaborative software." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 114,
-        section: "SOCIAL COMPUTING",
-        text: "The course states that most everything we do has a social component that is:",
-        options: [
-            { id: "a", text: "Unrelated to technology." },
-            { id: "b", text: "Completely isolated." },
-            { id: "c", text: "Impossible to capture online." },
-            { id: "d", text: "Mediated by some technology." },
-            { id: "e", text: "Restricted to face-to-face interaction." },
-            { id: "f", text: "Only relevant for teenagers." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 115,
-        section: "SOCIAL COMPUTING",
-        text: "Understanding 'Group Behavior' is central to:",
-        options: [
-            { id: "a", text: "Computer Graphics." },
-            { id: "b", text: "Compiler Design." },
-            { id: "c", text: "Embedded Systems." },
-            { id: "d", text: "Network Security." },
-            { id: "e", text: "Social Computing." },
-            { id: "f", text: "Operating Systems." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 116,
-        section: "SOCIAL COMPUTING",
-        text: "What challenge does 'Telecommuting' present?",
-        options: [
-            { id: "a", text: "Wearing a suit every day." },
-            { id: "b", text: "Too much office noise." },
-            { id: "c", text: "Isolation and lack of informal communication." },
-            { id: "d", text: "Commuting traffic jams." },
-            { id: "e", text: "Lack of internet at the office." },
-            { id: "f", text: "Finding a parking spot." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 117,
-        section: "SOCIAL COMPUTING",
-        text: "What does 'Digital Collaboration' frame similarly to?",
-        options: [
-            { id: "a", text: "Cooking." },
-            { id: "b", text: "Sleeping." },
-            { id: "c", text: "Physical collaboration." },
-            { id: "d", text: "Running." },
-            { id: "e", text: "Gardening." },
-            { id: "f", text: "Painting." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 118,
-        section: "SOCIAL COMPUTING",
-        text: "What does the course say about 'Collaboration at a Distance'?",
-        options: [
-            { id: "a", text: "It solves all management problems." },
-            { id: "b", text: "It is impossible to work effectively remotely." },
-            { id: "c", text: "It removes all need for communication." },
-            { id: "d", text: "It requires VR headsets for everyone." },
-            { id: "e", text: "It is exactly the same as face-to-face." },
-            { id: "f", text: "It presents unique challenges but allows for new forms of interaction." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 119,
-        section: "SOCIAL COMPUTING",
-        text: "What is 'Digital Communications' in this context?",
-        options: [
-            { id: "a", text: "Using a telegraph." },
-            { id: "b", text: "Speaking in binary code." },
-            { id: "c", text: "Sending paper mail." },
-            { id: "d", text: "Yelling at a computer." },
-            { id: "e", text: "Talking to a robot." },
-            { id: "f", text: "Exchange of information through digital platforms." }
-        ],
-        correctAnswer: "f",
-        difficulty: "EASY"
-    },
-    {
-        id: 120,
-        section: "SOCIAL COMPUTING",
-        text: "What is 'Social Computing'?",
-        options: [
-            { id: "a", text: "The study of how technology mediates social interaction and collaboration." },
-            { id: "b", text: "A government program for free internet." },
-            { id: "c", text: "Repairing computers for charity." },
-            { id: "d", text: "Building computers with friends." },
-            { id: "e", text: "Computing done at a party." },
-            { id: "f", text: "Using social media for marketing only." }
-        ],
-        correctAnswer: "a",
-        difficulty: "EASY"
-    },
-    {
-        id: 121,
-        section: "SOCIAL COMPUTING",
-        text: "Which is a major platform type for Social Computing?",
-        options: [
-            { id: "a", text: "Social Networks." },
-            { id: "b", text: "Disk Defragmenters." },
-            { id: "c", text: "Compilers." },
-            { id: "d", text: "Bios settings." },
-            { id: "e", text: "Bootloaders." },
-            { id: "f", text: "Spreadsheets (standalone)." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 122,
-        section: "SOCIAL COMPUTING",
-        text: "Which is an example of 'Social Software'?",
-        options: [
-            { id: "a", text: "A desktop antivirus scanner." },
-            { id: "b", text: "Microsoft Word 95 (offline)." },
-            { id: "c", text: "A compiler." },
-            { id: "d", text: "A heavy calculator app." },
-            { id: "e", text: "Wikis, social networks, and collaborative editors." },
-            { id: "f", text: "A single-player offline game." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 123,
-        section: "SOCIAL COMPUTING",
-        text: "Which of the following is a key challenge in online communities?",
-        options: [
-            { id: "a", text: "Buying the domain name." },
-            { id: "b", text: "Choosing a logo color." },
-            { id: "c", text: "Establishing trust and managing conflict at a distance." },
-            { id: "d", text: "Installing the software." },
-            { id: "e", text: "Connecting to Wi-Fi." },
-            { id: "f", text: "Compressing images." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 124,
-        section: "SOCIAL COMPUTING",
-        text: "Which technology is an example of 'Collaborative Software'?",
-        options: [
-            { id: "a", text: "Windows Notepad." },
-            { id: "b", text: "WinZip." },
-            { id: "c", text: "Screensaver." },
-            { id: "d", text: "Google Docs." },
-            { id: "e", text: "Calculator." },
-            { id: "f", text: "Disconnect." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 125,
-        section: "SOCIAL COMPUTING",
-        text: "Who is the instructor for Social Computing?",
-        options: [
-            { id: "a", text: "Bill Gates." },
-            { id: "b", text: "Steve Jobs." },
-            { id: "c", text: "Scott Klemmer." },
-            { id: "d", text: "Elon Musk." },
-            { id: "e", text: "Tim Berners-Lee." },
-            { id: "f", text: "Mark Zuckerberg." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 126,
-        section: "SOCIAL COMPUTING",
-        text: "Why is 'Driving Engagement' important in social computing?",
-        options: [
-            { id: "a", text: "It drains the battery." },
-            { id: "b", text: "It forces users to pay." },
-            { id: "c", text: "It prevents users from logging off." },
-            { id: "d", text: "It increases server load unnecessarily." },
-            { id: "e", text: "It annoys users effectively." },
-            { id: "f", text: "It ensures the community remains active and sustainable." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 127,
-        section: "INPUT & INTERACTION",
-        text: "A 'Natural' interface typically aims to:",
-        options: [
-            { id: "a", text: "Work without electricity." },
-            { id: "b", text: "Grow like a plant." },
-            { id: "c", text: "Use green colors." },
-            { id: "d", text: "Be made of wood." },
-            { id: "e", text: "Mimic real-world interactions (like grasping/pointing)." },
-            { id: "f", text: "Be biodegradable." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 128,
-        section: "INPUT & INTERACTION",
-        text: "A 'touch point' in prototyping refers to:",
-        options: [
-            { id: "a", text: "The power button." },
-            { id: "b", text: "A finger on the screen." },
-            { id: "c", text: "The charging port." },
-            { id: "d", text: "A warm area of the device." },
-            { id: "e", text: "Specific moments where a user interacts with the system/service." },
-            { id: "f", text: "A broken pixel." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 129,
-        section: "INPUT & INTERACTION",
-        text: "Designing 'smart things' implies:",
-        options: [
-            { id: "a", text: "Ignoring the user." },
-            { id: "b", text: "Making things expensive." },
-            { id: "c", text: "Designing hardware/software hybrids with usability in mind." },
-            { id: "d", text: "Only using voice control." },
-            { id: "e", text: "Removing all buttons." },
-            { id: "f", text: "Using AI for everything." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 130,
-        section: "INPUT & INTERACTION",
-        text: "Effectively evaluating multiple interface alternatives is:",
-        options: [
-            { id: "a", text: "Impossible." },
-            { id: "b", text: "Too expensive." },
-            { id: "c", text: "Critical for selecting the best design." },
-            { id: "d", text: "A waste of time." },
-            { id: "e", text: "Only for research labs." },
-            { id: "f", text: "Illegal." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 131,
-        section: "INPUT & INTERACTION",
-        text: "Fitts' Law is likely used to model:",
-        options: [
-            { id: "a", text: "The probability of a server crash." },
-            { id: "b", text: "The time required to rapidly move to a target area (e.g., a button)." },
-            { id: "c", text: "The pixel density of screens." },
-            { id: "d", text: "The legal copyright duration." },
-            { id: "e", text: "The growth of transistor density." },
-            { id: "f", text: "The price of hardware over time." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 132,
-        section: "INPUT & INTERACTION",
-        text: "Gestural interfaces are often described as:",
-        options: [
-            { id: "a", text: "Slow and clunky." },
-            { id: "b", text: "Only for gaming." },
-            { id: "c", text: "Non-interactive." },
-            { id: "d", text: "Solely text-based." },
-            { id: "e", text: "More direct and natural than WIMP but harder to learn." },
-            { id: "f", text: "Impossible to implement." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 133,
-        section: "INPUT & INTERACTION",
-        text: "Good input design considers:",
-        options: [
-            { id: "a", text: "Only what looks cool." },
-            { id: "b", text: "More than just preference; it includes performance and ergonomics." },
-            { id: "c", text: "Only what the developer likes." },
-            { id: "d", text: "Only what is patented." },
-            { id: "e", text: "The oldest technology available." },
-            { id: "f", text: "The most expensive option." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 134,
-        section: "INPUT & INTERACTION",
-        text: "Good search design helps users:",
-        options: [
-            { id: "a", text: "Defragment the disk." },
-            { id: "b", text: "Buy more ads." },
-            { id: "c", text: "Reset their password." },
-            { id: "d", text: "Crash the browser." },
-            { id: "e", text: "Navigate vast amounts of data efficiently." },
-            { id: "f", text: "Get lost." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 135,
-        section: "INPUT & INTERACTION",
-        text: "Human Factors engineering applies knowledge of:",
-        options: [
-            { id: "a", text: "Human capabilities and limitations to system design." },
-            { id: "b", text: "History of art." },
-            { id: "c", text: "Astronomy." },
-            { id: "d", text: "Political science." },
-            { id: "e", text: "Stock market trends." },
-            { id: "f", text: "Geology." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 136,
-        section: "INPUT & INTERACTION",
-        text: "Human-Computer Interaction (HCI) fundamentals include:",
-        options: [
-            { id: "a", text: "Perception, cognition, and motor performance." },
-            { id: "b", text: "Voltage, Amperage." },
-            { id: "c", text: "HTML, CSS, and JS." },
-            { id: "d", text: "Java, Python, C++." },
-            { id: "e", text: "SQL, NoSQL." },
-            { id: "f", text: "TCP/IP." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 137,
-        section: "INPUT & INTERACTION",
-        text: "Information Architecture (IA) in the context of Input helps:",
-        options: [
-            { id: "a", text: "Design the microchip." },
-            { id: "b", text: "Write the EULA." },
-            { id: "c", text: "Manage the payroll." },
-            { id: "d", text: "Structure how finding and asking for information works." },
-            { id: "e", text: "Compile the code." },
-            { id: "f", text: "Build the computer case." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 138,
-        section: "INPUT & INTERACTION",
-        text: "Input devices mentioned in the context of diversity include:",
-        options: [
-            { id: "a", text: "Only keyboards." },
-            { id: "b", text: "Only punch cards." },
-            { id: "c", text: "Only MRI scanners." },
-            { id: "d", text: "Only joysticks." },
-            { id: "e", text: "Only voice commands." },
-            { id: "f", text: "Fingertips, pointers, and gestures." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 139,
-        section: "INPUT & INTERACTION",
-        text: "Input techniques should be evaluated based on:",
-        options: [
-            { id: "a", text: "Their relative merits for the specific task." },
-            { id: "b", text: "If they use a touchscreen." },
-            { id: "c", text: "How expensive they are." },
-            { id: "d", text: "If they are wireless." },
-            { id: "e", text: "How futuristic they look." },
-            { id: "f", text: "If they are brand new." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 140,
-        section: "INPUT & INTERACTION",
-        text: "Prototyping input techniques helps to:",
-        options: [
-            { id: "a", text: "Verify the plastic quality." },
-            { id: "b", text: "None of the above." },
-            { id: "c", text: "Ensure the logo is visible." },
-            { id: "d", text: "Make the device heavier." },
-            { id: "e", text: "Check the battery life." },
-            { id: "f", text: "Test the feel and efficiency before manufacturing." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 141,
-        section: "INPUT & INTERACTION",
-        text: "Search design is central to 21st-century HCI because:",
-        options: [
-            { id: "a", text: "Users love typing." },
-            { id: "b", text: "It replaces the operating system." },
-            { id: "c", text: "Finding what we want in an information-rich world is a primary difficulty." },
-            { id: "d", text: "It makes the screen brighter." },
-            { id: "e", text: "Google pays for it." },
-            { id: "f", text: "It is required for SQL." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 142,
-        section: "INPUT & INTERACTION",
-        text: "The 'command line' interface is characterized by:",
-        options: [
-            { id: "a", text: "Drag and drop." },
-            { id: "b", text: "Voice control." },
-            { id: "c", text: "Touch gestures." },
-            { id: "d", text: "Mind control." },
-            { id: "e", text: "Text-based input commands." },
-            { id: "f", text: "3D graphics." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 143,
-        section: "INPUT & INTERACTION",
-        text: "The course argues that 'Input' deserves to be on equal footing with:",
-        options: [
-            { id: "a", text: "Output." },
-            { id: "b", text: "Storage." },
-            { id: "c", text: "Networking." },
-            { id: "d", text: "Processing." },
-            { id: "e", text: "Marketing." },
-            { id: "f", text: "Finance." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 144,
-        section: "INPUT & INTERACTION",
-        text: "The diversity of input devices allows for:",
-        options: [
-            { id: "a", text: "User confusion." },
-            { id: "b", text: "Vendor lock-in." },
-            { id: "c", text: "Different interaction styles suitable for different contexts." },
-            { id: "d", text: "Higher prices." },
-            { id: "e", text: "Slower computers." },
-            { id: "f", text: "More cables." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 145,
-        section: "INPUT & INTERACTION",
-        text: "The physical action of 'clicking' is constrained by:",
-        options: [
-            { id: "a", text: "The copyright law." },
-            { id: "b", text: "The font size." },
-            { id: "c", text: "The color of the mouse." },
-            { id: "d", text: "Human biomechanics." },
-            { id: "e", text: "The internet speed." },
-            { id: "f", text: "The weather." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 146,
-        section: "INPUT & INTERACTION",
-        text: "The transition from Command Line to WIMP took:",
-        options: [
-            { id: "a", text: "5 minutes." },
-            { id: "b", text: "100 years." },
-            { id: "c", text: "1 year." },
-            { id: "d", text: "It never happened." },
-            { id: "e", text: "It happened instantly." },
-            { id: "f", text: "Approx. 20 years to go from labs to homes." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 147,
-        section: "INPUT & INTERACTION",
-        text: "Tracing input 'from the fingertip to the screen' involves:",
-        options: [
-            { id: "a", text: "Touching the screen constantly." },
-            { id: "b", text: "Cleaning the screen." },
-            { id: "c", text: "Using a stylus only." },
-            { id: "d", text: "Wearing gloves." },
-            { id: "e", text: "Using a fingerprint scanner." },
-            { id: "f", text: "Understanding the entire stack of hardware and software processing interaction." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 148,
-        section: "INPUT & INTERACTION",
-        text: "User Interface (UI) design focuses on:",
-        options: [
-            { id: "a", text: "The HR department." },
-            { id: "b", text: "The server room layout." },
-            { id: "c", text: "The backend database." },
-            { id: "d", text: "The marketing strategy." },
-            { id: "e", text: "The cafeteria menu." },
-            { id: "f", text: "The visual and interactive elements of software interaction." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 149,
-        section: "INPUT & INTERACTION",
-        text: "What is 'WIMP' relevant to in interaction history?",
-        options: [
-            { id: "a", text: "Wireless Internet Mobile Protocol." },
-            { id: "b", text: "Web Interface Management Platform." },
-            { id: "c", text: "Windows, Icons, Menus, Pointer." },
-            { id: "d", text: "Wide Input Mouse Pad." },
-            { id: "e", text: "Whitespace, Indentation, Margins, Padding." },
-            { id: "f", text: "Writing, Imaging, Managing, Printing." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 150,
-        section: "INPUT & INTERACTION",
-        text: "What is a potential downside of 'Gestural Interfaces' compared to WIMP?",
-        options: [
-            { id: "a", text: "They are only for old computers." },
-            { id: "b", text: "They can be frustrating if not designed well (lack of affordance/feedback)." },
-            { id: "c", text: "They never fail." },
-            { id: "d", text: "They require a keyboard." },
-            { id: "e", text: "They are too cheap to produce." },
-            { id: "f", text: "They are too precise." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 151,
-        section: "INPUT & INTERACTION",
-        text: "What is the hardest part of interaction in an information-rich world?",
-        options: [
-            { id: "a", text: "Turning the computer on." },
-            { id: "b", text: "Typing fast enough." },
-            { id: "c", text: "Installing the OS." },
-            { id: "d", text: "Finding what we want or knowing what to ask for." },
-            { id: "e", text: "Buying the device." },
-            { id: "f", text: "Reading the text." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 152,
-        section: "INPUT & INTERACTION",
-        text: "Which is NOT part of WIMP?",
-        options: [
-            { id: "a", text: "Pointer." },
-            { id: "b", text: "Keyboard shortcuts only." },
-            { id: "c", text: "Menus." },
-            { id: "d", text: "Icons." },
-            { id: "e", text: "Windows." },
-            { id: "f", text: "GUI elements." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 153,
-        section: "INPUT & INTERACTION",
-        text: "Which is an example of a Human Factor in design?",
-        options: [
-            { id: "a", text: "Reaction time and accuracy." },
-            { id: "b", text: "Screen resolution." },
-            { id: "c", text: "Network bandwidth." },
-            { id: "d", text: "CPU clock speed." },
-            { id: "e", text: "Hard drive size." },
-            { id: "f", text: "RAM capacity." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 154,
-        section: "INPUT & INTERACTION",
-        text: "Why can input be modeled mathematically?",
-        options: [
-            { id: "a", text: "Because users are robots." },
-            { id: "b", text: "Because computers are good at math." },
-            { id: "c", text: "Because keyboards have numbers." },
-            { id: "d", text: "It cannot be modeled." },
-            { id: "e", text: "Because human motor movement follows predictable physical laws." },
-            { id: "f", text: "Because math is required for coding." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 155,
-        section: "INPUT & INTERACTION",
-        text: "Why is 'Human Motor Performance' relevant to effective interaction design?",
-        options: [
-            { id: "a", text: "It is only relevant for robotics." },
-            { id: "b", text: "It determines how fast the motor in the fan spins." },
-            { id: "c", text: "It speeds up the CPU." },
-            { id: "d", text: "It informs how quickly and accurately users can perform input tasks (e.g., clicking)." },
-            { id: "e", text: "It is used to calculate car mileage." },
-            { id: "f", text: "It replaces the need for a mouse." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 156,
-        section: "INPUT & INTERACTION",
-        text: "Why is 'Output' often more popular than 'Input'?",
-        options: [
-            { id: "a", text: "Because visual displays are flashy and obvious." },
-            { id: "b", text: "Because keyboards are ugly." },
-            { id: "c", text: "Because screens are cheap." },
-            { id: "d", text: "Because sound is annoying." },
-            { id: "e", text: "Because input is useless." },
-            { id: "f", text: "Because users don't interact." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 157,
-        section: "UX RESEARCH",
-        text: "'Synthesis' involves:",
-        options: [
-            { id: "a", text: "Encrypting data." },
-            { id: "b", text: "Printing data." },
-            { id: "c", text: "Deleting data." },
-            { id: "d", text: "Making sense of rich data to turn it into insights." },
-            { id: "e", text: "Creating fake data." },
-            { id: "f", text: "Writing a summary." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 158,
-        section: "UX RESEARCH",
-        text: "A 'Journey Map' is used to:",
-        options: [
-            { id: "a", text: "Track the project timeline." },
-            { id: "b", text: "Navigate the file system." },
-            { id: "c", text: "Visualize the user's experience over time across different touchpoints." },
-            { id: "d", text: "Design the database schema." },
-            { id: "e", text: "Plan a road trip." },
-            { id: "f", text: "Map the office layout." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 159,
-        section: "UX RESEARCH",
-        text: "A 'Walkthrough' prototype involves:",
-        options: [
-            { id: "a", text: "Walking the dog." },
-            { id: "b", text: "Walking in the park." },
-            { id: "c", text: "Touring the office." },
-            { id: "d", text: "A video game walkthrough." },
-            { id: "e", text: "Walking away." },
-            { id: "f", text: "Stepping through the user's process physically or mentally." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 160,
-        section: "UX RESEARCH",
-        text: "An 'actionable insight' is:",
-        options: [
-            { id: "a", text: "A bug report." },
-            { id: "b", text: "A random fact." },
-            { id: "c", text: "A compliment." },
-            { id: "d", text: "A statistic." },
-            { id: "e", text: "A complaint." },
-            { id: "f", text: "A finding that points directly to a design opportunity." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 161,
-        section: "UX RESEARCH",
-        text: "Design Thinking emphasizes:",
-        options: [
-            { id: "a", text: "Profit margins." },
-            { id: "b", text: "Empathy for the user." },
-            { id: "c", text: "Code efficiency." },
-            { id: "d", text: "Visual aesthetics only." },
-            { id: "e", text: "Hardware speed." },
-            { id: "f", text: "Brand loyalty." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 162,
-        section: "UX RESEARCH",
-        text: "Generating lists of questions happens:",
-        options: [
-            { id: "a", text: "Never." },
-            { id: "b", text: "After launch." },
-            { id: "c", text: "In the shower." },
-            { id: "d", text: "Before and during the research phase." },
-            { id: "e", text: "Only at the end." },
-            { id: "f", text: "During the holiday party." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 163,
-        section: "UX RESEARCH",
-        text: "Going out to talk to people in their everyday context provides:",
-        options: [
-            { id: "a", text: "A new perspective free from assumptions." },
-            { id: "b", text: "Free lunch." },
-            { id: "c", text: "Nothing useful." },
-            { id: "d", text: "Distraction." },
-            { id: "e", text: "Stress." },
-            { id: "f", text: "Exercise." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 164,
-        section: "UX RESEARCH",
-        text: "Ideation techniques help designers:",
-        options: [
-            { id: "a", text: "Clean the office." },
-            { id: "b", text: "Hire staff." },
-            { id: "c", text: "Generate a wide variety of solutions." },
-            { id: "d", text: "Determine the budget." },
-            { id: "e", text: "Minimize the number of ideas." },
-            { id: "f", text: "Pick colors." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 165,
-        section: "UX RESEARCH",
-        text: "Identifying an 'Opportunity Area' includes defining:",
-        options: [
-            { id: "a", text: "A focus, a stakeholder, a need, and an insight." },
-            { id: "b", text: "A logo and color." },
-            { id: "c", text: "A competitor and market." },
-            { id: "d", text: "A manager and developer." },
-            { id: "e", text: "A budget and timeline." },
-            { id: "f", text: "A server and database." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 166,
-        section: "UX RESEARCH",
-        text: "Innovation in UX often comes from:",
-        options: [
-            { id: "a", text: "Changing the font." },
-            { id: "b", text: "Working harder." },
-            { id: "c", text: "Using blockchain." },
-            { id: "d", text: "Reframing the problem based on user insights." },
-            { id: "e", text: "Buying new computers." },
-            { id: "f", text: "Ignoring users." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 167,
-        section: "UX RESEARCH",
-        text: "Judgment during brainstorming should be:",
-        options: [
-            { id: "a", text: "Harsh." },
-            { id: "b", text: "Immediate." },
-            { id: "c", text: "Suspended/Deferred." },
-            { id: "d", text: "Required." },
-            { id: "e", text: "Encouraged." },
-            { id: "f", text: "Final." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 168,
-        section: "UX RESEARCH",
-        text: "Making ideas 'tangible' means:",
-        options: [
-            { id: "a", text: "Deleting them." },
-            { id: "b", text: "Patenting them." },
-            { id: "c", text: "Thinking about them." },
-            { id: "d", text: "Selling them." },
-            { id: "e", text: "Writing them down." },
-            { id: "f", text: "Creating physical or visual representations (prototypes)." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 169,
-        section: "UX RESEARCH",
-        text: "Role-playing is a form of prototyping that helps to:",
-        options: [
-            { id: "a", text: "Review code." },
-            { id: "b", text: "Write screenplays." },
-            { id: "c", text: "Test server load." },
-            { id: "d", text: "Play games." },
-            { id: "e", text: "Act out interaction scenarios to uncover issues." },
-            { id: "f", text: "Train for acting careers." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 170,
-        section: "UX RESEARCH",
-        text: "Sticky notes are commonly used for:",
-        options: [
-            { id: "a", text: "Decorating walls." },
-            { id: "b", text: "Affinity diagramming and ideation." },
-            { id: "c", text: "Labeling food." },
-            { id: "d", text: "Writing grocery lists." },
-            { id: "e", text: "Bookmark pages." },
-            { id: "f", text: "Cleaning monitors." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 171,
-        section: "UX RESEARCH",
-        text: "Testing ideas with different people helps to:",
-        options: [
-            { id: "a", text: "Answer critical questions and push the idea forward." },
-            { id: "b", text: "Sell product." },
-            { id: "c", text: "Show off." },
-            { id: "d", text: "Recruit them." },
-            { id: "e", text: "Prove them wrong." },
-            { id: "f", text: "Annoy them." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 172,
-        section: "UX RESEARCH",
-        text: "The first step for generating great user experiences is:",
-        options: [
-            { id: "a", text: "Understanding what people do, think, say, and feel." },
-            { id: "b", text: "Designing the logo." },
-            { id: "c", text: "Assuming you know what they want." },
-            { id: "d", text: "Picking a color palette." },
-            { id: "e", text: "Hiring a marketing team." },
-            { id: "f", text: "Writing code immediately." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 173,
-        section: "UX RESEARCH",
-        text: "Understanding the 'larger systems' in which users interact is part of:",
-        options: [
-            { id: "a", text: "Coding." },
-            { id: "b", text: "Unit Testing." },
-            { id: "c", text: "Research/Observation." },
-            { id: "d", text: "Deploying." },
-            { id: "e", text: "Graphic Design." },
-            { id: "f", text: "Debugging." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 174,
-        section: "UX RESEARCH",
-        text: "User Centered Design puts the user at the:",
-        options: [
-            { id: "a", text: "Outside of the building." },
-            { id: "b", text: "End of the line." },
-            { id: "c", text: "Bottom of the hierarchy." },
-            { id: "d", text: "Back of the room." },
-            { id: "e", text: "Center of the development process." },
-            { id: "f", text: "In the cloud." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 175,
-        section: "UX RESEARCH",
-        text: "Validating user experiences requires:",
-        options: [
-            { id: "a", text: "Reviewing requirements." },
-            { id: "b", text: "Testing with actual users." },
-            { id: "c", text: "Passing unit tests." },
-            { id: "d", text: "Assuming success." },
-            { id: "e", text: "Asked the developer." },
-            { id: "f", text: "Checking compliance." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 176,
-        section: "UX RESEARCH",
-        text: "What is 'Fixation' in ideation?",
-        options: [
-            { id: "a", text: "A stable release." },
-            { id: "b", text: "Fixing bugs." },
-            { id: "c", text: "A permanent job." },
-            { id: "d", text: "A pitfall where designers get stuck on their first idea." },
-            { id: "e", text: "Glueing the prototype together." },
-            { id: "f", text: "Staring at the screen." }
-        ],
-        correctAnswer: "d",
-        difficulty: "EASY"
-    },
-    {
-        id: 177,
-        section: "UX RESEARCH",
-        text: "What is a 'Persona' in UX research?",
-        options: [
-            { id: "a", text: "The brand mascot." },
-            { id: "b", text: "The personality of the CEO." },
-            { id: "c", text: "A masked user." },
-            { id: "d", text: "A real specific person's biography." },
-            { id: "e", text: "Anonymous login." },
-            { id: "f", text: "A fictional character created to represent a user type." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 178,
-        section: "UX RESEARCH",
-        text: "What is the purpose of a '2x2 Matrix' in synthesis?",
-        options: [
-            { id: "a", text: "To multiply numbers." },
-            { id: "b", text: "To organize data along two axes to find patterns or opportunities." },
-            { id: "c", text: "To play tic-tac-toe." },
-            { id: "d", text: "To create a spreadsheet." },
-            { id: "e", text: "To measure screen resolution." },
-            { id: "f", text: "To draw a box." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 179,
-        section: "UX RESEARCH",
-        text: "What is the thrill mentioned in the research module?",
-        options: [
-            { id: "a", text: "Designing the icon." },
-            { id: "b", text: "Getting paid." },
-            { id: "c", text: "Writing perfect code." },
-            { id: "d", text: "Talking to and learning from people in their environment." },
-            { id: "e", text: "Launching the app." },
-            { id: "f", text: "Leaving work early." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 180,
-        section: "UX RESEARCH",
-        text: "Which is NOT a synthesis technique mentioned?",
-        options: [
-            { id: "a", text: "Affinity Diagramming (implied)." },
-            { id: "b", text: "Compiler optimization." },
-            { id: "c", text: "2x2 Matrix." },
-            { id: "d", text: "Personas." },
-            { id: "e", text: "Journey Maps." },
-            { id: "f", text: "Diagramming." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 181,
-        section: "UX RESEARCH",
-        text: "Which material is suggested for prototyping 'without coding'?",
-        options: [
-            { id: "a", text: "Glass blowing." },
-            { id: "b", text: "Laser cutters." },
-            { id: "c", text: "Materials found around your home (sticky notes, paper)." },
-            { id: "d", text: "Steel and welding." },
-            { id: "e", text: "Advanced 3D printers." },
-            { id: "f", text: "Expensive software." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 182,
-        section: "UX RESEARCH",
-        text: "Which rule is recommended for brainstorming?",
-        options: [
-            { id: "a", text: "Judge every idea immediately." },
-            { id: "b", text: "Only write down perfect ideas." },
-            { id: "c", text: "Criticize others." },
-            { id: "d", text: "Only the boss speaks." },
-            { id: "e", text: "Remain silent." },
-            { id: "f", text: "Get every idea out regardless of whether it's good or bad." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 183,
-        section: "UX RESEARCH",
-        text: "Who should be included in the brainstorming process?",
-        options: [
-            { id: "a", text: "Only the designers." },
-            { id: "b", text: "Strangers only." },
-            { id: "c", text: "Humans and AI." },
-            { id: "d", text: "Only the boss." },
-            { id: "e", text: "A diverse group of stakeholders/teammates." },
-            { id: "f", text: "Only the intern." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 184,
-        section: "UX RESEARCH",
-        text: "Why iterate?",
-        options: [
-            { id: "a", text: "To move closer to a meaningful and accessible experience." },
-            { id: "b", text: "To increase costs." },
-            { id: "c", text: "No reason." },
-            { id: "d", text: "To delay work." },
-            { id: "e", text: "Because it's fun." },
-            { id: "f", text: "To copy others." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 185,
-        section: "UX RESEARCH",
-        text: "Why make many prototypes?",
-        options: [
-            { id: "a", text: "To confuse stakeholders." },
-            { id: "b", text: "Because the first one always fails." },
-            { id: "c", text: "To avoid getting attached to one idea and to test different aspects." },
-            { id: "d", text: "To clutter the office." },
-            { id: "e", text: "To look busy." },
-            { id: "f", text: "To waste materials." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 186,
-        section: "UX RESEARCH",
-        text: "Why provide 'only essential details' in a prototype?",
-        options: [
-            { id: "a", text: "To make it abstract." },
-            { id: "b", text: "To hide flaws." },
-            { id: "c", text: "Because the designer is lazy." },
-            { id: "d", text: "To prevent copying." },
-            { id: "e", text: "To focus feedback on the core concept, not the finish." },
-            { id: "f", text: "To save ink." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 187,
-        section: "INFORMATION DESIGN",
-        text: "A 'Wireframe' primarily defines:",
-        options: [
-            { id: "a", text: "The final images." },
-            { id: "b", text: "The hosting provider." },
-            { id: "c", text: "The marketing copy." },
-            { id: "d", text: "The backend logic." },
-            { id: "e", text: "The color palette." },
-            { id: "f", text: "The skeletal framework and content layout of a page." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 188,
-        section: "INFORMATION DESIGN",
-        text: "A 'blank canvas' represents:",
-        options: [
-            { id: "a", text: "Possibility regarding how to turn an idea into an interface." },
-            { id: "b", text: "An empty database." },
-            { id: "c", text: "A missing file." },
-            { id: "d", text: "Writer's block." },
-            { id: "e", text: "A broken monitor." },
-            { id: "f", text: "A clean desk." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 189,
-        section: "INFORMATION DESIGN",
-        text: "A 'family' interface strategy means:",
-        options: [
-            { id: "a", text: "Parental controls." },
-            { id: "b", text: "Local networking." },
-            { id: "c", text: "Group discounts." },
-            { id: "d", text: "Designing for families." },
-            { id: "e", text: "Consistent experience across different devices." },
-            { id: "f", text: "Shared passwords." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 190,
-        section: "INFORMATION DESIGN",
-        text: "Ben Fry is an expert in:",
-        options: [
-            { id: "a", text: "Opera." },
-            { id: "b", text: "Visualization." },
-            { id: "c", text: "Cooking." },
-            { id: "d", text: "Carpentry." },
-            { id: "e", text: "Gardening." },
-            { id: "f", text: "Skiing." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 191,
-        section: "INFORMATION DESIGN",
-        text: "Designing for a 'modern context' implies handling:",
-        options: [
-            { id: "a", text: "Only desktop PCs." },
-            { id: "b", text: "Only English speakers." },
-            { id: "c", text: "Only iPhones." },
-            { id: "d", text: "Only rich users." },
-            { id: "e", text: "Diversity of devices and users." },
-            { id: "f", text: "Only experts." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 192,
-        section: "INFORMATION DESIGN",
-        text: "Don't jump into code just yet implies:",
-        options: [
-            { id: "a", text: "Quit the job." },
-            { id: "b", text: "Code is dangerous." },
-            { id: "c", text: "Prototype visually first to figure out look and feel." },
-            { id: "d", text: "Sleep on it." },
-            { id: "e", text: "Never code." },
-            { id: "f", text: "Wait for permission." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 193,
-        section: "INFORMATION DESIGN",
-        text: "Effective pixel prototyping is useful for communication within:",
-        options: [
-            { id: "a", text: "A dream." },
-            { id: "b", text: "A silence retreat." },
-            { id: "c", text: "A solitary confinement." },
-            { id: "d", text: "A family." },
-            { id: "e", text: "A design team." },
-            { id: "f", text: "Space." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 194,
-        section: "INFORMATION DESIGN",
-        text: "Hierarchy in typography is achieved by:",
-        options: [
-            { id: "a", text: "Using 10 different fonts." },
-            { id: "b", text: "Using size, weight, and color to indicate importance." },
-            { id: "c", text: "Making everything bold." },
-            { id: "d", text: "Hiding titles." },
-            { id: "e", text: "Capitalizing everything." },
-            { id: "f", text: "Underlining all text." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 195,
-        section: "INFORMATION DESIGN",
-        text: "Information Design bridges the gap between:",
-        options: [
-            { id: "a", text: "Mac and PC." },
-            { id: "b", text: "Manager and Employee." },
-            { id: "c", text: "Java and C++." },
-            { id: "d", text: "Data and human understanding." },
-            { id: "e", text: "Past and Future." },
-            { id: "f", text: "Input and Output." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 196,
-        section: "INFORMATION DESIGN",
-        text: "Information Design covers principles of:",
-        options: [
-            { id: "a", text: "Hardware assembly." },
-            { id: "b", text: "Network security." },
-            { id: "c", text: "Visual design, layout, color, and hierarchy." },
-            { id: "d", text: "Database indexing." },
-            { id: "e", text: "Server administration." },
-            { id: "f", text: "Cable management." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 197,
-        section: "INFORMATION DESIGN",
-        text: "Internationalization (i18n) prepares a design for:",
-        options: [
-            { id: "a", text: "One specific country." },
-            { id: "b", text: "Time zones." },
-            { id: "c", text: "Global warming." },
-            { id: "d", text: "Local travel." },
-            { id: "e", text: "Space travel." },
-            { id: "f", text: "Multiple languages and cultural norms." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 198,
-        section: "INFORMATION DESIGN",
-        text: "Mockups are typically:",
-        options: [
-            { id: "a", text: "User interviews." },
-            { id: "b", text: "Database tables." },
-            { id: "c", text: "Sketches." },
-            { id: "d", text: "Functional apps." },
-            { id: "e", text: "Code snippets." },
-            { id: "f", text: "Static high-fidelity designs." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 199,
-        section: "INFORMATION DESIGN",
-        text: "New device contexts include:",
-        options: [
-            { id: "a", text: "Old mainframes." },
-            { id: "b", text: "Tablets, walls, watches." },
-            { id: "c", text: "Telegraphs." },
-            { id: "d", text: "Fax machines." },
-            { id: "e", text: "Typewriters." },
-            { id: "f", text: "Calculators." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 200,
-        section: "INFORMATION DESIGN",
-        text: "Pixel prototyping tools (like software tools) allow for:",
-        options: [
-            { id: "a", text: "Database management." },
-            { id: "b", text: "Writing C++ code." },
-            { id: "c", text: "3D modeling for architecture." },
-            { id: "d", text: "High-fidelity visual representations." },
-            { id: "e", text: "Video editing." },
-            { id: "f", text: "Sound mixing." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 201,
-        section: "INFORMATION DESIGN",
-        text: "Prototyping 'before implementation' saves:",
-        options: [
-            { id: "a", text: "User data." },
-            { id: "b", text: "Nothing." },
-            { id: "c", text: "Development time and cost." },
-            { id: "d", text: "Disk space." },
-            { id: "e", text: "Electricity." },
-            { id: "f", text: "Paper." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 202,
-        section: "INFORMATION DESIGN",
-        text: "Rapid prototypes for 'communication' are used to:",
-        options: [
-            { id: "a", text: "Make phone calls." },
-            { id: "b", text: "Get buy-in from stakeholders." },
-            { id: "c", text: "Send emails." },
-            { id: "d", text: "Broadcast news." },
-            { id: "e", text: "Chat with friends." },
-            { id: "f", text: "Write letters." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 203,
-        section: "INFORMATION DESIGN",
-        text: "Responsive design helps accommodate:",
-        options: [
-            { id: "a", text: "Old browsers." },
-            { id: "b", text: "Bad eyesight." },
-            { id: "c", text: "Viruses." },
-            { id: "d", text: "Increasingly diverse form factors." },
-            { id: "e", text: "Slow internet." },
-            { id: "f", text: "Bored users." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 204,
-        section: "INFORMATION DESIGN",
-        text: "Script direction (e.g., RTL vs LTR) affects:",
-        options: [
-            { id: "a", text: "Internet speed." },
-            { id: "b", text: "Monitor brightness." },
-            { id: "c", text: "Computer weight." },
-            { id: "d", text: "Interface layout and information flow." },
-            { id: "e", text: "Audio quality." },
-            { id: "f", text: "Battery life." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 205,
-        section: "INFORMATION DESIGN",
-        text: "The choice of color impacts:",
-        options: [
-            { id: "a", text: "Privacy policy." },
-            { id: "b", text: "Download time." },
-            { id: "c", text: "Server speed." },
-            { id: "d", text: "Hardware version." },
-            { id: "e", text: "Emotion, readability, and brand recognition." },
-            { id: "f", text: "Code quality." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 206,
-        section: "INFORMATION DESIGN",
-        text: "The goal of Information Design is to:",
-        options: [
-            { id: "a", text: "Confuse readers." },
-            { id: "b", text: "Delete content." },
-            { id: "c", text: "Effectively organize and present information." },
-            { id: "d", text: "Create abstract art." },
-            { id: "e", text: "Hide information." },
-            { id: "f", text: "Write huge blocks of text." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 207,
-        section: "INFORMATION DESIGN",
-        text: "The term '1337 h4x0rs' in the text refers to:",
-        options: [
-            { id: "a", text: "A design tool." },
-            { id: "b", text: "A color code." },
-            { id: "c", text: "Leetspeak hackers (humorous context for tech jargon)." },
-            { id: "d", text: "A specific virus." },
-            { id: "e", text: "A font name." },
-            { id: "f", text: "A new device." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 208,
-        section: "INFORMATION DESIGN",
-        text: "Typography in UI deals with:",
-        options: [
-            { id: "a", text: "Writing stories." },
-            { id: "b", text: "Typing speed." },
-            { id: "c", text: "Correcting spelling." },
-            { id: "d", text: "Collecting stamps." },
-            { id: "e", text: "The style, arrangement, and appearance of text." },
-            { id: "f", text: "Printing photos." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 209,
-        section: "INFORMATION DESIGN",
-        text: "Visual design helps effective presentation by:",
-        options: [
-            { id: "a", text: "Encrypting text." },
-            { id: "b", text: "Using invisible ink." },
-            { id: "c", text: "Organizing information logically." },
-            { id: "d", text: "Making it chaotic." },
-            { id: "e", text: "Deleting paragraphs." },
-            { id: "f", text: "Using tiny fonts." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 210,
-        section: "INFORMATION DESIGN",
-        text: "Visualization expert Ben Fry discusses designing with:",
-        options: [
-            { id: "a", text: "Speed in mind." },
-            { id: "b", text: "Usability in mind." },
-            { id: "c", text: "Profit in mind." },
-            { id: "d", text: "Shapes in mind." },
-            { id: "e", text: "Colors in mind." },
-            { id: "f", text: "Code in mind." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 211,
-        section: "INFORMATION DESIGN",
-        text: "What does a 'smart thing' generally refer to here?",
-        options: [
-            { id: "a", text: "A library card." },
-            { id: "b", text: "A clever joke." },
-            { id: "c", text: "A diploma." },
-            { id: "d", text: "A fast car." },
-            { id: "e", text: "Connected devices or IoT with designed interfaces." },
-            { id: "f", text: "A smart person." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 212,
-        section: "INFORMATION DESIGN",
-        text: "What is 'Responsive Design'?",
-        options: [
-            { id: "a", text: "A printed collection." },
-            { id: "b", text: "A voice-activated app." },
-            { id: "c", text: "A customer support chat." },
-            { id: "d", text: "A design that talks back." },
-            { id: "e", text: "An interface strategy that adapts (grows/shrinks) to device form factors." },
-            { id: "f", text: "A fast-loading site." }
-        ],
-        correctAnswer: "e",
-        difficulty: "EASY"
-    },
-    {
-        id: 213,
-        section: "INFORMATION DESIGN",
-        text: "What is 'White Space' in layout?",
-        options: [
-            { id: "a", text: "A mistake." },
-            { id: "b", text: "Something to fill with ads." },
-            { id: "c", text: "Empty space used to separate and organize elements." },
-            { id: "d", text: "The background color only." },
-            { id: "e", text: "A missing image." },
-            { id: "f", text: "Wasted space." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 214,
-        section: "INFORMATION DESIGN",
-        text: "What is the purpose of 'Layout Design'?",
-        options: [
-            { id: "a", text: "Overlapping text." },
-            { id: "b", text: "Hiding navigation." },
-            { id: "c", text: "Arranging elements for clarity and usability." },
-            { id: "d", text: "Random placement." },
-            { id: "e", text: "Minimizing whitespace." },
-            { id: "f", text: "Filling every pixel." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 215,
-        section: "INFORMATION DESIGN",
-        text: "Why design 'flexibly' for diverse devices?",
-        options: [
-            { id: "a", text: "Because code is flexible." },
-            { id: "b", text: "Because one-size-fits-all does not work for 7 billion people/devices." },
-            { id: "c", text: "Because the internet is slow." },
-            { id: "d", text: "Because it's trendy." },
-            { id: "e", text: "Because screens are expensive." },
-            { id: "f", text: "Because diversity is a buzzword." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 216,
-        section: "INFORMATION DESIGN",
-        text: "ii Sn refers to:",
-        options: [
-            { id: "a", text: "Information 18." },
-            { id: "b", text: "Internet version 18." },
-            { id: "c", text: "Iteration 18." },
-            { id: "d", text: "Interaction 18." },
-            { id: "e", text: "Innovation 18." },
-            { id: "f", text: "Internationalization." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 217,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "A 'Null Hypothesis' typically states:",
-        options: [
-            { id: "a", text: "That the computer is off." },
-            { id: "b", text: "That the experiment will fail." },
-            { id: "c", text: "That the effect is huge." },
-            { id: "d", text: "That the hypothesis is missing." },
-            { id: "e", text: "That there is no significant difference or effect." },
-            { id: "f", text: "That the data is zero." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 218,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "A 'confound' in an experiment is:",
-        options: [
-            { id: "a", text: "A founding member of the team." },
-            { id: "b", text: "A lost participant." },
-            { id: "c", text: "A type of font." },
-            { id: "d", text: "An extraneous variable that correlates with both the dependent and independent variables, confusing results." },
-            { id: "e", text: "A broken computer." },
-            { id: "f", text: "A surprisingly good result." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 219,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "A 'p-value' helps researchers determine:",
-        options: [
-            { id: "a", text: "The price of the software." },
-            { id: "b", text: "If the null hypothesis can be rejected." },
-            { id: "c", text: "The power consumption." },
-            { id: "d", text: "The percentage of battery left." },
-            { id: "e", text: "The priority of the bug." },
-            { id: "f", text: "The number of pixels." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 220,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "A t-test is commonly used to compare:",
-        options: [
-            { id: "a", text: "The means of two groups." },
-            { id: "b", text: "The temperature." },
-            { id: "c", text: "The time." },
-            { id: "d", text: "Three or more groups (that's ANOVA)." },
-            { id: "e", text: "Tea brands." },
-            { id: "f", text: "The text size." }
-        ],
-        correctAnswer: "a",
-        difficulty: "HARD"
-    },
-    {
-        id: 221,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "ANOVA stands for:",
-        options: [
-            { id: "a", text: "Annual Validation of Assets." },
-            { id: "b", text: "Algorithm for Numerical Optimization." },
-            { id: "c", text: "Abstract Node Object Validation." },
-            { id: "d", text: "Another Variable Assessment." },
-            { id: "e", text: "Analysis of Variance." },
-            { id: "f", text: "Automated Network Analysis." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 222,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "An 'A/B Test' typically compares:",
-        options: [
-            { id: "a", text: "Authorized vs Blocked users." },
-            { id: "b", text: "The alphabet from A to B." },
-            { id: "c", text: "Apples and Bananas." },
-            { id: "d", text: "Two different programming languages." },
-            { id: "e", text: "Analog vs Digital signals." },
-            { id: "f", text: "Two versions of a design to see which performs better on a specific metric." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 223,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "Chi-Square tests are often used for:",
-        options: [
-            { id: "a", text: "Compiling Java code." },
-            { id: "b", text: "Designing 3D models." },
-            { id: "c", text: "Analyzing categorical data (e.g., user preferences or counts)." },
-            { id: "d", text: "Testing internet speed." },
-            { id: "e", text: "Calculating the square root of Pi." },
-            { id: "f", text: "Measuring screen brightness." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 224,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "Counterbalancing is used in Within-Subjects designs to:",
-        options: [
-            { id: "a", text: "Make the screen level." },
-            { id: "b", text: "Ensure equal gender representation only." },
-            { id: "c", text: "Compare weights." },
-            { id: "d", text: "Avoid carryover effects (like learning or fatigue) from one condition to another." },
-            { id: "e", text: "Balance the colors." },
-            { id: "f", text: "Balance the budget." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 225,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "Crowdsourcing experimentation platforms (like MTurk) allow for:",
-        options: [
-            { id: "a", text: "Meeting people in person." },
-            { id: "b", text: "Generating bitcoins." },
-            { id: "c", text: "Avoiding ethics reviews." },
-            { id: "d", text: "Hosting websites." },
-            { id: "e", text: "Free labor." },
-            { id: "f", text: "Running large-scale experiments remotely." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 226,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "Ecological Validity refers to:",
-        options: [
-            { id: "a", text: "Testing on animals." },
-            { id: "b", text: "Being green." },
-            { id: "c", text: "Testing in a forest." },
-            { id: "d", text: "Using recycled paper." },
-            { id: "e", text: "Saving energy." },
-            { id: "f", text: "The extent to which experimental findings apply to real-world settings." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 227,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "Ethics in experiments ensures:",
-        options: [
-            { id: "a", text: "Faster publication." },
-            { id: "b", text: "Respect for persons, beneficence, and justice." },
-            { id: "c", text: "Cheaper labor." },
-            { id: "d", text: "Less paperwork." },
-            { id: "e", text: "More data." },
-            { id: "f", text: "Higher profits." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 228,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "Experimental design is critical because:",
-        options: [
-            { id: "a", text: "It requires a PhD." },
-            { id: "b", text: "It looks professional." },
-            { id: "c", text: "It uses more paper." },
-            { id: "d", text: "Poor design leads to invalid conclusions, no matter how good the analysis." },
-            { id: "e", text: "It makes the graphs pretty." },
-            { id: "f", text: "It takes more time." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 229,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "Informed consent is important because:",
-        options: [
-            { id: "a", text: "It binds the user to pay money." },
-            { id: "b", text: "Participants must know the risks and agree to participate voluntarily." },
-            { id: "c", text: "It prevents lawsuits only." },
-            { id: "d", text: "It is a formality that can be skipped." },
-            { id: "e", text: "It allows the researcher to hide the truth." },
-            { id: "f", text: "It gives the researcher ownership of the user's house." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 230,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "Inclusion criteria define:",
-        options: [
-            { id: "a", text: "Who gets hired." },
-            { id: "b", text: "Who is excluded only." },
-            { id: "c", text: "What costs are covered." },
-            { id: "d", text: "What software is included." },
-            { id: "e", text: "The font size." },
-            { id: "f", text: "Who makes the cut to be a participant in the study." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 231,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "Likert-type scales are often used to measure:",
-        options: [
-            { id: "a", text: "Weight." },
-            { id: "b", text: "Subjective attitudes or preferences (e.g., 'Strongly Agree' to 'Strongly Disagree')." },
-            { id: "c", text: "Time." },
-            { id: "d", text: "Distance." },
-            { id: "e", text: "Height." },
-            { id: "f", text: "CPU speed." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 232,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "Post-hoc comparisons are performed:",
-        options: [
-            { id: "a", text: "Before the experiment starts." },
-            { id: "b", text: "To check for viruses." },
-            { id: "c", text: "Instead of an ANOVA." },
-            { id: "d", text: "To verify the participant's ID." },
-            { id: "e", text: "After an ANOVA finds a significant difference, to see specifically which groups differ." },
-            { id: "f", text: "To post results on social media." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 233,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "Practical Significance vs Statistical Significance:",
-        options: [
-            { id: "a", text: "They are the same." },
-            { id: "b", text: "Practical is for managers, Statistical is for nerds." },
-            { id: "c", text: "Practical means easy to calculate." },
-            { id: "d", text: "Statistical is useless." },
-            { id: "e", text: "Statistical significance implies reliability; Practical significance implies the effect is large enough to matter in real life." },
-            { id: "f", text: "Statistical means valid." }
-        ],
-        correctAnswer: "e",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 234,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "Quantitative analysis in UX often involves:",
-        options: [
-            { id: "a", text: "Color theory." },
-            { id: "b", text: "Guessing." },
-            { id: "c", text: "Writing poetry." },
-            { id: "d", text: "Sketching." },
-            { id: "e", text: "Subjective feelings only." },
-            { id: "f", text: "Numerical data like task completion time or error rates." }
-        ],
-        correctAnswer: "f",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 235,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "Regression Analysis allows us to:",
-        options: [
-            { id: "a", text: "Delete old data." },
-            { id: "b", text: "Regret our decisions." },
-            { id: "c", text: "Understand the relationship between independent and dependent variables." },
-            { id: "d", text: "Format the hard drive." },
-            { id: "e", text: "Go back to a previous version of the code." },
-            { id: "f", text: "Restart the computer." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 236,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "Reliability in measurement means:",
-        options: [
-            { id: "a", text: "Speed of the test." },
-            { id: "b", text: "Accuracy of the truth." },
-            { id: "c", text: "Consistency of the measure across repeated tests." },
-            { id: "d", text: "Difficulty of the test." },
-            { id: "e", text: "Cost of the test." },
-            { id: "f", text: "Length of the test." }
-        ],
-        correctAnswer: "c",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 237,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "The 'R' programming language is used in this course for:",
-        options: [
-            { id: "a", text: "Database management." },
-            { id: "b", text: "Statistical analysis of experimental data." },
-            { id: "c", text: "Writing operating systems." },
-            { id: "d", text: "Web frontend design." },
-            { id: "e", text: "Creating music." },
-            { id: "f", text: "Building 3D games." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 238,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "The Mann-Whitney U test is a nonparametric alternative to:",
-        options: [
-            { id: "a", text: "The Chi-Square." },
-            { id: "b", text: "The independent-samples t-test." },
-            { id: "c", text: "The print command." },
-            { id: "d", text: "The regression." },
-            { id: "e", text: "The logout button." },
-            { id: "f", text: "The ANOVA." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 239,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "Validity in measurement means:",
-        options: [
-            { id: "a", text: "The extent to which the tool measures what it claims to measure." },
-            { id: "b", text: "If the tool is popular." },
-            { id: "c", text: "If the tool is new." },
-            { id: "d", text: "If the tool is expensive." },
-            { id: "e", text: "If the tool is digital." },
-            { id: "f", text: "If the tool is fast." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 240,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "What does 'Statistical Significance' indicate in an experiment?",
-        options: [
-            { id: "a", text: "The importance of the project to the CEO." },
-            { id: "b", text: "The number of participants." },
-            { id: "c", text: "The speed of the server." },
-            { id: "d", text: "The likelihood that the difference observed is not due to random chance." },
-            { id: "e", text: "The quality of the graphics." },
-            { id: "f", text: "The financial cost of the error." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 241,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "What is 'Task Completion Time' used for?",
-        options: [
-            { id: "a", text: "Measuring network lag." },
-            { id: "b", text: "Measuring efficiency." },
-            { id: "c", text: "Measuring memory usage." },
-            { id: "d", text: "Measuring error rate." },
-            { id: "e", text: "Measuring screen size." },
-            { id: "f", text: "Measuring happiness." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 242,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "What is a 'Dependent Variable'?",
-        options: [
-            { id: "a", text: "The funding source." },
-            { id: "b", text: "The weather." },
-            { id: "c", text: "The variable changed by the researcher." },
-            { id: "d", text: "The outcome measured to see the effect of the manipulation." },
-            { id: "e", text: "The lab equipment." },
-            { id: "f", text: "The location." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 243,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "What is an 'Independent Variable'?",
-        options: [
-            { id: "a", text: "The result measured." },
-            { id: "b", text: "The variable manipulated by the researcher." },
-            { id: "c", text: "A constant value." },
-            { id: "d", text: "The participant's name." },
-            { id: "e", text: "A variable that doesn't matter." },
-            { id: "f", text: "The time of day." }
-        ],
-        correctAnswer: "b",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 244,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "What is reliable 'Experimental Control'?",
-        options: [
-            { id: "a", text: "Keeping all variables constant except the one being tested to ensure validity." },
-            { id: "b", text: "Turning off the lights." },
-            { id: "c", text: "Forcing users to finish the task." },
-            { id: "d", text: "Controlling the participants' minds." },
-            { id: "e", text: "Locking the laboratory doors." },
-            { id: "f", text: "Using a remote control." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 245,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "What is the difference between 'Between-Subjects' and 'Within-Subjects' design?",
-        options: [
-            { id: "a", text: "Between-subjects is cheaper." },
-            { id: "b", text: "There is no difference." },
-            { id: "c", text: "Within-subjects requires no participants." },
-            { id: "d", text: "Between-subjects uses different people for each condition; Within-subjects uses the same people for all conditions." },
-            { id: "e", text: "Within-subjects involves internal medical scans." },
-            { id: "f", text: "Between-subjects is for mobile, Within-subjects is for desktop." }
-        ],
-        correctAnswer: "d",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 246,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "Why analyze residuals?",
-        options: [
-            { id: "a", text: "To check if the assumptions of the statistical model (like normality) are met." },
-            { id: "b", text: "To find hidden files." },
-            { id: "c", text: "To see what's left over for lunch." },
-            { id: "d", text: "To clean the data." },
-            { id: "e", text: "To delete errors." },
-            { id: "f", text: "To compress the results." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 247,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "Why is testing with users considered essential in UX?",
-        options: [
-            { id: "a", text: "You can never be certain of an experience's effectiveness until it is validated with real users." },
-            { id: "b", text: "It is the only way to get a promotion." },
-            { id: "c", text: "It replaces the need for design." },
-            { id: "d", text: "It is a legal requirement." },
-            { id: "e", text: "It costs nothing." },
-            { id: "f", text: "It is required for compiling code." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
-    },
-    {
-        id: 248,
-        section: "EXPERIMENTS & ANALYSIS",
-        text: "Why use 'Mixed Effects Models'?",
-        options: [
-            { id: "a", text: "To account for both fixed effects (experiment conditions) and random effects (participant variation)." },
-            { id: "b", text: "To combine audio tracks." },
-            { id: "c", text: "To cook data." },
-            { id: "d", text: "To confuse the reader." },
-            { id: "e", text: "To mix different colors." },
-            { id: "f", text: "To use mixed media." }
-        ],
-        correctAnswer: "a",
-        difficulty: "MEDIUM"
+        "id": 1,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is the primary characteristic of a Blockchain distributed ledger?",
+        "options": [
+            {
+                "id": "a",
+                "text": "It allows editing past records"
+            },
+            {
+                "id": "b",
+                "text": "It is encrypted with a single password"
+            },
+            {
+                "id": "c",
+                "text": "It is immutable and append-only"
+            },
+            {
+                "id": "d",
+                "text": "It is stored on a single central server"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 1
+    },
+    {
+        "id": 2,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "Which cryptocurrency was the first implementation of blockchain technology?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Litecoin"
+            },
+            {
+                "id": "b",
+                "text": "Ethereum"
+            },
+            {
+                "id": "c",
+                "text": "Ripple"
+            },
+            {
+                "id": "d",
+                "text": "Bitcoin"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 2
+    },
+    {
+        "id": 3,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What does 'P2P' stand for in the context of blockchain?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Pay-to-Play"
+            },
+            {
+                "id": "b",
+                "text": "Peer-to-Peer"
+            },
+            {
+                "id": "c",
+                "text": "Private-to-Public"
+            },
+            {
+                "id": "d",
+                "text": "Person-to-Person 2"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 3
+    },
+    {
+        "id": 4,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "In the Bitcoin network, what is a 'node'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A website"
+            },
+            {
+                "id": "b",
+                "text": "The central bank server"
+            },
+            {
+                "id": "c",
+                "text": "A computer connected to the network that maintains a copy of the ledger"
+            },
+            {
+                "id": "d",
+                "text": "A miners pickaxe"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 4
+    },
+    {
+        "id": 5,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is the function of a 'Hash' in a block?",
+        "options": [
+            {
+                "id": "a",
+                "text": "To calculate the transaction fee"
+            },
+            {
+                "id": "b",
+                "text": "To store the user's password"
+            },
+            {
+                "id": "c",
+                "text": "To encrypt the data so no one can read it"
+            },
+            {
+                "id": "d",
+                "text": "To uniquely identify the block and link it to the previous one"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 5
+    },
+    {
+        "id": 6,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "Which consensus mechanism does Bitcoin originally use?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Proof of Stake (PoS)"
+            },
+            {
+                "id": "b",
+                "text": "Proof of Authority (PoA)"
+            },
+            {
+                "id": "c",
+                "text": "Proof of Work (PoW)"
+            },
+            {
+                "id": "d",
+                "text": "Proof of Burn (PoB) 3"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 6
+    },
+    {
+        "id": 7,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "Who is the pseudonymous creator of Bitcoin?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Gavin Wood"
+            },
+            {
+                "id": "b",
+                "text": "Charlie Lee"
+            },
+            {
+                "id": "c",
+                "text": "Vitalik Buterin"
+            },
+            {
+                "id": "d",
+                "text": "Satoshi Nakamoto"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 7
+    },
+    {
+        "id": 8,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is the 'Genesis Block'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A rejected block"
+            },
+            {
+                "id": "b",
+                "text": "The very first block in a blockchain"
+            },
+            {
+                "id": "c",
+                "text": "The last block mined"
+            },
+            {
+                "id": "d",
+                "text": "The largest block"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 8
+    },
+    {
+        "id": 9,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What problem does the consensus protocol primarily solve?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The large file storage problem"
+            },
+            {
+                "id": "b",
+                "text": "The slow internet problem"
+            },
+            {
+                "id": "c",
+                "text": "The Double-Spending problem"
+            },
+            {
+                "id": "d",
+                "text": "The password recovery problem 4"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 9
+    },
+    {
+        "id": 10,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "In Proof of Work, what are miners competing to do?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Hack the network"
+            },
+            {
+                "id": "b",
+                "text": "Solve a complex mathematical puzzle (find a nonce)"
+            },
+            {
+                "id": "c",
+                "text": "Create the most transactions"
+            },
+            {
+                "id": "d",
+                "text": "Guess a password"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 10
+    },
+    {
+        "id": 11,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Gas' in the context of Ethereum?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A fee paid to execute transactions and smart contracts"
+            },
+            {
+                "id": "b",
+                "text": "A type of token"
+            },
+            {
+                "id": "c",
+                "text": "Fuel for the servers"
+            },
+            {
+                "id": "d",
+                "text": "Cloud storage space"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 11
+    },
+    {
+        "id": 12,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "Which programming language is primarily used for Bitcoin Core?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Python"
+            },
+            {
+                "id": "b",
+                "text": "JavaScript"
+            },
+            {
+                "id": "c",
+                "text": "Solidity"
+            },
+            {
+                "id": "d",
+                "text": "C++ 5"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 12
+    },
+    {
+        "id": 13,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What differentiates Ethereum from Bitcoin primarily?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Ethereum supports programmable Smart Contracts"
+            },
+            {
+                "id": "b",
+                "text": "Ethereum has no coins"
+            },
+            {
+                "id": "c",
+                "text": "Ethereum is older"
+            },
+            {
+                "id": "d",
+                "text": "Ethereum is centralized"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 13
+    },
+    {
+        "id": 14,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is a 'Wallet' in blockchain?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A cloud drive"
+            },
+            {
+                "id": "b",
+                "text": "A bank account"
+            },
+            {
+                "id": "c",
+                "text": "A bag for cash"
+            },
+            {
+                "id": "d",
+                "text": "Software/Hardware that stores private/public keys"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 14
+    },
+    {
+        "id": 15,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "If you lose your Private Key, what happens to your funds?",
+        "options": [
+            {
+                "id": "a",
+                "text": "You can reset it via email"
+            },
+            {
+                "id": "b",
+                "text": "The bank restores them"
+            },
+            {
+                "id": "c",
+                "text": "They are permanently inaccessible"
+            },
+            {
+                "id": "d",
+                "text": "You can call support 6"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 15
+    },
+    {
+        "id": 16,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is the size limit of a Bitcoin block (roughly)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "1 GB"
+            },
+            {
+                "id": "b",
+                "text": "1 KB"
+            },
+            {
+                "id": "c",
+                "text": "100 MB"
+            },
+            {
+                "id": "d",
+                "text": "1 MB (historically)"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 16
+    },
+    {
+        "id": 17,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'SHA-256'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The cryptographic hashing algorithm used by Bitcoin"
+            },
+            {
+                "id": "b",
+                "text": "A consensus model"
+            },
+            {
+                "id": "c",
+                "text": "A token standard"
+            },
+            {
+                "id": "d",
+                "text": "An encryption standard"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 17
+    },
+    {
+        "id": 18,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What does 'Decentralization' mean?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The network is ofline"
+            },
+            {
+                "id": "b",
+                "text": "One company controls everything"
+            },
+            {
+                "id": "c",
+                "text": "The network is slow"
+            },
+            {
+                "id": "d",
+                "text": "No single entity controls the network 7"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 18
+    },
+    {
+        "id": 19,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is a 'Smart Contract'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Self-executing code managed by a blockchain"
+            },
+            {
+                "id": "b",
+                "text": "A lawyer"
+            },
+            {
+                "id": "c",
+                "text": "A smart phone app"
+            },
+            {
+                "id": "d",
+                "text": "A legal paper document"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 19
+    },
+    {
+        "id": 20,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is a 'Nonce'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A random number used once in mining to satisfy the hash target"
+            },
+            {
+                "id": "b",
+                "text": "A user address"
+            },
+            {
+                "id": "c",
+                "text": "A timestamp"
+            },
+            {
+                "id": "d",
+                "text": "A transaction ID"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 20
+    },
+    {
+        "id": 21,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "Which organization manages the Ethereum development?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Satoshi Inc"
+            },
+            {
+                "id": "b",
+                "text": "Microsoft"
+            },
+            {
+                "id": "c",
+                "text": "Google"
+            },
+            {
+                "id": "d",
+                "text": "The Ethereum Foundation 8"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 21
+    },
+    {
+        "id": 22,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is a 'Fork' in blockchain?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A virus"
+            },
+            {
+                "id": "b",
+                "text": "A database error"
+            },
+            {
+                "id": "c",
+                "text": "A spoon"
+            },
+            {
+                "id": "d",
+                "text": "A divergence in the chain (Soft or Hard)"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 22
+    },
+    {
+        "id": 23,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is a 'Hard Fork'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A compatible upgrade"
+            },
+            {
+                "id": "b",
+                "text": "A server restart"
+            },
+            {
+                "id": "c",
+                "text": "A non-backward compatible upgrade to the protocol"
+            },
+            {
+                "id": "d",
+                "text": "A minor bug fix"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 23
+    },
+    {
+        "id": 24,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Distributed Consensus'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Centralized voting"
+            },
+            {
+                "id": "b",
+                "text": "Agreement among nodes on the state of the ledger"
+            },
+            {
+                "id": "c",
+                "text": "Cloud computing"
+            },
+            {
+                "id": "d",
+                "text": "Agreement between CEO and CTO 9"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 24
+    },
+    {
+        "id": 25,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Mining'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Digging for gold"
+            },
+            {
+                "id": "b",
+                "text": "Writing code"
+            },
+            {
+                "id": "c",
+                "text": "Deleting data"
+            },
+            {
+                "id": "d",
+                "text": "The process of verifying/adding transactions and securing the network"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 25
+    },
+    {
+        "id": 26,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is a 'Public Key'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "An address that can be shared to receive funds"
+            },
+            {
+                "id": "b",
+                "text": "A hash of the private key"
+            },
+            {
+                "id": "c",
+                "text": "A secret password"
+            },
+            {
+                "id": "d",
+                "text": "A admin password"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 26
+    },
+    {
+        "id": 27,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is a 'Private Key'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A secret key used to sign transactions"
+            },
+            {
+                "id": "b",
+                "text": "A website URL"
+            },
+            {
+                "id": "c",
+                "text": "A public address"
+            },
+            {
+                "id": "d",
+                "text": "A username 10"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 27
+    },
+    {
+        "id": 28,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is the 'Byzantine Generals Problem'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A coding bug"
+            },
+            {
+                "id": "b",
+                "text": "A consensus challenge in distributed systems with potential traitors"
+            },
+            {
+                "id": "c",
+                "text": "A history lesson"
+            },
+            {
+                "id": "d",
+                "text": "A war strategy"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 28
+    },
+    {
+        "id": 29,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Permissionless' Blockchain?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Only approved users can join"
+            },
+            {
+                "id": "b",
+                "text": "Corporate only"
+            },
+            {
+                "id": "c",
+                "text": "Internal network"
+            },
+            {
+                "id": "d",
+                "text": "Anyone can join and participate (e.g., Bitcoin)"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 29
+    },
+    {
+        "id": 30,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Permissioned' Blockchain?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Access is restricted to authorized participants"
+            },
+            {
+                "id": "b",
+                "text": "Open to all"
+            },
+            {
+                "id": "c",
+                "text": "Public access"
+            },
+            {
+                "id": "d",
+                "text": "Anonymous 11"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 30
+    },
+    {
+        "id": 31,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is the 'EVM'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Electronic Voting Machine"
+            },
+            {
+                "id": "b",
+                "text": "Enterprise Virtual Memory"
+            },
+            {
+                "id": "c",
+                "text": "Ether Validating Miner"
+            },
+            {
+                "id": "d",
+                "text": "Ethereum Virtual Machine"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 31
+    },
+    {
+        "id": 32,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "Which standard is used for tokens on Ethereum?",
+        "options": [
+            {
+                "id": "a",
+                "text": "ERC-20"
+            },
+            {
+                "id": "b",
+                "text": "HTTP"
+            },
+            {
+                "id": "c",
+                "text": "TCP/IP"
+            },
+            {
+                "id": "d",
+                "text": "ISO-20022"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 32
+    },
+    {
+        "id": 33,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is a 'dApp'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Desktop Application"
+            },
+            {
+                "id": "b",
+                "text": "Database App"
+            },
+            {
+                "id": "c",
+                "text": "Decentralized Application"
+            },
+            {
+                "id": "d",
+                "text": "Digital Application 12"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 33
+    },
+    {
+        "id": 34,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Ether' (ETH)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The native cryptocurrency of Ethereum"
+            },
+            {
+                "id": "b",
+                "text": "A gas"
+            },
+            {
+                "id": "c",
+                "text": "A fiat currency"
+            },
+            {
+                "id": "d",
+                "text": "A stock"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 34
+    },
+    {
+        "id": 35,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "How often is a new block added to Bitcoin (approx)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Every day"
+            },
+            {
+                "id": "b",
+                "text": "Every hour"
+            },
+            {
+                "id": "c",
+                "text": "Every 1 second"
+            },
+            {
+                "id": "d",
+                "text": "Every 10 minutes"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 35
+    },
+    {
+        "id": 36,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "How often is a new block added to Ethereum (approx)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Every 12-15 seconds"
+            },
+            {
+                "id": "b",
+                "text": "Every 10 minutes"
+            },
+            {
+                "id": "c",
+                "text": "Instantly"
+            },
+            {
+                "id": "d",
+                "text": "Every hour 13"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 36
+    },
+    {
+        "id": 37,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Keccak-256'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The hashing algorithm used by Ethereum"
+            },
+            {
+                "id": "b",
+                "text": "A consensus"
+            },
+            {
+                "id": "c",
+                "text": "A Bitcoin wallet"
+            },
+            {
+                "id": "d",
+                "text": "A mining rig"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 37
+    },
+    {
+        "id": 38,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What implies 'Immutability'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Data is temporary"
+            },
+            {
+                "id": "b",
+                "text": "Once data is written, it cannot be changed"
+            },
+            {
+                "id": "c",
+                "text": "Data is invisible"
+            },
+            {
+                "id": "d",
+                "text": "Data expires"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 38
+    },
+    {
+        "id": 39,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is UTXO?",
+        "options": [
+            {
+                "id": "a",
+                "text": "United Text Organization"
+            },
+            {
+                "id": "b",
+                "text": "User Transaction Order"
+            },
+            {
+                "id": "c",
+                "text": "Universal Tax Output"
+            },
+            {
+                "id": "d",
+                "text": "Unspent Transaction Output 14"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 39
+    },
+    {
+        "id": 40,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "Bitcoin uses which model for balances?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Account/Balance Model"
+            },
+            {
+                "id": "b",
+                "text": "Debit Model"
+            },
+            {
+                "id": "c",
+                "text": "UTXO Model"
+            },
+            {
+                "id": "d",
+                "text": "Credit Model"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 40
+    },
+    {
+        "id": 41,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "Ethereum uses which model for balances?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Cash Model"
+            },
+            {
+                "id": "b",
+                "text": "Check Model"
+            },
+            {
+                "id": "c",
+                "text": "Account/Balance Model"
+            },
+            {
+                "id": "d",
+                "text": "UTXO Model"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 41
+    },
+    {
+        "id": 42,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What represents 'Identity' on a blockchain?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Your Public Address"
+            },
+            {
+                "id": "b",
+                "text": "Your Photo"
+            },
+            {
+                "id": "c",
+                "text": "Your Name"
+            },
+            {
+                "id": "d",
+                "text": "Your Email 15"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 42
+    },
+    {
+        "id": 43,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is a 'Merkle Tree'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A sorting algorithm"
+            },
+            {
+                "id": "b",
+                "text": "A hash tree used to efficiently summarize/verify block data"
+            },
+            {
+                "id": "c",
+                "text": "A biological tree"
+            },
+            {
+                "id": "d",
+                "text": "A network topology"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 43
+    },
+    {
+        "id": 44,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is the 'Root Hash'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The single hash representing the entire Merkle Tree"
+            },
+            {
+                "id": "b",
+                "text": "The first transaction"
+            },
+            {
+                "id": "c",
+                "text": "The last transaction"
+            },
+            {
+                "id": "d",
+                "text": "The block height"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 44
+    },
+    {
+        "id": 45,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Cold Storage'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Cloud backup"
+            },
+            {
+                "id": "b",
+                "text": "Online wallet"
+            },
+            {
+                "id": "c",
+                "text": "A refrigerator"
+            },
+            {
+                "id": "d",
+                "text": "Storing keys ofline (e.g. paper, hardware wallet) 16"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 45
+    },
+    {
+        "id": 46,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Hot Wallet'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A stolen wallet"
+            },
+            {
+                "id": "b",
+                "text": "A wallet connected to the internet"
+            },
+            {
+                "id": "c",
+                "text": "A hardware wallet"
+            },
+            {
+                "id": "d",
+                "text": "A paper wallet"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 46
+    },
+    {
+        "id": 47,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "Double-spending is prevented by:",
+        "options": [
+            {
+                "id": "a",
+                "text": "Trusting users"
+            },
+            {
+                "id": "b",
+                "text": "Deleting coins"
+            },
+            {
+                "id": "c",
+                "text": "Consensus and the immutable history"
+            },
+            {
+                "id": "d",
+                "text": "Faster internet"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 47
+    },
+    {
+        "id": 48,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is a '51% Attack'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Hacking 51 servers"
+            },
+            {
+                "id": "b",
+                "text": "Stealing 51% of coins"
+            },
+            {
+                "id": "c",
+                "text": "A discount"
+            },
+            {
+                "id": "d",
+                "text": "An entity controls >50% of hash power and can reorganize the chain 17"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 48
+    },
+    {
+        "id": 49,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Difficulty Adjustment'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The price dropping"
+            },
+            {
+                "id": "b",
+                "text": "The network auto-adjusts puzzle hardness to maintain block time"
+            },
+            {
+                "id": "c",
+                "text": "Computers getting slower"
+            },
+            {
+                "id": "d",
+                "text": "Miners getting tired"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 49
+    },
+    {
+        "id": 50,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "Which of these is a 'Layer 2' solution?",
+        "options": [
+            {
+                "id": "a",
+                "text": "TCP/IP"
+            },
+            {
+                "id": "b",
+                "text": "Lightning Network"
+            },
+            {
+                "id": "c",
+                "text": "Bitcoin Core"
+            },
+            {
+                "id": "d",
+                "text": "Ethereum Mainnet"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 50
+    },
+    {
+        "id": 51,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Tokenization'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Encrypting"
+            },
+            {
+                "id": "b",
+                "text": "Buying coins"
+            },
+            {
+                "id": "c",
+                "text": "Representing real-world assets as digital tokens"
+            },
+            {
+                "id": "d",
+                "text": "Mining 18"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 51
+    },
+    {
+        "id": 52,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "A 'Block Header' contains:",
+        "options": [
+            {
+                "id": "a",
+                "text": "Source code"
+            },
+            {
+                "id": "b",
+                "text": "User emails"
+            },
+            {
+                "id": "c",
+                "text": "All transactions full text"
+            },
+            {
+                "id": "d",
+                "text": "Metadata like Parent Hash, Timestamp, Nonce"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 52
+    },
+    {
+        "id": 53,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Halving' in Bitcoin?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Speed doubles"
+            },
+            {
+                "id": "b",
+                "text": "Miner block reward is cut in half every 4 years"
+            },
+            {
+                "id": "c",
+                "text": "Users are banned"
+            },
+            {
+                "id": "d",
+                "text": "Price drops by half"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 53
+    },
+    {
+        "id": 54,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "Why are blockchain transactions 'Traceable'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The entire history is public (pseudonymous)"
+            },
+            {
+                "id": "b",
+                "text": "Because banks track them"
+            },
+            {
+                "id": "c",
+                "text": "Because Google tracks them"
+            },
+            {
+                "id": "d",
+                "text": "They are not 19"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 54
+    },
+    {
+        "id": 55,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Peer Discovery'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Finding friends"
+            },
+            {
+                "id": "b",
+                "text": "Google Search"
+            },
+            {
+                "id": "c",
+                "text": "Buying peers"
+            },
+            {
+                "id": "d",
+                "text": "Nodes finding other nodes to connect to"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 55
+    },
+    {
+        "id": 56,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is a 'Light Node'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A lamp"
+            },
+            {
+                "id": "b",
+                "text": "A heavy server"
+            },
+            {
+                "id": "c",
+                "text": "A node that downloads only headers, not the full chain"
+            },
+            {
+                "id": "d",
+                "text": "A mining rig"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 56
+    },
+    {
+        "id": 57,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Cryptography' in blockchain used for?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Hiding data only"
+            },
+            {
+                "id": "b",
+                "text": "Security, signing, and verification"
+            },
+            {
+                "id": "c",
+                "text": "Speeding up network"
+            },
+            {
+                "id": "d",
+                "text": "Compressing files 20"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 57
+    },
+    {
+        "id": 58,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "Asymmetric Encryption uses:",
+        "options": [
+            {
+                "id": "a",
+                "text": "No keys"
+            },
+            {
+                "id": "b",
+                "text": "Three keys"
+            },
+            {
+                "id": "c",
+                "text": "One key"
+            },
+            {
+                "id": "d",
+                "text": "A pair of keys: Public and Private"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 58
+    },
+    {
+        "id": 59,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "Symmetric Encryption uses:",
+        "options": [
+            {
+                "id": "a",
+                "text": "No keys"
+            },
+            {
+                "id": "b",
+                "text": "The same key for encryption and decryption"
+            },
+            {
+                "id": "c",
+                "text": "Public key only"
+            },
+            {
+                "id": "d",
+                "text": "Two different keys"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 59
+    },
+    {
+        "id": 60,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "A 'Signature' proves:",
+        "options": [
+            {
+                "id": "a",
+                "text": "Ownership of the private key without revealing it"
+            },
+            {
+                "id": "b",
+                "text": "The location"
+            },
+            {
+                "id": "c",
+                "text": "Your name"
+            },
+            {
+                "id": "d",
+                "text": "The time 21"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 60
+    },
+    {
+        "id": 61,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What does 'Satoshi' represent?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A wallet"
+            },
+            {
+                "id": "b",
+                "text": "A server"
+            },
+            {
+                "id": "c",
+                "text": "The smallest unit of a Bitcoin (0.00000001 BTC)"
+            },
+            {
+                "id": "d",
+                "text": "A distinct coin"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 61
+    },
+    {
+        "id": 62,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Wei'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A gas limit"
+            },
+            {
+                "id": "b",
+                "text": "A person"
+            },
+            {
+                "id": "c",
+                "text": "A token"
+            },
+            {
+                "id": "d",
+                "text": "The smallest unit of Ether"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 62
+    },
+    {
+        "id": 63,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Gwei'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A transaction"
+            },
+            {
+                "id": "b",
+                "text": "A unit of Gas price (1 billion wei)"
+            },
+            {
+                "id": "c",
+                "text": "A block"
+            },
+            {
+                "id": "d",
+                "text": "A token 22"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 63
+    },
+    {
+        "id": 64,
+        "part": 1,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is a 'Whitepaper'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A blank paper"
+            },
+            {
+                "id": "b",
+                "text": "A receipt"
+            },
+            {
+                "id": "c",
+                "text": "A technical document proposing the blockchain protocol"
+            },
+            {
+                "id": "d",
+                "text": "A contract"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 64
+    },
+    {
+        "id": 65,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "Which language is most commonly used for Ethereum Smart Contracts?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Java"
+            },
+            {
+                "id": "b",
+                "text": "Swift"
+            },
+            {
+                "id": "c",
+                "text": "C#"
+            },
+            {
+                "id": "d",
+                "text": "Solidity"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 65
+    },
+    {
+        "id": 66,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "Where is Solidity code executed?",
+        "options": [
+            {
+                "id": "a",
+                "text": "In the browser"
+            },
+            {
+                "id": "b",
+                "text": "On the miner's CPU directly"
+            },
+            {
+                "id": "c",
+                "text": "On the EVM (Ethereum Virtual Machine)"
+            },
+            {
+                "id": "d",
+                "text": "On the AWS cloud 23"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 66
+    },
+    {
+        "id": 67,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is the file extension for Solidity?",
+        "options": [
+            {
+                "id": "a",
+                "text": ".eth"
+            },
+            {
+                "id": "b",
+                "text": ".sol"
+            },
+            {
+                "id": "c",
+                "text": ".py"
+            },
+            {
+                "id": "d",
+                "text": ".js"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 67
+    },
+    {
+        "id": 68,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "Which keyword defines a contract in Solidity?",
+        "options": [
+            {
+                "id": "a",
+                "text": "contract"
+            },
+            {
+                "id": "b",
+                "text": "class"
+            },
+            {
+                "id": "c",
+                "text": "function"
+            },
+            {
+                "id": "d",
+                "text": "def"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 68
+    },
+    {
+        "id": 69,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'Remix'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A browser-based IDE for Solidity development"
+            },
+            {
+                "id": "b",
+                "text": "A music mixer"
+            },
+            {
+                "id": "c",
+                "text": "A wallet"
+            },
+            {
+                "id": "d",
+                "text": "A mining tool 24"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 69
+    },
+    {
+        "id": 70,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is the constructor in Solidity?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A variable"
+            },
+            {
+                "id": "b",
+                "text": "A function for building UI"
+            },
+            {
+                "id": "c",
+                "text": "A function that runs only once upon deployment"
+            },
+            {
+                "id": "d",
+                "text": "A loop"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 70
+    },
+    {
+        "id": 71,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is a 'state variable'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A global constant"
+            },
+            {
+                "id": "b",
+                "text": "A local variable"
+            },
+            {
+                "id": "c",
+                "text": "A variable stored permanently on the blockchain storage"
+            },
+            {
+                "id": "d",
+                "text": "A temporary variable"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 71
+    },
+    {
+        "id": 72,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'msg.sender'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The miner"
+            },
+            {
+                "id": "b",
+                "text": "The address of the account calling the function"
+            },
+            {
+                "id": "c",
+                "text": "The contract address"
+            },
+            {
+                "id": "d",
+                "text": "The email sender 25"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 72
+    },
+    {
+        "id": 73,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'msg.value'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The gas price"
+            },
+            {
+                "id": "b",
+                "text": "The message text"
+            },
+            {
+                "id": "c",
+                "text": "The amount of Ether (in Wei) sent with the call"
+            },
+            {
+                "id": "d",
+                "text": "The block number"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 73
+    },
+    {
+        "id": 74,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is a 'modifier' in Solidity?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A CSS style"
+            },
+            {
+                "id": "b",
+                "text": "A variable type"
+            },
+            {
+                "id": "c",
+                "text": "A code snippet to change the behavior of functions (e.g. checks)"
+            },
+            {
+                "id": "d",
+                "text": "A compiler setting"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 74
+    },
+    {
+        "id": 75,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "Which visibility makes a function callable from outside strictly?",
+        "options": [
+            {
+                "id": "a",
+                "text": "internal"
+            },
+            {
+                "id": "b",
+                "text": "local"
+            },
+            {
+                "id": "c",
+                "text": "private"
+            },
+            {
+                "id": "d",
+                "text": "external 26"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 75
+    },
+    {
+        "id": 76,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "Which visibility makes a function callable ONLY from within the contract?",
+        "options": [
+            {
+                "id": "a",
+                "text": "public"
+            },
+            {
+                "id": "b",
+                "text": "private"
+            },
+            {
+                "id": "c",
+                "text": "external"
+            },
+            {
+                "id": "d",
+                "text": "view"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 76
+    },
+    {
+        "id": 77,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What does 'view' keyword mean?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Function is invisible"
+            },
+            {
+                "id": "b",
+                "text": "Function changes state"
+            },
+            {
+                "id": "c",
+                "text": "Function reads state but modifies nothing"
+            },
+            {
+                "id": "d",
+                "text": "Function accepts payments"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 77
+    },
+    {
+        "id": 78,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What does 'pure' keyword mean?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Function is private"
+            },
+            {
+                "id": "b",
+                "text": "Function is holy"
+            },
+            {
+                "id": "c",
+                "text": "Function is free"
+            },
+            {
+                "id": "d",
+                "text": "Function neither reads nor writes state 27"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 78
+    },
+    {
+        "id": 79,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is a 'mapping' in Solidity?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A loop"
+            },
+            {
+                "id": "b",
+                "text": "A key-value data structure (hash map)"
+            },
+            {
+                "id": "c",
+                "text": "A list"
+            },
+            {
+                "id": "d",
+                "text": "A Google map"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 79
+    },
+    {
+        "id": 80,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "How do you declare a mapping mapping address to uint?",
+        "options": [
+            {
+                "id": "a",
+                "text": "array address uint"
+            },
+            {
+                "id": "b",
+                "text": "mapping(address => uint) public balances;"
+            },
+            {
+                "id": "c",
+                "text": "dict(address, uint)"
+            },
+            {
+                "id": "d",
+                "text": "map address to uint"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 80
+    },
+    {
+        "id": 81,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is an 'event' in Solidity?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A error"
+            },
+            {
+                "id": "b",
+                "text": "A party"
+            },
+            {
+                "id": "c",
+                "text": "A way for contracts to log data that frontends can listen to"
+            },
+            {
+                "id": "d",
+                "text": "A transaction 28"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 81
+    },
+    {
+        "id": 82,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "How do you 'emit' an event?",
+        "options": [
+            {
+                "id": "a",
+                "text": "log Event"
+            },
+            {
+                "id": "b",
+                "text": "call EventName"
+            },
+            {
+                "id": "c",
+                "text": "print Event"
+            },
+            {
+                "id": "d",
+                "text": "emit EventName(args);"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 82
+    },
+    {
+        "id": 83,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is the 'require()' function used for?",
+        "options": [
+            {
+                "id": "a",
+                "text": "To loop"
+            },
+            {
+                "id": "b",
+                "text": "To ask user"
+            },
+            {
+                "id": "c",
+                "text": "To validate conditions; reverts if false"
+            },
+            {
+                "id": "d",
+                "text": "To import files"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 83
+    },
+    {
+        "id": 84,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What happens if a 'require' fails?",
+        "options": [
+            {
+                "id": "a",
+                "text": "It prints a warning"
+            },
+            {
+                "id": "b",
+                "text": "It continues"
+            },
+            {
+                "id": "c",
+                "text": "It crashes the network"
+            },
+            {
+                "id": "d",
+                "text": "The transaction reverts and gas is refunded (mostly) 29"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 84
+    },
+    {
+        "id": 85,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'gas limit'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Block size"
+            },
+            {
+                "id": "b",
+                "text": "Max amount of gas user is willing to spend"
+            },
+            {
+                "id": "c",
+                "text": "Speed limit"
+            },
+            {
+                "id": "d",
+                "text": "Fuel tank size"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 85
+    },
+    {
+        "id": 86,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'gas price'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Price of Ether"
+            },
+            {
+                "id": "b",
+                "text": "Price of oil"
+            },
+            {
+                "id": "c",
+                "text": "Transaction fee"
+            },
+            {
+                "id": "d",
+                "text": "Amount of Wei user pays per unit of gas"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 86
+    },
+    {
+        "id": 87,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is the 'fallback function'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A error handler"
+            },
+            {
+                "id": "b",
+                "text": "A backup plan"
+            },
+            {
+                "id": "c",
+                "text": "A constructor"
+            },
+            {
+                "id": "d",
+                "text": "A function executed if no other function matches the call identifier 30"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 87
+    },
+    {
+        "id": 88,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'receive()' function?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A getter"
+            },
+            {
+                "id": "b",
+                "text": "A function triggered when the contract receives plain Ether"
+            },
+            {
+                "id": "c",
+                "text": "A mailbox"
+            },
+            {
+                "id": "d",
+                "text": "A setter"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 88
+    },
+    {
+        "id": 89,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'payable' keyword?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Requires payment of taxes"
+            },
+            {
+                "id": "b",
+                "text": "Locks the function"
+            },
+            {
+                "id": "c",
+                "text": "Allows a function to receive Ether"
+            },
+            {
+                "id": "d",
+                "text": "Makes it free"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 89
+    },
+    {
+        "id": 90,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "Which data type is 'address'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A number"
+            },
+            {
+                "id": "b",
+                "text": "A string"
+            },
+            {
+                "id": "c",
+                "text": "A 20-byte Ethereum address"
+            },
+            {
+                "id": "d",
+                "text": "A boolean 31"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 90
+    },
+    {
+        "id": 91,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'uint256'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Unique Integer"
+            },
+            {
+                "id": "b",
+                "text": "Universal Integer"
+            },
+            {
+                "id": "c",
+                "text": "Unsigned Integer 256-bit"
+            },
+            {
+                "id": "d",
+                "text": "Unit Integer"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 91
+    },
+    {
+        "id": 92,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'struct'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A function"
+            },
+            {
+                "id": "b",
+                "text": "A custom data structure grouping variables"
+            },
+            {
+                "id": "c",
+                "text": "A building"
+            },
+            {
+                "id": "d",
+                "text": "A wall"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 92
+    },
+    {
+        "id": 93,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What implies 'Turing Complete'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "It is smart"
+            },
+            {
+                "id": "b",
+                "text": "The system can solve any computational problem (given enough resources)"
+            },
+            {
+                "id": "c",
+                "text": "It is finished"
+            },
+            {
+                "id": "d",
+                "text": "It is fast 32"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 93
+    },
+    {
+        "id": 94,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "Does Solidity support inheritance?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Yes, using 'is' keyword"
+            },
+            {
+                "id": "b",
+                "text": "Only for variables"
+            },
+            {
+                "id": "c",
+                "text": "Only for events"
+            },
+            {
+                "id": "d",
+                "text": "No"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 94
+    },
+    {
+        "id": 95,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is an 'Interface' in Solidity?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A screen"
+            },
+            {
+                "id": "b",
+                "text": "A UI"
+            },
+            {
+                "id": "c",
+                "text": "A user"
+            },
+            {
+                "id": "d",
+                "text": "Defines function signatures without implementation"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 95
+    },
+    {
+        "id": 96,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'ABI'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A blood type"
+            },
+            {
+                "id": "b",
+                "text": "Address Bit Index"
+            },
+            {
+                "id": "c",
+                "text": "Abstract Binary Init"
+            },
+            {
+                "id": "d",
+                "text": "Application Binary Interface (JSON description of contract) 33"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 96
+    },
+    {
+        "id": 97,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "Why do we need ABI?",
+        "options": [
+            {
+                "id": "a",
+                "text": "For storage"
+            },
+            {
+                "id": "b",
+                "text": "For compilation"
+            },
+            {
+                "id": "c",
+                "text": "For mining"
+            },
+            {
+                "id": "d",
+                "text": "For JS/Client apps to know how to interact with the bytecode"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 97
+    },
+    {
+        "id": 98,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'Bytecode'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Design"
+            },
+            {
+                "id": "b",
+                "text": "Source code"
+            },
+            {
+                "id": "c",
+                "text": "Documentation"
+            },
+            {
+                "id": "d",
+                "text": "The compiled machine code deployed to the blockchain"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 98
+    },
+    {
+        "id": 99,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What represents 'now' or 'block.timestamp'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Server time"
+            },
+            {
+                "id": "b",
+                "text": "Current block timestamp (Unix epoch)"
+            },
+            {
+                "id": "c",
+                "text": "User time"
+            },
+            {
+                "id": "d",
+                "text": "Real time 34"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 99
+    },
+    {
+        "id": 100,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "Can smart contracts call other smart contracts?",
+        "options": [
+            {
+                "id": "a",
+                "text": "No"
+            },
+            {
+                "id": "b",
+                "text": "Only if paid"
+            },
+            {
+                "id": "c",
+                "text": "Yes"
+            },
+            {
+                "id": "d",
+                "text": "Never"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 100
+    },
+    {
+        "id": 101,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'Reentrancy'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Entering a room"
+            },
+            {
+                "id": "b",
+                "text": "Login again"
+            },
+            {
+                "id": "c",
+                "text": "Restarting"
+            },
+            {
+                "id": "d",
+                "text": "A vulnerability where a contract calls back into the calling contract recursively"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 101
+    },
+    {
+        "id": 102,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "How to prevent Reentrancy?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Use Check-Effects-Interactions pattern or ReentrancyGuard"
+            },
+            {
+                "id": "b",
+                "text": "Delete code"
+            },
+            {
+                "id": "c",
+                "text": "Use faster internet"
+            },
+            {
+                "id": "d",
+                "text": "Use more gas 35"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 102
+    },
+    {
+        "id": 103,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'OpenZeppelin'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A browser"
+            },
+            {
+                "id": "b",
+                "text": "A balloon"
+            },
+            {
+                "id": "c",
+                "text": "A library of secure, standard smart contracts (e.g. ERC20)"
+            },
+            {
+                "id": "d",
+                "text": "A rock band"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 103
+    },
+    {
+        "id": 104,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'Pragma'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Directive to specify compiler version"
+            },
+            {
+                "id": "b",
+                "text": "A variable"
+            },
+            {
+                "id": "c",
+                "text": "A function"
+            },
+            {
+                "id": "d",
+                "text": "A comment"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 104
+    },
+    {
+        "id": 105,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "Example: 'pragma solidity 0 .8.0;′ means :",
+        "options": [
+            {
+                "id": "a",
+                "text": "Use compiler version 0.8.0 or newer (but compatible)"
+            },
+            {
+                "id": "b",
+                "text": "Use exactly 0.8.0"
+            },
+            {
+                "id": "c",
+                "text": "Ignore version"
+            },
+            {
+                "id": "d",
+                "text": "Use older versions 36"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 105
+    },
+    {
+        "id": 106,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'storage' vs 'memory'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Storage is persistent; Memory is temporary during execution"
+            },
+            {
+                "id": "b",
+                "text": "Storage is RAM"
+            },
+            {
+                "id": "c",
+                "text": "Memory is Hard Drive"
+            },
+            {
+                "id": "d",
+                "text": "No difference"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 106
+    },
+    {
+        "id": 107,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "Where are local variables usually stored?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Stack or Memory"
+            },
+            {
+                "id": "b",
+                "text": "Storage"
+            },
+            {
+                "id": "c",
+                "text": "Cloud"
+            },
+            {
+                "id": "d",
+                "text": "Database"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 107
+    },
+    {
+        "id": 108,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'block.number'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The puzzle"
+            },
+            {
+                "id": "b",
+                "text": "The transaction count"
+            },
+            {
+                "id": "c",
+                "text": "The current block height"
+            },
+            {
+                "id": "d",
+                "text": "The block size 37"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 108
+    },
+    {
+        "id": 109,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'selfdestruct()'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Stops the network"
+            },
+            {
+                "id": "b",
+                "text": "Explodes the computer"
+            },
+            {
+                "id": "c",
+                "text": "Pauses the contract"
+            },
+            {
+                "id": "d",
+                "text": "Deletes the contract and sends remaining Ether to an address"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 109
+    },
+    {
+        "id": 110,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "Why are loops (for/while) dangerous in Solidity?",
+        "options": [
+            {
+                "id": "a",
+                "text": "They are hard to read"
+            },
+            {
+                "id": "b",
+                "text": "Compiler hates them"
+            },
+            {
+                "id": "c",
+                "text": "May hit gas limit if array is too large"
+            },
+            {
+                "id": "d",
+                "text": "They are slow"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 110
+    },
+    {
+        "id": 111,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'ERC-721'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Standard for Identity"
+            },
+            {
+                "id": "b",
+                "text": "Standard for Non-Fungible Tokens (NFTs)"
+            },
+            {
+                "id": "c",
+                "text": "Standard for Storage"
+            },
+            {
+                "id": "d",
+                "text": "Standard for Currency 38"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 111
+    },
+    {
+        "id": 112,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'ERC-20'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Standard for NFT"
+            },
+            {
+                "id": "b",
+                "text": "Standard for ID"
+            },
+            {
+                "id": "c",
+                "text": "Standard for Fungible Tokens"
+            },
+            {
+                "id": "d",
+                "text": "Standard for Governance"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 112
+    },
+    {
+        "id": 113,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is a 'Library' in Solidity?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A struct"
+            },
+            {
+                "id": "b",
+                "text": "Reusable code deployed once and called by contracts (using delegatecall)"
+            },
+            {
+                "id": "c",
+                "text": "A variable"
+            },
+            {
+                "id": "d",
+                "text": "A book store"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 113
+    },
+    {
+        "id": 114,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'delegatecall'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Remote call"
+            },
+            {
+                "id": "b",
+                "text": "Executes code in context of the CALLING contract (uses caller's storage)"
+            },
+            {
+                "id": "c",
+                "text": "Calls a delegate"
+            },
+            {
+                "id": "d",
+                "text": "Standard call 39"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 114
+    },
+    {
+        "id": 115,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'assert()' used for?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Printing"
+            },
+            {
+                "id": "b",
+                "text": "Input validation"
+            },
+            {
+                "id": "c",
+                "text": "Internal errors and invariants; consumes all gas if fails"
+            },
+            {
+                "id": "d",
+                "text": "Logging"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 115
+    },
+    {
+        "id": 116,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "Which unit is default for time in Solidity?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Days"
+            },
+            {
+                "id": "b",
+                "text": "Minutes"
+            },
+            {
+                "id": "c",
+                "text": "Seconds"
+            },
+            {
+                "id": "d",
+                "text": "Hours"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 116
+    },
+    {
+        "id": 117,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "Can you generate true random numbers in Solidity easily?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Yes, asking miner"
+            },
+            {
+                "id": "b",
+                "text": "No, because the blockchain is deterministic"
+            },
+            {
+                "id": "c",
+                "text": "Yes, using time"
+            },
+            {
+                "id": "d",
+                "text": "Yes, using random() 40"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 117
+    },
+    {
+        "id": 118,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is an 'Oracle'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A database"
+            },
+            {
+                "id": "b",
+                "text": "A god"
+            },
+            {
+                "id": "c",
+                "text": "A predictor"
+            },
+            {
+                "id": "d",
+                "text": "A bridge to fetch real-world off-chain data"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 118
+    },
+    {
+        "id": 119,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "Why do contracts need Oracles?",
+        "options": [
+            {
+                "id": "a",
+                "text": "To read minds"
+            },
+            {
+                "id": "b",
+                "text": "To make money"
+            },
+            {
+                "id": "c",
+                "text": "To secure keys"
+            },
+            {
+                "id": "d",
+                "text": "Blockchains cannot access the internet directly"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 119
+    },
+    {
+        "id": 120,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "Example of an Oracle service?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Twitter"
+            },
+            {
+                "id": "b",
+                "text": "Chainlink"
+            },
+            {
+                "id": "c",
+                "text": "Facebook"
+            },
+            {
+                "id": "d",
+                "text": "Google 41"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 120
+    },
+    {
+        "id": 121,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'IPFS' commonly used for with NFT?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Mining"
+            },
+            {
+                "id": "b",
+                "text": "Storing the asset (image/metadata) off-chain"
+            },
+            {
+                "id": "c",
+                "text": "Trading"
+            },
+            {
+                "id": "d",
+                "text": "Buying"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 121
+    },
+    {
+        "id": 122,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is the 'Design Pattern': Withdrawal Pattern?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Bank transfer"
+            },
+            {
+                "id": "b",
+                "text": "Users pull payments (withdraw) instead of contract pushing (transfer)"
+            },
+            {
+                "id": "c",
+                "text": "ATM"
+            },
+            {
+                "id": "d",
+                "text": "Contract pushes money"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 122
+    },
+    {
+        "id": 123,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "Why use Withdrawal Pattern?",
+        "options": [
+            {
+                "id": "a",
+                "text": "It costs more"
+            },
+            {
+                "id": "b",
+                "text": "It is harder"
+            },
+            {
+                "id": "c",
+                "text": "Prevents DoS attacks if one transfer fails in a loop"
+            },
+            {
+                "id": "d",
+                "text": "It is slower 42"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 123
+    },
+    {
+        "id": 124,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'Owner' pattern?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Owning the coin"
+            },
+            {
+                "id": "b",
+                "text": "Setting an admin address that can call restricted functions"
+            },
+            {
+                "id": "c",
+                "text": "Owning the server"
+            },
+            {
+                "id": "d",
+                "text": "No owner"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 124
+    },
+    {
+        "id": 125,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What library manages 'Ownable'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "React"
+            },
+            {
+                "id": "b",
+                "text": "Angular"
+            },
+            {
+                "id": "c",
+                "text": "JQuery"
+            },
+            {
+                "id": "d",
+                "text": "OpenZeppelin Ownable"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 125
+    },
+    {
+        "id": 126,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "How do you access array length?",
+        "options": [
+            {
+                "id": "a",
+                "text": "array.length"
+            },
+            {
+                "id": "b",
+                "text": "len(array)"
+            },
+            {
+                "id": "c",
+                "text": "count(array)"
+            },
+            {
+                "id": "d",
+                "text": "array.size() 43"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 126
+    },
+    {
+        "id": 127,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "How do you push to a dynamic array?",
+        "options": [
+            {
+                "id": "a",
+                "text": "array.add(value)"
+            },
+            {
+                "id": "b",
+                "text": "array.push(value)"
+            },
+            {
+                "id": "c",
+                "text": "array.insert(value)"
+            },
+            {
+                "id": "d",
+                "text": "array.append(value)"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 127
+    },
+    {
+        "id": 128,
+        "part": 1,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What implies 'Atomicity' in transactions?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Partial success"
+            },
+            {
+                "id": "b",
+                "text": "Nuclear power"
+            },
+            {
+                "id": "c",
+                "text": "All or nothing: if one part fails, everything reverts"
+            },
+            {
+                "id": "d",
+                "text": "Small size"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 128
+    },
+    {
+        "id": 129,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What are the three tiers of a DApp?",
+        "options": [
+            {
+                "id": "a",
+                "text": "HTML, CSS, JS"
+            },
+            {
+                "id": "b",
+                "text": "Client, Server, DB"
+            },
+            {
+                "id": "c",
+                "text": "Frontend, Backend, Database"
+            },
+            {
+                "id": "d",
+                "text": "Frontend, Smart Contract (Logic), Blockchain (Data) 44"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 129
+    },
+    {
+        "id": 130,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "Which JavaScript library interacts with Ethereum?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Three.js"
+            },
+            {
+                "id": "b",
+                "text": "React.js"
+            },
+            {
+                "id": "c",
+                "text": "JQuery"
+            },
+            {
+                "id": "d",
+                "text": "Web3.js or Ethers.js"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 130
+    },
+    {
+        "id": 131,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Trufle'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A development framework for Ethereum (compile, test, migrate)"
+            },
+            {
+                "id": "b",
+                "text": "A sweet"
+            },
+            {
+                "id": "c",
+                "text": "A wallet"
+            },
+            {
+                "id": "d",
+                "text": "A mushroom"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 131
+    },
+    {
+        "id": 132,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What does 'trufle init' do?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Compiles code"
+            },
+            {
+                "id": "b",
+                "text": "Creates a basic project structure"
+            },
+            {
+                "id": "c",
+                "text": "Deletes project"
+            },
+            {
+                "id": "d",
+                "text": "Starts a node 45"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 132
+    },
+    {
+        "id": 133,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What does 'trufle compile' do?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Sends money"
+            },
+            {
+                "id": "b",
+                "text": "Mines blocks"
+            },
+            {
+                "id": "c",
+                "text": "Tests code"
+            },
+            {
+                "id": "d",
+                "text": "Compiles Solidity files into JSON artifacts (ABI/Bytecode)"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 133
+    },
+    {
+        "id": 134,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What does 'trufle migrate' do?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Migrates birds"
+            },
+            {
+                "id": "b",
+                "text": "Moves files"
+            },
+            {
+                "id": "c",
+                "text": "Updates Windows"
+            },
+            {
+                "id": "d",
+                "text": "Deploys smart contracts to the network"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 134
+    },
+    {
+        "id": 135,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Ganache'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A food"
+            },
+            {
+                "id": "b",
+                "text": "A compiler"
+            },
+            {
+                "id": "c",
+                "text": "A personal local blockchain for testing deployment"
+            },
+            {
+                "id": "d",
+                "text": "A scanner 46"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 135
+    },
+    {
+        "id": 136,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Metamask'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A mask"
+            },
+            {
+                "id": "b",
+                "text": "A chat app"
+            },
+            {
+                "id": "c",
+                "text": "A browser extension wallet and Web3 injector"
+            },
+            {
+                "id": "d",
+                "text": "A game"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 136
+    },
+    {
+        "id": 137,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is a 'Provider' in Web3?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The internet provider"
+            },
+            {
+                "id": "b",
+                "text": "The bank"
+            },
+            {
+                "id": "c",
+                "text": "The connection node (e.g. Infura, Localhost)"
+            },
+            {
+                "id": "d",
+                "text": "The user"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 137
+    },
+    {
+        "id": 138,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Infura'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A wallet"
+            },
+            {
+                "id": "b",
+                "text": "A hosted Ethereum node service (Infrastructure as a Service)"
+            },
+            {
+                "id": "c",
+                "text": "A cleaner"
+            },
+            {
+                "id": "d",
+                "text": "A car 47"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 138
+    },
+    {
+        "id": 139,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "Why use Infura?",
+        "options": [
+            {
+                "id": "a",
+                "text": "To hack"
+            },
+            {
+                "id": "b",
+                "text": "To save gas"
+            },
+            {
+                "id": "c",
+                "text": "To mine"
+            },
+            {
+                "id": "d",
+                "text": "To avoid running your own full node"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 139
+    },
+    {
+        "id": 140,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What file stores Trufle configuration?",
+        "options": [
+            {
+                "id": "a",
+                "text": "config.xml"
+            },
+            {
+                "id": "b",
+                "text": "index.html"
+            },
+            {
+                "id": "c",
+                "text": "trufle-config.js"
+            },
+            {
+                "id": "d",
+                "text": "package.json"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 140
+    },
+    {
+        "id": 141,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "Where are compiled artifacts stored in Trufle?",
+        "options": [
+            {
+                "id": "a",
+                "text": "./dist"
+            },
+            {
+                "id": "b",
+                "text": "./build/contracts"
+            },
+            {
+                "id": "c",
+                "text": "./bin"
+            },
+            {
+                "id": "d",
+                "text": "./out 48"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 141
+    },
+    {
+        "id": 142,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "Which command runs unit tests in Trufle?",
+        "options": [
+            {
+                "id": "a",
+                "text": "run test"
+            },
+            {
+                "id": "b",
+                "text": "node test"
+            },
+            {
+                "id": "c",
+                "text": "trufle test"
+            },
+            {
+                "id": "d",
+                "text": "npm start"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 142
+    },
+    {
+        "id": 143,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "Trufle tests can be written in:",
+        "options": [
+            {
+                "id": "a",
+                "text": "JavaScript (Mocha/Chai) or Solidity"
+            },
+            {
+                "id": "b",
+                "text": "C++"
+            },
+            {
+                "id": "c",
+                "text": "Java"
+            },
+            {
+                "id": "d",
+                "text": "Python"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 143
+    },
+    {
+        "id": 144,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Chai'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A variable"
+            },
+            {
+                "id": "b",
+                "text": "Tea"
+            },
+            {
+                "id": "c",
+                "text": "A network"
+            },
+            {
+                "id": "d",
+                "text": "Assertion library used in testing 49"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 144
+    },
+    {
+        "id": 145,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "How does a DApp frontend sign transactions?",
+        "options": [
+            {
+                "id": "a",
+                "text": "It cannot"
+            },
+            {
+                "id": "b",
+                "text": "Using password field"
+            },
+            {
+                "id": "c",
+                "text": "Using Google login"
+            },
+            {
+                "id": "d",
+                "text": "Requests user signature via Metamask (Wallet)"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 145
+    },
+    {
+        "id": 146,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is the 'Ropsten' network?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A virus"
+            },
+            {
+                "id": "b",
+                "text": "A public testnet (now deprecated/historic)"
+            },
+            {
+                "id": "c",
+                "text": "Private net"
+            },
+            {
+                "id": "d",
+                "text": "Mainnet"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 146
+    },
+    {
+        "id": 147,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is the 'Goerli' or 'Sepolia' network?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Ethereum Testnets"
+            },
+            {
+                "id": "b",
+                "text": "Mainnets"
+            },
+            {
+                "id": "c",
+                "text": "Bitcoin networks"
+            },
+            {
+                "id": "d",
+                "text": "Databases 50"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 147
+    },
+    {
+        "id": 148,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "Why use a Testnet?",
+        "options": [
+            {
+                "id": "a",
+                "text": "To make money"
+            },
+            {
+                "id": "b",
+                "text": "To test with worthless coins before spending real money"
+            },
+            {
+                "id": "c",
+                "text": "To hide data"
+            },
+            {
+                "id": "d",
+                "text": "To be faster"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 148
+    },
+    {
+        "id": 149,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is a 'Faucet'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A website giving free testnet ETH"
+            },
+            {
+                "id": "b",
+                "text": "A sink"
+            },
+            {
+                "id": "c",
+                "text": "A hack"
+            },
+            {
+                "id": "d",
+                "text": "A game"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 149
+    },
+    {
+        "id": 150,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "In Web3.js, how do you instantiate a contract?",
+        "options": [
+            {
+                "id": "a",
+                "text": "import Contract"
+            },
+            {
+                "id": "b",
+                "text": "new Contract()"
+            },
+            {
+                "id": "c",
+                "text": "new web3.eth.Contract(abi, address)"
+            },
+            {
+                "id": "d",
+                "text": "getContract() 51"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 150
+    },
+    {
+        "id": 151,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is the difference between .call() and .send()?",
+        "options": [
+            {
+                "id": "a",
+                "text": "call() is read-only (free); send() writes (costs gas)"
+            },
+            {
+                "id": "b",
+                "text": "call costs gas"
+            },
+            {
+                "id": "c",
+                "text": "send is free"
+            },
+            {
+                "id": "d",
+                "text": "No difference"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 151
+    },
+    {
+        "id": 152,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'BigNumber' library used for?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Handling 256-bit integers in JS (which has max safe integer)"
+            },
+            {
+                "id": "b",
+                "text": "Big fonts"
+            },
+            {
+                "id": "c",
+                "text": "Calculating gas"
+            },
+            {
+                "id": "d",
+                "text": "Formatting"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 152
+    },
+    {
+        "id": 153,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "Why does JS need BigNumber?",
+        "options": [
+            {
+                "id": "a",
+                "text": "It is required by law"
+            },
+            {
+                "id": "b",
+                "text": "It is faster"
+            },
+            {
+                "id": "c",
+                "text": "Standard JS numbers lose precision for large crypto values"
+            },
+            {
+                "id": "d",
+                "text": "It looks better 52"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 153
+    },
+    {
+        "id": 154,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'React' often used for in DApps?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Writing contracts"
+            },
+            {
+                "id": "b",
+                "text": "Building the Frontend UI"
+            },
+            {
+                "id": "c",
+                "text": "Database"
+            },
+            {
+                "id": "d",
+                "text": "Mining"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 154
+    },
+    {
+        "id": 155,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'IPFS'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Internet Protocol"
+            },
+            {
+                "id": "b",
+                "text": "Internal File Server"
+            },
+            {
+                "id": "c",
+                "text": "Image Processing"
+            },
+            {
+                "id": "d",
+                "text": "InterPlanetary File System (Decentralized storage)"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 155
+    },
+    {
+        "id": 156,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "How are files addressed in IPFS?",
+        "options": [
+            {
+                "id": "a",
+                "text": "By Filename"
+            },
+            {
+                "id": "b",
+                "text": "By Content Hash (CID)"
+            },
+            {
+                "id": "c",
+                "text": "By Server IP"
+            },
+            {
+                "id": "d",
+                "text": "By URL 53"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 156
+    },
+    {
+        "id": 157,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "If you change a file in IPFS, what happens?",
+        "options": [
+            {
+                "id": "a",
+                "text": "It updates in place"
+            },
+            {
+                "id": "b",
+                "text": "Nothing"
+            },
+            {
+                "id": "c",
+                "text": "The hash changes, so it's a new address"
+            },
+            {
+                "id": "d",
+                "text": "It deletes"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 157
+    },
+    {
+        "id": 158,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What implies 'Content Addressing'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The address is a server"
+            },
+            {
+                "id": "b",
+                "text": "The address is random"
+            },
+            {
+                "id": "c",
+                "text": "The address is derived from the content itself"
+            },
+            {
+                "id": "d",
+                "text": "The address is manual"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 158
+    },
+    {
+        "id": 159,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Swarm'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Ethereum's native decentralized storage"
+            },
+            {
+                "id": "b",
+                "text": "A virus"
+            },
+            {
+                "id": "c",
+                "text": "A node"
+            },
+            {
+                "id": "d",
+                "text": "Use of bees 54"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 159
+    },
+    {
+        "id": 160,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'ENS'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "English Name System"
+            },
+            {
+                "id": "b",
+                "text": "Ether Net Service"
+            },
+            {
+                "id": "c",
+                "text": "Enterprise Network"
+            },
+            {
+                "id": "d",
+                "text": "Ethereum Name Service (resolves names to addresses)"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 160
+    },
+    {
+        "id": 161,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "Example of ENS name?",
+        "options": [
+            {
+                "id": "a",
+                "text": "alice.org"
+            },
+            {
+                "id": "b",
+                "text": "alice.eth"
+            },
+            {
+                "id": "c",
+                "text": "alice.net"
+            },
+            {
+                "id": "d",
+                "text": "alice.com"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 161
+    },
+    {
+        "id": 162,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'TDD'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Test Data Design"
+            },
+            {
+                "id": "b",
+                "text": "Test Driven Development"
+            },
+            {
+                "id": "c",
+                "text": "The Daily Design"
+            },
+            {
+                "id": "d",
+                "text": "Technical Design Doc 55"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 162
+    },
+    {
+        "id": 163,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "In Trufle migration, what is 'artifacts.require'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Loads a file"
+            },
+            {
+                "id": "b",
+                "text": "Loads the contract abstraction"
+            },
+            {
+                "id": "c",
+                "text": "requires a package"
+            },
+            {
+                "id": "d",
+                "text": "Errors out"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 163
+    },
+    {
+        "id": 164,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What represents 1 Ether in Wei?",
+        "options": [
+            {
+                "id": "a",
+                "text": "109"
+            },
+            {
+                "id": "a",
+                "text": "1000"
+            },
+            {
+                "id": "b",
+                "text": "101 8"
+            },
+            {
+                "id": "b",
+                "text": "100"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 164
+    },
+    {
+        "id": 165,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What function serves the DApp to the browser?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A web server (e.g. LiteServer, Nginx)"
+            },
+            {
+                "id": "b",
+                "text": "The blockchain"
+            },
+            {
+                "id": "c",
+                "text": "The miner"
+            },
+            {
+                "id": "d",
+                "text": "The wallet 56"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 165
+    },
+    {
+        "id": 166,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "Does the Blockchain host the index.html?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Always"
+            },
+            {
+                "id": "b",
+                "text": "No, usually hosted on standard web server or IPFS"
+            },
+            {
+                "id": "c",
+                "text": "Yes"
+            },
+            {
+                "id": "d",
+                "text": "Sometimes"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 166
+    },
+    {
+        "id": 167,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Event Listening' in DApp?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Frontend waiting for blockchain events to update UI"
+            },
+            {
+                "id": "b",
+                "text": "Listening to music"
+            },
+            {
+                "id": "c",
+                "text": "Server polling"
+            },
+            {
+                "id": "d",
+                "text": "Waiting for email"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 167
+    },
+    {
+        "id": 168,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "How does Metamask inject Web3?",
+        "options": [
+            {
+                "id": "a",
+                "text": "window.ethereum object"
+            },
+            {
+                "id": "b",
+                "text": "window.web3 (legacy)"
+            },
+            {
+                "id": "c",
+                "text": "Via USB"
+            },
+            {
+                "id": "d",
+                "text": "It downloads file 57"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 168
+    },
+    {
+        "id": 169,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Mainnet'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The beta"
+            },
+            {
+                "id": "b",
+                "text": "The testnet"
+            },
+            {
+                "id": "c",
+                "text": "The live production blockchain with real value"
+            },
+            {
+                "id": "d",
+                "text": "The local net"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 169
+    },
+    {
+        "id": 170,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'HD Wallet'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "High Definition"
+            },
+            {
+                "id": "b",
+                "text": "Heavy Duty"
+            },
+            {
+                "id": "c",
+                "text": "Hierarchical Deterministic (generates tree of keys from seed)"
+            },
+            {
+                "id": "d",
+                "text": "Hard Drive"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 170
+    },
+    {
+        "id": 171,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is a 'Mnemonic Phrase'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A file"
+            },
+            {
+                "id": "b",
+                "text": "A password"
+            },
+            {
+                "id": "c",
+                "text": "A username"
+            },
+            {
+                "id": "d",
+                "text": "12-24 words to recover a wallet 58"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 171
+    },
+    {
+        "id": 172,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "Why never share Mnemonic?",
+        "options": [
+            {
+                "id": "a",
+                "text": "It is embarrassing"
+            },
+            {
+                "id": "b",
+                "text": "It is long"
+            },
+            {
+                "id": "c",
+                "text": "It grants full access to all keys/funds"
+            },
+            {
+                "id": "d",
+                "text": "It is code"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 172
+    },
+    {
+        "id": 173,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Geth'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Git"
+            },
+            {
+                "id": "b",
+                "text": "Get Here"
+            },
+            {
+                "id": "c",
+                "text": "Go-Ethereum (A CLI Ethereum Node client)"
+            },
+            {
+                "id": "d",
+                "text": "Go There"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 173
+    },
+    {
+        "id": 174,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "To deploy to Ropsten, you need:",
+        "options": [
+            {
+                "id": "a",
+                "text": "An account with Ropsten ETH and configured provider"
+            },
+            {
+                "id": "b",
+                "text": "Permission"
+            },
+            {
+                "id": "c",
+                "text": "A license"
+            },
+            {
+                "id": "d",
+                "text": "Real money 59"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 174
+    },
+    {
+        "id": 175,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'infura.io' Key?",
+        "options": [
+            {
+                "id": "a",
+                "text": "API Key to access the node service"
+            },
+            {
+                "id": "b",
+                "text": "A coin"
+            },
+            {
+                "id": "c",
+                "text": "A wallet"
+            },
+            {
+                "id": "d",
+                "text": "A password"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 175
+    },
+    {
+        "id": 176,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What wraps the Ethereum interaction in React?",
+        "options": [
+            {
+                "id": "a",
+                "text": "CSS"
+            },
+            {
+                "id": "b",
+                "text": "Context API or Hooks (useWeb3)"
+            },
+            {
+                "id": "c",
+                "text": "HTML"
+            },
+            {
+                "id": "d",
+                "text": "SQL"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 176
+    },
+    {
+        "id": 177,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is a 'State Channel'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Radio"
+            },
+            {
+                "id": "b",
+                "text": "Off-chain scaling solution (e.g. payment channel)"
+            },
+            {
+                "id": "c",
+                "text": "Chat"
+            },
+            {
+                "id": "d",
+                "text": "TV channel 60"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 177
+    },
+    {
+        "id": 178,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Cross-Chain'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Interoperability between different blockchains"
+            },
+            {
+                "id": "b",
+                "text": "A necklace"
+            },
+            {
+                "id": "c",
+                "text": "A bug"
+            },
+            {
+                "id": "d",
+                "text": "A constraint"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 178
+    },
+    {
+        "id": 179,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What represents the 'Backend' in a pure DApp?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Smart Contracts + Blockchain"
+            },
+            {
+                "id": "b",
+                "text": "PHP"
+            },
+            {
+                "id": "c",
+                "text": "Python"
+            },
+            {
+                "id": "d",
+                "text": "NodeJS"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 179
+    },
+    {
+        "id": 180,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "Are DApp backends centralized?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Partially"
+            },
+            {
+                "id": "b",
+                "text": "Yes"
+            },
+            {
+                "id": "c",
+                "text": "Maybe"
+            },
+            {
+                "id": "d",
+                "text": "No, they are decentralized 61"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 180
+    },
+    {
+        "id": 181,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Web 3.0'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Mobile Web"
+            },
+            {
+                "id": "b",
+                "text": "Static Pages"
+            },
+            {
+                "id": "c",
+                "text": "Social Media"
+            },
+            {
+                "id": "d",
+                "text": "The decentralized web (Read-Write-Own)"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 181
+    },
+    {
+        "id": 182,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Web 2.0'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Future"
+            },
+            {
+                "id": "b",
+                "text": "Blockchain"
+            },
+            {
+                "id": "c",
+                "text": "The social/platform web (Read-Write)"
+            },
+            {
+                "id": "d",
+                "text": "Static"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 182
+    },
+    {
+        "id": 183,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "Who pays for read operations on DApp?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Nobody (they are free)"
+            },
+            {
+                "id": "b",
+                "text": "The miner"
+            },
+            {
+                "id": "c",
+                "text": "The user"
+            },
+            {
+                "id": "d",
+                "text": "The dev 62"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 183
+    },
+    {
+        "id": 184,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "Who pays for write operations?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The user (gas fee)"
+            },
+            {
+                "id": "b",
+                "text": "The browser"
+            },
+            {
+                "id": "c",
+                "text": "Nobody"
+            },
+            {
+                "id": "d",
+                "text": "The dev"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 184
+    },
+    {
+        "id": 185,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Sign Typed Data'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Signing generic text"
+            },
+            {
+                "id": "b",
+                "text": "Standard (EIP-712) for signing readable structures"
+            },
+            {
+                "id": "c",
+                "text": "Typing password"
+            },
+            {
+                "id": "d",
+                "text": "Scanning QR"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 185
+    },
+    {
+        "id": 186,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Block Explorer'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "File Explorer"
+            },
+            {
+                "id": "b",
+                "text": "Map"
+            },
+            {
+                "id": "c",
+                "text": "Internet Explorer"
+            },
+            {
+                "id": "d",
+                "text": "Tool to view blocks/txs (e.g. Etherscan) 63"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 186
+    },
+    {
+        "id": 187,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "Why verify source code on Etherscan?",
+        "options": [
+            {
+                "id": "a",
+                "text": "To sell"
+            },
+            {
+                "id": "b",
+                "text": "To compress"
+            },
+            {
+                "id": "c",
+                "text": "To hack"
+            },
+            {
+                "id": "d",
+                "text": "To build trust so users can read the code"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 187
+    },
+    {
+        "id": 188,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'ABI Encoding'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Hiding"
+            },
+            {
+                "id": "b",
+                "text": "Formatting data to match EVM function calls"
+            },
+            {
+                "id": "c",
+                "text": "Zipping"
+            },
+            {
+                "id": "d",
+                "text": "Encrypting"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 188
+    },
+    {
+        "id": 189,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Localhost:8545'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Google"
+            },
+            {
+                "id": "b",
+                "text": "Facebook"
+            },
+            {
+                "id": "c",
+                "text": "Default port for local Ganache node"
+            },
+            {
+                "id": "d",
+                "text": "Router 64"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 189
+    },
+    {
+        "id": 190,
+        "part": 1,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "Can a DApp work ofline?",
+        "options": [
+            {
+                "id": "a",
+                "text": "With cache"
+            },
+            {
+                "id": "b",
+                "text": "Maybe"
+            },
+            {
+                "id": "c",
+                "text": "No, needs connection to node"
+            },
+            {
+                "id": "d",
+                "text": "Yes"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 190
+    },
+    {
+        "id": 191,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Hyperledger Fabric'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A cryptocurrency"
+            },
+            {
+                "id": "b",
+                "text": "A clothing brand"
+            },
+            {
+                "id": "c",
+                "text": "A public chain"
+            },
+            {
+                "id": "d",
+                "text": "A permissioned enterprise blockchain framework"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 191
+    },
+    {
+        "id": 192,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "Who hosts the Hyperledger project?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The Linux Foundation"
+            },
+            {
+                "id": "b",
+                "text": "Google"
+            },
+            {
+                "id": "c",
+                "text": "Microsoft"
+            },
+            {
+                "id": "d",
+                "text": "Facebook 65"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 192
+    },
+    {
+        "id": 193,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What distinguishes Fabric from Ethereum?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Fabric is public"
+            },
+            {
+                "id": "b",
+                "text": "Fabric is older"
+            },
+            {
+                "id": "c",
+                "text": "Fabric is permissioned, modular, and has no native coin"
+            },
+            {
+                "id": "d",
+                "text": "Fabric uses ETH"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 193
+    },
+    {
+        "id": 194,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Chaincode'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A necklace"
+            },
+            {
+                "id": "b",
+                "text": "Smart Contract in Hyperledger Fabric"
+            },
+            {
+                "id": "c",
+                "text": "Bitcoin code"
+            },
+            {
+                "id": "d",
+                "text": "Encryption"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 194
+    },
+    {
+        "id": 195,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What languages does Chaincode support?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Go, Java, Node.js"
+            },
+            {
+                "id": "b",
+                "text": "Solidity only"
+            },
+            {
+                "id": "c",
+                "text": "Python only"
+            },
+            {
+                "id": "d",
+                "text": "C# only 66"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 195
+    },
+    {
+        "id": 196,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is a 'Channel' in Fabric?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A private subnet of communication between specific members"
+            },
+            {
+                "id": "b",
+                "text": "A pipe"
+            },
+            {
+                "id": "c",
+                "text": "A TV station"
+            },
+            {
+                "id": "d",
+                "text": "A slack channel"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 196
+    },
+    {
+        "id": 197,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'MSP'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "My Secret Pass"
+            },
+            {
+                "id": "b",
+                "text": "Microsoft Paint"
+            },
+            {
+                "id": "c",
+                "text": "Managed Service"
+            },
+            {
+                "id": "d",
+                "text": "Membership Service Provider (Identity mgmt)"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 197
+    },
+    {
+        "id": 198,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What consensus does Fabric typically use?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Pluggable (e.g. Raft, Kafka, SOLO)"
+            },
+            {
+                "id": "b",
+                "text": "Proof of Stake"
+            },
+            {
+                "id": "c",
+                "text": "Proof of Work"
+            },
+            {
+                "id": "d",
+                "text": "None 67"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 198
+    },
+    {
+        "id": 199,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'BaaS'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Base"
+            },
+            {
+                "id": "b",
+                "text": "Bank"
+            },
+            {
+                "id": "c",
+                "text": "Blockchain-as-a-Service (e.g. Azure Blockchain)"
+            },
+            {
+                "id": "d",
+                "text": "Boss"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 199
+    },
+    {
+        "id": 200,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "Azure Blockchain Service simplifies:",
+        "options": [
+            {
+                "id": "a",
+                "text": "Buying ETH"
+            },
+            {
+                "id": "b",
+                "text": "Deployment/Management of consortium networks"
+            },
+            {
+                "id": "c",
+                "text": "Playing games"
+            },
+            {
+                "id": "d",
+                "text": "Mining Bitcoin"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 200
+    },
+    {
+        "id": 201,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is the 'Scalability Trilemma'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Three nodes"
+            },
+            {
+                "id": "b",
+                "text": "Three computers"
+            },
+            {
+                "id": "c",
+                "text": "Three coins"
+            },
+            {
+                "id": "d",
+                "text": "Trade-off between Decentralization, Security, and Scalability 68"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 201
+    },
+    {
+        "id": 202,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Sharding'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Sharing data"
+            },
+            {
+                "id": "b",
+                "text": "Encrypting"
+            },
+            {
+                "id": "c",
+                "text": "Breaking glass"
+            },
+            {
+                "id": "d",
+                "text": "Splitting the blockchain into partitions (shards) to scale"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 202
+    },
+    {
+        "id": 203,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Proof of Stake' (PoS)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Proof of work"
+            },
+            {
+                "id": "b",
+                "text": "Mining with hardware"
+            },
+            {
+                "id": "c",
+                "text": "Proof of auth"
+            },
+            {
+                "id": "d",
+                "text": "Validators stake coins to propose blocks (energy efficient)"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 203
+    },
+    {
+        "id": 204,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Delegated Proof of Stake' (DPoS)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Voting for delegates to validate blocks"
+            },
+            {
+                "id": "b",
+                "text": "Centralized"
+            },
+            {
+                "id": "c",
+                "text": "Direct staking"
+            },
+            {
+                "id": "d",
+                "text": "Mining 69"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 204
+    },
+    {
+        "id": 205,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Hashgraph'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A DAG-based consensus protocol (Gossip about Gossip)"
+            },
+            {
+                "id": "b",
+                "text": "A chart"
+            },
+            {
+                "id": "c",
+                "text": "A hash"
+            },
+            {
+                "id": "d",
+                "text": "A blockchain"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 205
+    },
+    {
+        "id": 206,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "Is Hashgraph a Blockchain?",
+        "options": [
+            {
+                "id": "a",
+                "text": "No, it is a DLT (Distributed Ledger) using DAG"
+            },
+            {
+                "id": "b",
+                "text": "Maybe"
+            },
+            {
+                "id": "c",
+                "text": "Yes"
+            },
+            {
+                "id": "d",
+                "text": "It is Bitcoin"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 206
+    },
+    {
+        "id": 207,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'DAG'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Direct Access Gate"
+            },
+            {
+                "id": "b",
+                "text": "Data Access Group"
+            },
+            {
+                "id": "c",
+                "text": "Directed Acyclic Graph"
+            },
+            {
+                "id": "d",
+                "text": "Dog And Goat 70"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 207
+    },
+    {
+        "id": 208,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Corda'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A car"
+            },
+            {
+                "id": "b",
+                "text": "A rope"
+            },
+            {
+                "id": "c",
+                "text": "R3's enterprise DLT for finance"
+            },
+            {
+                "id": "d",
+                "text": "A coin"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 208
+    },
+    {
+        "id": 209,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Ripple' (XRP) focussed on?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Smart Contracts"
+            },
+            {
+                "id": "b",
+                "text": "Storage"
+            },
+            {
+                "id": "c",
+                "text": "Interbank settlement / Remittance"
+            },
+            {
+                "id": "d",
+                "text": "Gaming"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 209
+    },
+    {
+        "id": 210,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Stablecoin'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Fake coin"
+            },
+            {
+                "id": "b",
+                "text": "Horse coin"
+            },
+            {
+                "id": "c",
+                "text": "Crypto pegged to a stable asset (e.g. USD) to minimize volatility"
+            },
+            {
+                "id": "d",
+                "text": "Volatile coin 71"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 210
+    },
+    {
+        "id": 211,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "Example of Stablecoin?",
+        "options": [
+            {
+                "id": "a",
+                "text": "BTC"
+            },
+            {
+                "id": "b",
+                "text": "USDT or USDC"
+            },
+            {
+                "id": "c",
+                "text": "DOGE"
+            },
+            {
+                "id": "d",
+                "text": "ETH"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 211
+    },
+    {
+        "id": 212,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'DeFi'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Design Fi"
+            },
+            {
+                "id": "b",
+                "text": "Digital Fi"
+            },
+            {
+                "id": "c",
+                "text": "Decentralized Finance"
+            },
+            {
+                "id": "d",
+                "text": "Defined Finance"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 212
+    },
+    {
+        "id": 213,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is a 'DEX'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Directory"
+            },
+            {
+                "id": "b",
+                "text": "Decentralized Exchange (e.g. Uniswap)"
+            },
+            {
+                "id": "c",
+                "text": "Index"
+            },
+            {
+                "id": "d",
+                "text": "Database 72"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 213
+    },
+    {
+        "id": 214,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Dao'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Way"
+            },
+            {
+                "id": "b",
+                "text": "Road"
+            },
+            {
+                "id": "c",
+                "text": "Person"
+            },
+            {
+                "id": "d",
+                "text": "Decentralized Autonomous Organization"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 214
+    },
+    {
+        "id": 215,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "famous 'The DAO' hack happened on?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Fabric"
+            },
+            {
+                "id": "b",
+                "text": "Ethereum"
+            },
+            {
+                "id": "c",
+                "text": "Corda"
+            },
+            {
+                "id": "d",
+                "text": "Bitcoin"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 215
+    },
+    {
+        "id": 216,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Permissioned' vs 'Permissionless'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Blue vs Red"
+            },
+            {
+                "id": "b",
+                "text": "Rich vs Poor"
+            },
+            {
+                "id": "c",
+                "text": "Known identity vs Anonymous"
+            },
+            {
+                "id": "d",
+                "text": "Fast vs Slow 73"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 216
+    },
+    {
+        "id": 217,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Zero Knowledge Proof' (ZKP)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Magic"
+            },
+            {
+                "id": "b",
+                "text": "Knowing nothing"
+            },
+            {
+                "id": "c",
+                "text": "Guessing"
+            },
+            {
+                "id": "d",
+                "text": "Proving you know data without revealing the data itself"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 217
+    },
+    {
+        "id": 218,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "Example of Privacy Coin?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Monero or Zcash"
+            },
+            {
+                "id": "b",
+                "text": "USDT"
+            },
+            {
+                "id": "c",
+                "text": "Ether"
+            },
+            {
+                "id": "d",
+                "text": "Bitcoin"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 218
+    },
+    {
+        "id": 219,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Interoperability'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Internal ability"
+            },
+            {
+                "id": "b",
+                "text": "Internet speed"
+            },
+            {
+                "id": "c",
+                "text": "Ability of different chains to communicate"
+            },
+            {
+                "id": "d",
+                "text": "Intranet 74"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 219
+    },
+    {
+        "id": 220,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Cosmos' or 'Polkadot'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Coins only"
+            },
+            {
+                "id": "b",
+                "text": "So-called Layer 0 / Interoperability protocols"
+            },
+            {
+                "id": "c",
+                "text": "Planets"
+            },
+            {
+                "id": "d",
+                "text": "Websites"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 220
+    },
+    {
+        "id": 221,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Tether'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A centralized stablecoin"
+            },
+            {
+                "id": "b",
+                "text": "A wallet"
+            },
+            {
+                "id": "c",
+                "text": "A rope"
+            },
+            {
+                "id": "d",
+                "text": "A blockchain"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 221
+    },
+    {
+        "id": 222,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Governance' in blockchain?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Government"
+            },
+            {
+                "id": "b",
+                "text": "Rules/Processes for protocol upgrades/changes"
+            },
+            {
+                "id": "c",
+                "text": "Taxes"
+            },
+            {
+                "id": "d",
+                "text": "Police 75"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 222
+    },
+    {
+        "id": 223,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "On-chain Governance means:",
+        "options": [
+            {
+                "id": "a",
+                "text": "Voting happens via tokens/protocol directly"
+            },
+            {
+                "id": "b",
+                "text": "Voting in senate"
+            },
+            {
+                "id": "c",
+                "text": "No voting"
+            },
+            {
+                "id": "d",
+                "text": "Voting by email"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 223
+    },
+    {
+        "id": 224,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "Off-chain Governance means:",
+        "options": [
+            {
+                "id": "a",
+                "text": "On server"
+            },
+            {
+                "id": "b",
+                "text": "On chain"
+            },
+            {
+                "id": "c",
+                "text": "Automated"
+            },
+            {
+                "id": "d",
+                "text": "Decisions made socially/forums then implemented (like Bitcoin)"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 224
+    },
+    {
+        "id": 225,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Self-Sovereign Identity' (SSI)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Google Login"
+            },
+            {
+                "id": "b",
+                "text": "State ID"
+            },
+            {
+                "id": "c",
+                "text": "User owns/controls their identity credentials"
+            },
+            {
+                "id": "d",
+                "text": "Passport 76"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 225
+    },
+    {
+        "id": 226,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Orphan Block'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Sad block"
+            },
+            {
+                "id": "b",
+                "text": "Empty block"
+            },
+            {
+                "id": "c",
+                "text": "Valid block not part of main chain (stale)"
+            },
+            {
+                "id": "d",
+                "text": "Red block"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 226
+    },
+    {
+        "id": 227,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Uncle Block' in Ethereum?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Aunts"
+            },
+            {
+                "id": "b",
+                "text": "Parents"
+            },
+            {
+                "id": "c",
+                "text": "Stale block that still gets a partial reward"
+            },
+            {
+                "id": "d",
+                "text": "Cousins"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 227
+    },
+    {
+        "id": 228,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "Why Uncle rewards?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Error"
+            },
+            {
+                "id": "b",
+                "text": "To incentivize security even if beaten by speed"
+            },
+            {
+                "id": "c",
+                "text": "Charity"
+            },
+            {
+                "id": "d",
+                "text": "Bug 77"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 228
+    },
+    {
+        "id": 229,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Casper'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Wallet"
+            },
+            {
+                "id": "b",
+                "text": "Miner"
+            },
+            {
+                "id": "c",
+                "text": "Ethereum's PoS finality gadget"
+            },
+            {
+                "id": "d",
+                "text": "Ghost"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 229
+    },
+    {
+        "id": 230,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Solana' known for?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Slowness"
+            },
+            {
+                "id": "b",
+                "text": "Old tech"
+            },
+            {
+                "id": "c",
+                "text": "High throughput and Proof of History"
+            },
+            {
+                "id": "d",
+                "text": "Privacy"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 230
+    },
+    {
+        "id": 231,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Flash Loan'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Uncollateralized loan valid only within one transaction"
+            },
+            {
+                "id": "b",
+                "text": "Bank loan"
+            },
+            {
+                "id": "c",
+                "text": "Credit card"
+            },
+            {
+                "id": "d",
+                "text": "Fast money 78"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 231
+    },
+    {
+        "id": 232,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Yield Farming'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Gaming"
+            },
+            {
+                "id": "b",
+                "text": "Agriculture"
+            },
+            {
+                "id": "c",
+                "text": "Mining"
+            },
+            {
+                "id": "d",
+                "text": "Earning rewards by providing liquidity"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 232
+    },
+    {
+        "id": 233,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Liquidity Pool'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Swimming pool"
+            },
+            {
+                "id": "b",
+                "text": "Water"
+            },
+            {
+                "id": "c",
+                "text": "Pile of funds locked in a smart contract for trading"
+            },
+            {
+                "id": "d",
+                "text": "Cash"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 233
+    },
+    {
+        "id": 234,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Automated Market Maker' (AMM)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Stock market"
+            },
+            {
+                "id": "b",
+                "text": "Algorithm pricing assets based on ratio in pool"
+            },
+            {
+                "id": "c",
+                "text": "Human broker"
+            },
+            {
+                "id": "d",
+                "text": "Robot 79"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 234
+    },
+    {
+        "id": 235,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Impermanent Loss'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Profit"
+            },
+            {
+                "id": "b",
+                "text": "Gain"
+            },
+            {
+                "id": "c",
+                "text": "Loss of funds in LP compared to holding HODL"
+            },
+            {
+                "id": "d",
+                "text": "Permanent loss"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 235
+    },
+    {
+        "id": 236,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Wrapped Bitcoin' (WBTC)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Paper"
+            },
+            {
+                "id": "b",
+                "text": "Coin"
+            },
+            {
+                "id": "c",
+                "text": "Gift"
+            },
+            {
+                "id": "d",
+                "text": "BTC represented on Ethereum (ERC20)"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 236
+    },
+    {
+        "id": 237,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Layer 1'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "UI"
+            },
+            {
+                "id": "b",
+                "text": "The base blockchain (e.g. Ethereum)"
+            },
+            {
+                "id": "c",
+                "text": "App"
+            },
+            {
+                "id": "d",
+                "text": "L2 80"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 237
+    },
+    {
+        "id": 238,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Rollup' (Optimistic/ZK)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Paper"
+            },
+            {
+                "id": "b",
+                "text": "Sushi"
+            },
+            {
+                "id": "c",
+                "text": "Carpet"
+            },
+            {
+                "id": "d",
+                "text": "L2 scaling by bundling txs off-chain"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 238
+    },
+    {
+        "id": 239,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'CBDC'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Crypto"
+            },
+            {
+                "id": "b",
+                "text": "Coin"
+            },
+            {
+                "id": "c",
+                "text": "Code"
+            },
+            {
+                "id": "d",
+                "text": "Central Bank Digital Currency"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 239
+    },
+    {
+        "id": 240,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "Difference between CBDC and Bitcoin?",
+        "options": [
+            {
+                "id": "a",
+                "text": "No difference"
+            },
+            {
+                "id": "b",
+                "text": "BTC is Gov"
+            },
+            {
+                "id": "c",
+                "text": "CBDC is centralized/Gov issued; BTC is decentralized"
+            },
+            {
+                "id": "d",
+                "text": "CBDC is better 81"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 240
+    },
+    {
+        "id": 241,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Supply Chain' use case?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Tracking provenance and logistics transparency"
+            },
+            {
+                "id": "b",
+                "text": "Wearing chains"
+            },
+            {
+                "id": "c",
+                "text": "Selling chains"
+            },
+            {
+                "id": "d",
+                "text": "Buying chains"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 241
+    },
+    {
+        "id": 242,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Credential Verification' use case?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Email"
+            },
+            {
+                "id": "b",
+                "text": "Verifying degrees/certs on blockchain"
+            },
+            {
+                "id": "c",
+                "text": "Login"
+            },
+            {
+                "id": "d",
+                "text": "Password"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 242
+    },
+    {
+        "id": 243,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Energy Consumption' critique?",
+        "options": [
+            {
+                "id": "a",
+                "text": "PoS consumes energy"
+            },
+            {
+                "id": "b",
+                "text": "PoW consumes vast electricity"
+            },
+            {
+                "id": "c",
+                "text": "Blockchain is green"
+            },
+            {
+                "id": "d",
+                "text": "Computers are hot 82"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 243
+    },
+    {
+        "id": 244,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "Why move to PoS?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Energy efficiency (>99% reduction)"
+            },
+            {
+                "id": "b",
+                "text": "make money"
+            },
+            {
+                "id": "c",
+                "text": "centralize"
+            },
+            {
+                "id": "d",
+                "text": "slow down"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 244
+    },
+    {
+        "id": 245,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Web3.js'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Website"
+            },
+            {
+                "id": "b",
+                "text": "Language"
+            },
+            {
+                "id": "c",
+                "text": "Library to talk to Ethereum node"
+            },
+            {
+                "id": "d",
+                "text": "Frame"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 245
+    },
+    {
+        "id": 246,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'EIP'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Exit"
+            },
+            {
+                "id": "b",
+                "text": "Email"
+            },
+            {
+                "id": "c",
+                "text": "Error"
+            },
+            {
+                "id": "d",
+                "text": "Ethereum Improvement Proposal 83"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 246
+    },
+    {
+        "id": 247,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'ERC'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Entity"
+            },
+            {
+                "id": "b",
+                "text": "Error"
+            },
+            {
+                "id": "c",
+                "text": "Ethereum Request for Comments (Application Standard)"
+            },
+            {
+                "id": "d",
+                "text": "Event"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 247
+    },
+    {
+        "id": 248,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is the 'Merge' (Ethereum)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Transition from PoW to PoS"
+            },
+            {
+                "id": "b",
+                "text": "Database merge"
+            },
+            {
+                "id": "c",
+                "text": "Fork"
+            },
+            {
+                "id": "d",
+                "text": "Merging companies"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 248
+    },
+    {
+        "id": 249,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Beacon Chain'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Lighthouse"
+            },
+            {
+                "id": "b",
+                "text": "The coordinator chain for Eth2 PoS"
+            },
+            {
+                "id": "c",
+                "text": "Fire"
+            },
+            {
+                "id": "d",
+                "text": "Light 84"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 249
+    },
+    {
+        "id": 250,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Nostr'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A bank"
+            },
+            {
+                "id": "b",
+                "text": "A decentralized social protocol (Notes and Other Stuff Transmitted by Relays)"
+            },
+            {
+                "id": "c",
+                "text": "A coin"
+            },
+            {
+                "id": "d",
+                "text": "A game"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 250
+    },
+    {
+        "id": 251,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'BlueSky'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Rain"
+            },
+            {
+                "id": "b",
+                "text": "Cloud"
+            },
+            {
+                "id": "c",
+                "text": "Decentralized social network protocol (AT Protocol)"
+            },
+            {
+                "id": "d",
+                "text": "Sky"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 251
+    },
+    {
+        "id": 252,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Lens Protocol'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Eye"
+            },
+            {
+                "id": "b",
+                "text": "Camera"
+            },
+            {
+                "id": "c",
+                "text": "Glass"
+            },
+            {
+                "id": "d",
+                "text": "Social graph protocol for Web3 85"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 252
+    },
+    {
+        "id": 253,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Farcaster'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Sufficiently decentralized social network"
+            },
+            {
+                "id": "b",
+                "text": "Weather"
+            },
+            {
+                "id": "c",
+                "text": "Radio"
+            },
+            {
+                "id": "d",
+                "text": "News"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 253
+    },
+    {
+        "id": 254,
+        "part": 1,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'ActivityPub'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Pub"
+            },
+            {
+                "id": "b",
+                "text": "Decentralized social networking protocol (used by Mastodon)"
+            },
+            {
+                "id": "c",
+                "text": "Activity"
+            },
+            {
+                "id": "d",
+                "text": "Bar 86"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 254
+    },
+    {
+        "id": 255,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What does 'DLT' stand for?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Double Ledger Tech"
+            },
+            {
+                "id": "b",
+                "text": "Data Link Tech"
+            },
+            {
+                "id": "c",
+                "text": "Digital Ledger Tech"
+            },
+            {
+                "id": "d",
+                "text": "Distributed Ledger Technology"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 1
+    },
+    {
+        "id": 256,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is the 'Longest Chain Rule' in Bitcoin?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The chain owned by Google"
+            },
+            {
+                "id": "b",
+                "text": "The chain with most transactions"
+            },
+            {
+                "id": "c",
+                "text": "The chain with most blocks always wins"
+            },
+            {
+                "id": "d",
+                "text": "Nodes accept the chain with the most accumulated Proof of Work as valid"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 2
+    },
+    {
+        "id": 257,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is a 'Sybille Attack' (Sybil)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Mining attack"
+            },
+            {
+                "id": "b",
+                "text": "DDOS"
+            },
+            {
+                "id": "c",
+                "text": "Stealing passwords"
+            },
+            {
+                "id": "d",
+                "text": "Creating multiple fake identities to subvert the network 2"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 3
+    },
+    {
+        "id": 258,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "Which cryptographic family does Bitcoin use?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Elliptic Curve Cryptography (secp256k1)"
+            },
+            {
+                "id": "b",
+                "text": "DES"
+            },
+            {
+                "id": "c",
+                "text": "AES"
+            },
+            {
+                "id": "d",
+                "text": "RSA"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 4
+    },
+    {
+        "id": 259,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is the exact block time target for Bitcoin?",
+        "options": [
+            {
+                "id": "a",
+                "text": "5 seconds"
+            },
+            {
+                "id": "b",
+                "text": "1 hour"
+            },
+            {
+                "id": "c",
+                "text": "1 minute"
+            },
+            {
+                "id": "d",
+                "text": "10 minutes"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 5
+    },
+    {
+        "id": 260,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What data is stored in the 'State Root' of Ethereum?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Only transactions"
+            },
+            {
+                "id": "b",
+                "text": "The root hash of the global state trie (account balances, code, storage)"
+            },
+            {
+                "id": "c",
+                "text": "Only logs"
+            },
+            {
+                "id": "d",
+                "text": "Only receipts 3"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 6
+    },
+    {
+        "id": 261,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "Which unit is 109 W ei?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Finney"
+            },
+            {
+                "id": "b",
+                "text": "Szabo"
+            },
+            {
+                "id": "c",
+                "text": "Gwei"
+            },
+            {
+                "id": "d",
+                "text": "Ether"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 7
+    },
+    {
+        "id": 262,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is a 'pre-mine'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Mining slowly"
+            },
+            {
+                "id": "b",
+                "text": "Mining after launch"
+            },
+            {
+                "id": "c",
+                "text": "Mining fast"
+            },
+            {
+                "id": "d",
+                "text": "When developers mine coins for themselves before public launch"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 8
+    },
+    {
+        "id": 263,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Difficulty' in mining?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A measure of how hard it is to find a hash below the target"
+            },
+            {
+                "id": "b",
+                "text": "The electricity cost"
+            },
+            {
+                "id": "c",
+                "text": "The price of hardware"
+            },
+            {
+                "id": "d",
+                "text": "The internet speed 4"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 9
+    },
+    {
+        "id": 264,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What happens if two miners find a block simultaneously?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Both are rejected"
+            },
+            {
+                "id": "b",
+                "text": "Network stops"
+            },
+            {
+                "id": "c",
+                "text": "The chain forks temporarily until one side becomes longer"
+            },
+            {
+                "id": "d",
+                "text": "Both are accepted forever"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 10
+    },
+    {
+        "id": 265,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Confirmation' in Bitcoin?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A email receipt"
+            },
+            {
+                "id": "b",
+                "text": "A text message"
+            },
+            {
+                "id": "c",
+                "text": "A phone call"
+            },
+            {
+                "id": "d",
+                "text": "The number of blocks added on top of the block containing the tx"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 11
+    },
+    {
+        "id": 266,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "Why is 6 confirmations recommended for Bitcoin?",
+        "options": [
+            {
+                "id": "a",
+                "text": "It is a lucky number"
+            },
+            {
+                "id": "b",
+                "text": "Satoshi said so"
+            },
+            {
+                "id": "c",
+                "text": "It makes the probability of reversal statistically negligible"
+            },
+            {
+                "id": "d",
+                "text": "It takes 1 hour 5"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 12
+    },
+    {
+        "id": 267,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'SegWit'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "New coin"
+            },
+            {
+                "id": "b",
+                "text": "New wallet"
+            },
+            {
+                "id": "c",
+                "text": "Segregated Witness (soft fork to fix malleability and scale)"
+            },
+            {
+                "id": "d",
+                "text": "New miner"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 13
+    },
+    {
+        "id": 268,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is the max supply of Bitcoin?",
+        "options": [
+            {
+                "id": "a",
+                "text": "100 Million"
+            },
+            {
+                "id": "b",
+                "text": "Infinity"
+            },
+            {
+                "id": "c",
+                "text": "1 Billion"
+            },
+            {
+                "id": "d",
+                "text": "21 Million"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 14
+    },
+    {
+        "id": 269,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is Ethereum's ination model?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Random"
+            },
+            {
+                "id": "b",
+                "text": "2% per year fixed"
+            },
+            {
+                "id": "c",
+                "text": "Fixed cap like Bitcoin"
+            },
+            {
+                "id": "d",
+                "text": "No hard cap, but issuance is reduced (burning mechanism EIP-1559) 6"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 15
+    },
+    {
+        "id": 270,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Gas Limit' in a block?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The maximum users"
+            },
+            {
+                "id": "b",
+                "text": "The maximum total gas of all transactions in a block"
+            },
+            {
+                "id": "c",
+                "text": "The maximum speed"
+            },
+            {
+                "id": "d",
+                "text": "The maximum file size"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 16
+    },
+    {
+        "id": 271,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Uncle Reward' used for?",
+        "options": [
+            {
+                "id": "a",
+                "text": "To pay taxes"
+            },
+            {
+                "id": "b",
+                "text": "To buy hardware"
+            },
+            {
+                "id": "c",
+                "text": "To pay developers"
+            },
+            {
+                "id": "d",
+                "text": "To reward miners for valid but stale blocks (improving security)"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 17
+    },
+    {
+        "id": 272,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Merkle Proof'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A ID card"
+            },
+            {
+                "id": "b",
+                "text": "A password"
+            },
+            {
+                "id": "c",
+                "text": "A cryptographic proof that a specific transaction is in a block"
+            },
+            {
+                "id": "d",
+                "text": "A legal document 7"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 18
+    },
+    {
+        "id": 273,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is a 'Light Client'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A heavy server"
+            },
+            {
+                "id": "b",
+                "text": "A client that downloads only block headers and verifies via Merkle Proofs"
+            },
+            {
+                "id": "c",
+                "text": "A ashlight"
+            },
+            {
+                "id": "d",
+                "text": "A mining pool"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 19
+    },
+    {
+        "id": 274,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'SPV'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Secure Password"
+            },
+            {
+                "id": "b",
+                "text": "Special Payment"
+            },
+            {
+                "id": "c",
+                "text": "Simple Protocol"
+            },
+            {
+                "id": "d",
+                "text": "Simplified Payment Verification (Light Clients)"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 20
+    },
+    {
+        "id": 275,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is a 'Full Node'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A miner only"
+            },
+            {
+                "id": "b",
+                "text": "A node that downloads and validates every transaction and block"
+            },
+            {
+                "id": "c",
+                "text": "A partial node"
+            },
+            {
+                "id": "d",
+                "text": "A wallet only 8"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 21
+    },
+    {
+        "id": 276,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Hash Rate'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The speed at which a computer is completing the hashing algorithm"
+            },
+            {
+                "id": "b",
+                "text": "Internet speed"
+            },
+            {
+                "id": "c",
+                "text": "Download speed"
+            },
+            {
+                "id": "d",
+                "text": "Upload speed"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 22
+    },
+    {
+        "id": 277,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'ASIC'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A software"
+            },
+            {
+                "id": "b",
+                "text": "A website"
+            },
+            {
+                "id": "c",
+                "text": "A virus"
+            },
+            {
+                "id": "d",
+                "text": "Application Specific Integrated Circuit (specialized mining hardware)"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 23
+    },
+    {
+        "id": 278,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "Why did Ethereum enable 'The Merge'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "To increase fees"
+            },
+            {
+                "id": "b",
+                "text": "To stop mining"
+            },
+            {
+                "id": "c",
+                "text": "To delete data"
+            },
+            {
+                "id": "d",
+                "text": "To switch from PoW to PoS for energy efficiency 9"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 24
+    },
+    {
+        "id": 279,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Proof of Authority'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Anyone can mine"
+            },
+            {
+                "id": "b",
+                "text": "Validators are approved trusted entities"
+            },
+            {
+                "id": "c",
+                "text": "Burning coins"
+            },
+            {
+                "id": "d",
+                "text": "Staking money"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 25
+    },
+    {
+        "id": 280,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Proof of Burn'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Burning hardware"
+            },
+            {
+                "id": "b",
+                "text": "Send coins to an unspendable address to earn mining rights"
+            },
+            {
+                "id": "c",
+                "text": "Burning passwords"
+            },
+            {
+                "id": "d",
+                "text": "Burning paper"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 26
+    },
+    {
+        "id": 281,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Cryptographic Hash Function' property?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Random, Slow"
+            },
+            {
+                "id": "b",
+                "text": "Deterministic, Quick, Pre-image resistance, Avalanche effect"
+            },
+            {
+                "id": "c",
+                "text": "Secret"
+            },
+            {
+                "id": "d",
+                "text": "Reversible 10"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 27
+    },
+    {
+        "id": 282,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Avalanche Effect'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Snow falling"
+            },
+            {
+                "id": "b",
+                "text": "Price drop"
+            },
+            {
+                "id": "c",
+                "text": "Network crash"
+            },
+            {
+                "id": "d",
+                "text": "A small change in input results in a massive change in output hash"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 28
+    },
+    {
+        "id": 283,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Collision Resistance'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "No resistance"
+            },
+            {
+                "id": "b",
+                "text": "It is infeasible to find two inputs that hash to the same output"
+            },
+            {
+                "id": "c",
+                "text": "Cars crashing"
+            },
+            {
+                "id": "d",
+                "text": "Network collision"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 29
+    },
+    {
+        "id": 284,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Public Key Infrastructure' (PKI)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A server room"
+            },
+            {
+                "id": "b",
+                "text": "A building"
+            },
+            {
+                "id": "c",
+                "text": "A network cable"
+            },
+            {
+                "id": "d",
+                "text": "Framework for encryption and signing using public/private keys 11"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 30
+    },
+    {
+        "id": 285,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Digital Signature'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Photo of face"
+            },
+            {
+                "id": "b",
+                "text": "Email footer"
+            },
+            {
+                "id": "c",
+                "text": "Handwritten signature"
+            },
+            {
+                "id": "d",
+                "text": "Mathematical scheme to verify authenticity"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 31
+    },
+    {
+        "id": 286,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "In Ethereum, what is a 'Contract Account'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A user account"
+            },
+            {
+                "id": "b",
+                "text": "A bank account"
+            },
+            {
+                "id": "c",
+                "text": "A savings account"
+            },
+            {
+                "id": "d",
+                "text": "An account controlled by code (has codeHash)"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 32
+    },
+    {
+        "id": 287,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "In Ethereum, what is an 'EOA'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Miner"
+            },
+            {
+                "id": "b",
+                "text": "Contract Account"
+            },
+            {
+                "id": "c",
+                "text": "Externally Owned Account (controlled by Private Key)"
+            },
+            {
+                "id": "d",
+                "text": "Validator 12"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 33
+    },
+    {
+        "id": 288,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "Can an EOA contain code?",
+        "options": [
+            {
+                "id": "a",
+                "text": "No, only Contract Accounts can"
+            },
+            {
+                "id": "b",
+                "text": "Sometimes"
+            },
+            {
+                "id": "c",
+                "text": "Yes"
+            },
+            {
+                "id": "d",
+                "text": "Maybe"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 34
+    },
+    {
+        "id": 289,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "Who initiates a transaction in Ethereum?",
+        "options": [
+            {
+                "id": "a",
+                "text": "A Contract"
+            },
+            {
+                "id": "b",
+                "text": "Always an EOA"
+            },
+            {
+                "id": "c",
+                "text": "A Miner"
+            },
+            {
+                "id": "d",
+                "text": "The Network"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 35
+    },
+    {
+        "id": 290,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "Can a Smart Contract initiate a transaction essentially?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Always"
+            },
+            {
+                "id": "b",
+                "text": "No, it must be triggered by an EOA (or via Chainlink Automation)"
+            },
+            {
+                "id": "c",
+                "text": "Never"
+            },
+            {
+                "id": "d",
+                "text": "Yes 13"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 36
+    },
+    {
+        "id": 291,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Base Fee' (EIP-1559)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The wallet fee"
+            },
+            {
+                "id": "b",
+                "text": "The minimum gas price required for a block, which is burned"
+            },
+            {
+                "id": "c",
+                "text": "The max fee"
+            },
+            {
+                "id": "d",
+                "text": "The miner tip"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 37
+    },
+    {
+        "id": 292,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Priority Fee' (Tip)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Fee paid directly to miner to prioritize inclusion"
+            },
+            {
+                "id": "b",
+                "text": "Tax"
+            },
+            {
+                "id": "c",
+                "text": "Base fee"
+            },
+            {
+                "id": "d",
+                "text": "Burn fee"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 38
+    },
+    {
+        "id": 293,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is the 'Genesis Address'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Google"
+            },
+            {
+                "id": "b",
+                "text": "Vitalik's wallet"
+            },
+            {
+                "id": "c",
+                "text": "Satoshi's wallet"
+            },
+            {
+                "id": "d",
+                "text": "The first address (often 0x000...) 14"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 39
+    },
+    {
+        "id": 294,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Block Height'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The time"
+            },
+            {
+                "id": "b",
+                "text": "The weight"
+            },
+            {
+                "id": "c",
+                "text": "The sequential number of a block (0, 1, 2...)"
+            },
+            {
+                "id": "d",
+                "text": "The size of block"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 40
+    },
+    {
+        "id": 295,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Reorg' (Chain Reorganization)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "When a node switches to a longer chain, discarding its current top blocks"
+            },
+            {
+                "id": "b",
+                "text": "Clean up"
+            },
+            {
+                "id": "c",
+                "text": "Sorting database"
+            },
+            {
+                "id": "d",
+                "text": "Organizing files"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 41
+    },
+    {
+        "id": 296,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "Why are Reorgs dangerous?",
+        "options": [
+            {
+                "id": "a",
+                "text": "They save space"
+            },
+            {
+                "id": "b",
+                "text": "Transactions in discarded blocks become invalid (unless re-mined)"
+            },
+            {
+                "id": "c",
+                "text": "They are not"
+            },
+            {
+                "id": "d",
+                "text": "They are fast 15"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 42
+    },
+    {
+        "id": 297,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Finality'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Death"
+            },
+            {
+                "id": "b",
+                "text": "Stopping"
+            },
+            {
+                "id": "c",
+                "text": "The end of exam"
+            },
+            {
+                "id": "d",
+                "text": "Ideally, the point where a block can never be reverted"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 43
+    },
+    {
+        "id": 298,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "Bitcoin has what kind of finality?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Absolute Finality"
+            },
+            {
+                "id": "b",
+                "text": "No Finality"
+            },
+            {
+                "id": "c",
+                "text": "Instant Finality"
+            },
+            {
+                "id": "d",
+                "text": "Probabilistic Finality"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 44
+    },
+    {
+        "id": 299,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Instant Finality'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "PoS"
+            },
+            {
+                "id": "b",
+                "text": "Once a block is added, it is immediately irreversible (e.g. some PBFT)"
+            },
+            {
+                "id": "c",
+                "text": "PoW"
+            },
+            {
+                "id": "d",
+                "text": "Mining 16"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 45
+    },
+    {
+        "id": 300,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is a 'Memo' or 'Data' field in a tx?",
+        "options": [
+            {
+                "id": "a",
+                "text": "File"
+            },
+            {
+                "id": "b",
+                "text": "Optional text/data attached to a transaction"
+            },
+            {
+                "id": "c",
+                "text": "Password"
+            },
+            {
+                "id": "d",
+                "text": "Username"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 46
+    },
+    {
+        "id": 301,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "How large is a standard Bitcoin transaction?",
+        "options": [
+            {
+                "id": "a",
+                "text": "1 GB"
+            },
+            {
+                "id": "b",
+                "text": "250-500 bytes"
+            },
+            {
+                "id": "c",
+                "text": "10 MB"
+            },
+            {
+                "id": "d",
+                "text": "1 KB"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 47
+    },
+    {
+        "id": 302,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'OpCode'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Secret code"
+            },
+            {
+                "id": "b",
+                "text": "Username"
+            },
+            {
+                "id": "c",
+                "text": "Password"
+            },
+            {
+                "id": "d",
+                "text": "Operation Code (instruction) in Script or EVM 17"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 48
+    },
+    {
+        "id": 303,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Turing Incomplete'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Slow computer"
+            },
+            {
+                "id": "b",
+                "text": "Lost computer"
+            },
+            {
+                "id": "c",
+                "text": "Broken computer"
+            },
+            {
+                "id": "d",
+                "text": "System that cannot compute everything (e.g. loops forbidden)"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 49
+    },
+    {
+        "id": 304,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "Is Bitcoin Script Turing Complete?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Partially"
+            },
+            {
+                "id": "b",
+                "text": "Yes"
+            },
+            {
+                "id": "c",
+                "text": "Maybe"
+            },
+            {
+                "id": "d",
+                "text": "No (intentionally limited for security)"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 50
+    },
+    {
+        "id": 305,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Cold Staking'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Frozen coins"
+            },
+            {
+                "id": "b",
+                "text": "Ice mining"
+            },
+            {
+                "id": "c",
+                "text": "Mining inside fridge"
+            },
+            {
+                "id": "d",
+                "text": "Staking coins while they are kept in an ofline wallet 18"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 51
+    },
+    {
+        "id": 306,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Slashing' in PoS?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Cutting cable"
+            },
+            {
+                "id": "b",
+                "text": "Penalty (loss of coins) for malicious behavior by validator"
+            },
+            {
+                "id": "c",
+                "text": "Speeding"
+            },
+            {
+                "id": "d",
+                "text": "Hacking"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 52
+    },
+    {
+        "id": 307,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "Example of Slashing offense?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Double Signing (signing two blocks at same height)"
+            },
+            {
+                "id": "b",
+                "text": "Going ofline"
+            },
+            {
+                "id": "c",
+                "text": "Mining fast"
+            },
+            {
+                "id": "d",
+                "text": "Being slow"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 53
+    },
+    {
+        "id": 308,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Voting Power' in PoS?",
+        "options": [
+            {
+                "id": "a",
+                "text": "One person one vote"
+            },
+            {
+                "id": "b",
+                "text": "CPU speed"
+            },
+            {
+                "id": "c",
+                "text": "Usually proportional to the amount staked"
+            },
+            {
+                "id": "d",
+                "text": "Random 19"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 54
+    },
+    {
+        "id": 309,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Nothing at Stake' problem?",
+        "options": [
+            {
+                "id": "a",
+                "text": "No money"
+            },
+            {
+                "id": "b",
+                "text": "No risk"
+            },
+            {
+                "id": "c",
+                "text": "No hardware"
+            },
+            {
+                "id": "d",
+                "text": "PoS challenge where validators can vote on all forks at no cost"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 55
+    },
+    {
+        "id": 310,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What solves 'Nothing at Stake'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "More hardware"
+            },
+            {
+                "id": "b",
+                "text": "Faster internet"
+            },
+            {
+                "id": "c",
+                "text": "More RAM"
+            },
+            {
+                "id": "d",
+                "text": "Slashing conditions"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 56
+    },
+    {
+        "id": 311,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Faucet' used for?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Cleaning"
+            },
+            {
+                "id": "b",
+                "text": "Drinking"
+            },
+            {
+                "id": "c",
+                "text": "Getting testnet coins"
+            },
+            {
+                "id": "d",
+                "text": "Washing 20"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 57
+    },
+    {
+        "id": 312,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Rinkeby'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Deprecated Ethereum Testnet"
+            },
+            {
+                "id": "b",
+                "text": "Person"
+            },
+            {
+                "id": "c",
+                "text": "Code"
+            },
+            {
+                "id": "d",
+                "text": "City"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 58
+    },
+    {
+        "id": 313,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Sepolia'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Token"
+            },
+            {
+                "id": "b",
+                "text": "Coin"
+            },
+            {
+                "id": "c",
+                "text": "Food"
+            },
+            {
+                "id": "d",
+                "text": "Current recommended Ethereum Testnet for Application Development"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 59
+    },
+    {
+        "id": 314,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Goerli'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Place"
+            },
+            {
+                "id": "b",
+                "text": "Game"
+            },
+            {
+                "id": "c",
+                "text": "Current recommended Ethereum Testnet for Staking/Protocol testing"
+            },
+            {
+                "id": "d",
+                "text": "Animal 21"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 60
+    },
+    {
+        "id": 315,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is a 'Paper Wallet'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Fake money"
+            },
+            {
+                "id": "b",
+                "text": "Wallet made of paper"
+            },
+            {
+                "id": "c",
+                "text": "Physical printout of private/public keys"
+            },
+            {
+                "id": "d",
+                "text": "Toy"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 61
+    },
+    {
+        "id": 316,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is a 'Brain Wallet'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Smart wallet"
+            },
+            {
+                "id": "b",
+                "text": "AI wallet"
+            },
+            {
+                "id": "c",
+                "text": "Memorizing the seed phrase (no physical record)"
+            },
+            {
+                "id": "d",
+                "text": "Headphone"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 62
+    },
+    {
+        "id": 317,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'Vanity Address'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Mirror"
+            },
+            {
+                "id": "b",
+                "text": "Address starting with specific char (e.g. 1Love...)"
+            },
+            {
+                "id": "c",
+                "text": "Fake address"
+            },
+            {
+                "id": "d",
+                "text": "Long address 22"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 63
+    },
+    {
+        "id": 318,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'HD Path'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Map"
+            },
+            {
+                "id": "b",
+                "text": "Hard Drive path"
+            },
+            {
+                "id": "c",
+                "text": "Derivation path for keys (e.g. m/44'/60'/0'/0)"
+            },
+            {
+                "id": "d",
+                "text": "Road"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 64
+    },
+    {
+        "id": 319,
+        "part": 2,
+        "section": "MODULE 1: BLOCKCHAIN BASICS",
+        "text": "What is 'BIP'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Basic IP"
+            },
+            {
+                "id": "b",
+                "text": "Binary IP"
+            },
+            {
+                "id": "c",
+                "text": "Bitcoin Improvement Proposal"
+            },
+            {
+                "id": "d",
+                "text": "Big IP"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 65
+    },
+    {
+        "id": 320,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What does 'SOLIDITY_VERSION' pragma ensure?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Contract name"
+            },
+            {
+                "id": "b",
+                "text": "Gas cost"
+            },
+            {
+                "id": "c",
+                "text": "Variable type"
+            },
+            {
+                "id": "d",
+                "text": "Compiler compatibility 23"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 66
+    },
+    {
+        "id": 321,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is the equivalent of 'public' variable?",
+        "options": [
+            {
+                "id": "a",
+                "text": "It automatically creates a getter function"
+            },
+            {
+                "id": "b",
+                "text": "It is open source"
+            },
+            {
+                "id": "c",
+                "text": "It is insecure"
+            },
+            {
+                "id": "d",
+                "text": "It is free"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 67
+    },
+    {
+        "id": 322,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "How do you specify Ether value in Remix deployment?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Writing value in code"
+            },
+            {
+                "id": "b",
+                "text": "Using the 'Value' field in 'Run' tab"
+            },
+            {
+                "id": "c",
+                "text": "You cannot"
+            },
+            {
+                "id": "d",
+                "text": "Sending email"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 68
+    },
+    {
+        "id": 323,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'unchecked' block in Solidity 0.8+?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Function"
+            },
+            {
+                "id": "b",
+                "text": "Loop"
+            },
+            {
+                "id": "c",
+                "text": "Unsafe code"
+            },
+            {
+                "id": "d",
+                "text": "Disables overow/underow checks to save gas 24"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 69
+    },
+    {
+        "id": 324,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What happens on integer overow in Solidity <0.8?",
+        "options": [
+            {
+                "id": "a",
+                "text": "It crashes"
+            },
+            {
+                "id": "b",
+                "text": "It throws error"
+            },
+            {
+                "id": "c",
+                "text": "It wraps around (e.g. 255+1 = 0 for uint8)"
+            },
+            {
+                "id": "d",
+                "text": "It stops"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 70
+    },
+    {
+        "id": 325,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What happens on integer overow in Solidity 0.8+?",
+        "options": [
+            {
+                "id": "a",
+                "text": "It wraps"
+            },
+            {
+                "id": "b",
+                "text": "It continues"
+            },
+            {
+                "id": "c",
+                "text": "It ignores"
+            },
+            {
+                "id": "d",
+                "text": "It reverts automatically"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 71
+    },
+    {
+        "id": 326,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'enum'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "List"
+            },
+            {
+                "id": "b",
+                "text": "Number"
+            },
+            {
+                "id": "c",
+                "text": "User-defined type with named constants"
+            },
+            {
+                "id": "d",
+                "text": "String 25"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 72
+    },
+    {
+        "id": 327,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is default value of 'bool'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "null"
+            },
+            {
+                "id": "b",
+                "text": "undefined"
+            },
+            {
+                "id": "c",
+                "text": "false"
+            },
+            {
+                "id": "d",
+                "text": "true"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 73
+    },
+    {
+        "id": 328,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is default value of 'uint'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "1"
+            },
+            {
+                "id": "b",
+                "text": "null"
+            },
+            {
+                "id": "c",
+                "text": "0"
+            },
+            {
+                "id": "d",
+                "text": "-1"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 74
+    },
+    {
+        "id": 329,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is default value of 'address'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "None"
+            },
+            {
+                "id": "b",
+                "text": "0x0000000000000000000000000000000000000000"
+            },
+            {
+                "id": "c",
+                "text": "1"
+            },
+            {
+                "id": "d",
+                "text": "Wallet 26"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 75
+    },
+    {
+        "id": 330,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'keccak256' input type?",
+        "options": [
+            {
+                "id": "a",
+                "text": "string"
+            },
+            {
+                "id": "b",
+                "text": "int"
+            },
+            {
+                "id": "c",
+                "text": "bytes"
+            },
+            {
+                "id": "d",
+                "text": "bool"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 76
+    },
+    {
+        "id": 331,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "How to convert string to bytes?",
+        "options": [
+            {
+                "id": "a",
+                "text": "string.toBytes()"
+            },
+            {
+                "id": "b",
+                "text": "convert(string)"
+            },
+            {
+                "id": "c",
+                "text": "parse(string)"
+            },
+            {
+                "id": "d",
+                "text": "bytes(string_variable)"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 77
+    },
+    {
+        "id": 332,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'abi.encodePacked'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Encrypt"
+            },
+            {
+                "id": "b",
+                "text": "Tightly packed encoding (saves space, but ambiguous)"
+            },
+            {
+                "id": "c",
+                "text": "Zip"
+            },
+            {
+                "id": "d",
+                "text": "Sign 27"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 78
+    },
+    {
+        "id": 333,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'ecrecover'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Recover email"
+            },
+            {
+                "id": "b",
+                "text": "Recover file"
+            },
+            {
+                "id": "c",
+                "text": "Recover password"
+            },
+            {
+                "id": "d",
+                "text": "Function to recover address from signature"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 79
+    },
+    {
+        "id": 334,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'tx.origin'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The node"
+            },
+            {
+                "id": "b",
+                "text": "The EOA that signed the original transaction"
+            },
+            {
+                "id": "c",
+                "text": "The miner"
+            },
+            {
+                "id": "d",
+                "text": "The contract caller"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 80
+    },
+    {
+        "id": 335,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "Why is 'tx.origin' dangerous for auth?",
+        "options": [
+            {
+                "id": "a",
+                "text": "It is expensive"
+            },
+            {
+                "id": "b",
+                "text": "It is slow"
+            },
+            {
+                "id": "c",
+                "text": "It is text"
+            },
+            {
+                "id": "d",
+                "text": "Phishing attack (contract can trick user to call it) 28"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 81
+    },
+    {
+        "id": 336,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What should you use instead of 'tx.origin'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "msg.sender"
+            },
+            {
+                "id": "b",
+                "text": "block.coinbase"
+            },
+            {
+                "id": "c",
+                "text": "msg.value"
+            },
+            {
+                "id": "d",
+                "text": "tx.origin"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 82
+    },
+    {
+        "id": 337,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'block.coinbase'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Coinbase website"
+            },
+            {
+                "id": "b",
+                "text": "A coin"
+            },
+            {
+                "id": "c",
+                "text": "Address of the miner producing the block"
+            },
+            {
+                "id": "d",
+                "text": "A base"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 83
+    },
+    {
+        "id": 338,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'block.difficulty' (now prevrandao)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Hardness"
+            },
+            {
+                "id": "b",
+                "text": "Speed"
+            },
+            {
+                "id": "c",
+                "text": "Price"
+            },
+            {
+                "id": "d",
+                "text": "Difficulty of current block (randomness source) 29"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 84
+    },
+    {
+        "id": 339,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'block.chainid'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Block ID"
+            },
+            {
+                "id": "b",
+                "text": "Current chain ID"
+            },
+            {
+                "id": "c",
+                "text": "User ID"
+            },
+            {
+                "id": "d",
+                "text": "Tx ID"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 85
+    },
+    {
+        "id": 340,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'delete' keyword?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Kills connection"
+            },
+            {
+                "id": "b",
+                "text": "Removes file"
+            },
+            {
+                "id": "c",
+                "text": "Resets variable to default value (refunds gas)"
+            },
+            {
+                "id": "d",
+                "text": "Deletes contract"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 86
+    },
+    {
+        "id": 341,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "Can you delete a mapping?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Yes"
+            },
+            {
+                "id": "b",
+                "text": "Maybe"
+            },
+            {
+                "id": "c",
+                "text": "No, only individual keys"
+            },
+            {
+                "id": "d",
+                "text": "Yes completely 30"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 87
+    },
+    {
+        "id": 342,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What does 'super' keyword do?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Calls function in parent contract"
+            },
+            {
+                "id": "b",
+                "text": "Superman"
+            },
+            {
+                "id": "c",
+                "text": "Root"
+            },
+            {
+                "id": "d",
+                "text": "Super user"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 88
+    },
+    {
+        "id": 343,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'virtual' keyword?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Online"
+            },
+            {
+                "id": "b",
+                "text": "Fake"
+            },
+            {
+                "id": "c",
+                "text": "Digital"
+            },
+            {
+                "id": "d",
+                "text": "Allows function to be overridden"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 89
+    },
+    {
+        "id": 344,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'override' keyword?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Overwrite file"
+            },
+            {
+                "id": "b",
+                "text": "Indicates function overrides a parent function"
+            },
+            {
+                "id": "c",
+                "text": "Overclock"
+            },
+            {
+                "id": "d",
+                "text": "Overpower 31"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 90
+    },
+    {
+        "id": 345,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'immutable' variable?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Variable"
+            },
+            {
+                "id": "b",
+                "text": "Mutable"
+            },
+            {
+                "id": "c",
+                "text": "Set once at construction time, read-only afterwards"
+            },
+            {
+                "id": "d",
+                "text": "Changeable"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 91
+    },
+    {
+        "id": 346,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "Difference between 'constant' and 'immutable'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Size"
+            },
+            {
+                "id": "b",
+                "text": "No difference"
+            },
+            {
+                "id": "c",
+                "text": "Color"
+            },
+            {
+                "id": "d",
+                "text": "Constant is hardcoded at compile; Immutable set at deploy"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 92
+    },
+    {
+        "id": 347,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'indexed' in Events?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Allows searching/filtering logs by that parameter"
+            },
+            {
+                "id": "b",
+                "text": "Sorting"
+            },
+            {
+                "id": "c",
+                "text": "Database"
+            },
+            {
+                "id": "d",
+                "text": "Performance 32"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 93
+    },
+    {
+        "id": 348,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "Max indexed parameters in an event?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Infinity"
+            },
+            {
+                "id": "b",
+                "text": "1"
+            },
+            {
+                "id": "c",
+                "text": "10"
+            },
+            {
+                "id": "d",
+                "text": "3"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 94
+    },
+    {
+        "id": 349,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'Anonymous Event'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Private party"
+            },
+            {
+                "id": "b",
+                "text": "Event without name signature (cheaper gas)"
+            },
+            {
+                "id": "c",
+                "text": "Hidden log"
+            },
+            {
+                "id": "d",
+                "text": "Secret event"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 95
+    },
+    {
+        "id": 350,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'try/catch' in Solidity?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Testing"
+            },
+            {
+                "id": "b",
+                "text": "Error handling for external calls"
+            },
+            {
+                "id": "c",
+                "text": "Catch fish"
+            },
+            {
+                "id": "d",
+                "text": "Try ball 33"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 96
+    },
+    {
+        "id": 351,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "Can you use try/catch on internal calls?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Yes"
+            },
+            {
+                "id": "b",
+                "text": "Sometimes"
+            },
+            {
+                "id": "c",
+                "text": "Always"
+            },
+            {
+                "id": "d",
+                "text": "No, only external"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 97
+    },
+    {
+        "id": 352,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'Receive' vs 'Fallback'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Same"
+            },
+            {
+                "id": "b",
+                "text": "Recieve is slower"
+            },
+            {
+                "id": "c",
+                "text": "Receive is only for empty data ETH transfers; Fallback for everything else"
+            },
+            {
+                "id": "d",
+                "text": "No difference"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 98
+    },
+    {
+        "id": 353,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'CREATE2'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Opcode to deploy contract at deterministic address"
+            },
+            {
+                "id": "b",
+                "text": "Create user"
+            },
+            {
+                "id": "c",
+                "text": "Create folder"
+            },
+            {
+                "id": "d",
+                "text": "Create file 34"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 99
+    },
+    {
+        "id": 354,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'Proxy Contract'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Client"
+            },
+            {
+                "id": "b",
+                "text": "Contract that delegates logic to another (implementation) contract"
+            },
+            {
+                "id": "c",
+                "text": "VPN"
+            },
+            {
+                "id": "d",
+                "text": "Server"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 100
+    },
+    {
+        "id": 355,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "Why use Proxy Pattern?",
+        "options": [
+            {
+                "id": "a",
+                "text": "To hide IP"
+            },
+            {
+                "id": "b",
+                "text": "To be fast"
+            },
+            {
+                "id": "c",
+                "text": "To enable upgradeability of smart contracts"
+            },
+            {
+                "id": "d",
+                "text": "To be cheap"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 101
+    },
+    {
+        "id": 356,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'Storage Slot'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Parking slot"
+            },
+            {
+                "id": "b",
+                "text": "SD Card slot"
+            },
+            {
+                "id": "c",
+                "text": "USB slot"
+            },
+            {
+                "id": "d",
+                "text": "32-byte chunk where state is stored 35"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 102
+    },
+    {
+        "id": 357,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "How are state variables laid out?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Contiguously in storage slots"
+            },
+            {
+                "id": "b",
+                "text": "In file"
+            },
+            {
+                "id": "c",
+                "text": "In cloud"
+            },
+            {
+                "id": "d",
+                "text": "Randomly"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 103
+    },
+    {
+        "id": 358,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'Pull Payment'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Credit card"
+            },
+            {
+                "id": "b",
+                "text": "User withdraws funds rather than contract sending"
+            },
+            {
+                "id": "c",
+                "text": "Push payment"
+            },
+            {
+                "id": "d",
+                "text": "Contract sends"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 104
+    },
+    {
+        "id": 359,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'Checks-Effects-Interactions'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Interact first"
+            },
+            {
+                "id": "b",
+                "text": "Random order"
+            },
+            {
+                "id": "c",
+                "text": "No checks"
+            },
+            {
+                "id": "d",
+                "text": "Security pattern: Check conditions, Update state, Then Interact 36"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 105
+    },
+    {
+        "id": 360,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'ReentrancyGuard'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Mutex modifier to prevent re-entrant calls"
+            },
+            {
+                "id": "b",
+                "text": "Security guard"
+            },
+            {
+                "id": "c",
+                "text": "Firewall"
+            },
+            {
+                "id": "d",
+                "text": "Guard dog"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 106
+    },
+    {
+        "id": 361,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'Yul'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Food"
+            },
+            {
+                "id": "b",
+                "text": "Person"
+            },
+            {
+                "id": "c",
+                "text": "Intermediate language for inline assembly in Solidity"
+            },
+            {
+                "id": "d",
+                "text": "Place"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 107
+    },
+    {
+        "id": 362,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'assembly { ... }' block?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Code assembly"
+            },
+            {
+                "id": "b",
+                "text": "Meeting"
+            },
+            {
+                "id": "c",
+                "text": "Car assembly"
+            },
+            {
+                "id": "d",
+                "text": "Writing low-level EVM code inside Solidity 37"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 108
+    },
+    {
+        "id": 363,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "Why use Assembly?",
+        "options": [
+            {
+                "id": "a",
+                "text": "It is easier"
+            },
+            {
+                "id": "b",
+                "text": "It is python"
+            },
+            {
+                "id": "c",
+                "text": "Gas optimization or unsupported operations"
+            },
+            {
+                "id": "d",
+                "text": "It is fun"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 109
+    },
+    {
+        "id": 364,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'transfer' vs 'send'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Transfer reverts on failure; Send returns false"
+            },
+            {
+                "id": "b",
+                "text": "Send reverts"
+            },
+            {
+                "id": "c",
+                "text": "Same"
+            },
+            {
+                "id": "d",
+                "text": "Transfer returns false"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 110
+    },
+    {
+        "id": 365,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "Limitation of 'transfer' and 'send'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Slow"
+            },
+            {
+                "id": "b",
+                "text": "Unlimited gas"
+            },
+            {
+                "id": "c",
+                "text": "Fixed 2300 gas stipend (may break with smart wallets)"
+            },
+            {
+                "id": "d",
+                "text": "Expensive 38"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 111
+    },
+    {
+        "id": 366,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "Recommended way to send ETH now?",
+        "options": [
+            {
+                "id": "a",
+                "text": "give"
+            },
+            {
+                "id": "b",
+                "text": "call{value: amount}(\"\")"
+            },
+            {
+                "id": "c",
+                "text": "transfer"
+            },
+            {
+                "id": "d",
+                "text": "send"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 112
+    },
+    {
+        "id": 367,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'ERC-165'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Standard for NFT"
+            },
+            {
+                "id": "b",
+                "text": "Standard for token"
+            },
+            {
+                "id": "c",
+                "text": "Standard for interface detection"
+            },
+            {
+                "id": "d",
+                "text": "Standard for name"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 113
+    },
+    {
+        "id": 368,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'ERC-1155'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Token"
+            },
+            {
+                "id": "b",
+                "text": "Wallet"
+            },
+            {
+                "id": "c",
+                "text": "Coin"
+            },
+            {
+                "id": "d",
+                "text": "Multi-Token Standard (both Fungible and NFT in one) 39"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 114
+    },
+    {
+        "id": 369,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'metadata' in NFT?",
+        "options": [
+            {
+                "id": "a",
+                "text": "The image itself"
+            },
+            {
+                "id": "b",
+                "text": "JSON file describing the asset (image, name)"
+            },
+            {
+                "id": "c",
+                "text": "The code"
+            },
+            {
+                "id": "d",
+                "text": "The key"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 115
+    },
+    {
+        "id": 370,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "Where is NFT metadata usually stored?",
+        "options": [
+            {
+                "id": "a",
+                "text": "In mind"
+            },
+            {
+                "id": "b",
+                "text": "In wallet"
+            },
+            {
+                "id": "c",
+                "text": "On-chain"
+            },
+            {
+                "id": "d",
+                "text": "IPFS or centralized server (URI)"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 116
+    },
+    {
+        "id": 371,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'burn' function?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Heat"
+            },
+            {
+                "id": "b",
+                "text": "Fire"
+            },
+            {
+                "id": "c",
+                "text": "Delete"
+            },
+            {
+                "id": "d",
+                "text": "Sends token to 0x0 address (removing supply) 40"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 117
+    },
+    {
+        "id": 372,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'mint' function?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Candy"
+            },
+            {
+                "id": "b",
+                "text": "Fresh"
+            },
+            {
+                "id": "c",
+                "text": "Money"
+            },
+            {
+                "id": "d",
+                "text": "Creates new tokens"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 118
+    },
+    {
+        "id": 373,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'allowance' in ERC20?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Pocket money"
+            },
+            {
+                "id": "b",
+                "text": "Amount a spender is allowed to transfer on owner's behalf"
+            },
+            {
+                "id": "c",
+                "text": "Gift"
+            },
+            {
+                "id": "d",
+                "text": "Permission"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 119
+    },
+    {
+        "id": 374,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'approve' in ERC20?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Likes"
+            },
+            {
+                "id": "b",
+                "text": "Says yes"
+            },
+            {
+                "id": "c",
+                "text": "Votes"
+            },
+            {
+                "id": "d",
+                "text": "Sets the allowance 41"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 120
+    },
+    {
+        "id": 375,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'Flash Loan Attack'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Manipulating price with massive borrowed funds in one tx"
+            },
+            {
+                "id": "b",
+                "text": "Hacking bank"
+            },
+            {
+                "id": "c",
+                "text": "Stealing card"
+            },
+            {
+                "id": "d",
+                "text": "Speeding"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 121
+    },
+    {
+        "id": 376,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'Timelock'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Clock"
+            },
+            {
+                "id": "b",
+                "text": "Watch"
+            },
+            {
+                "id": "c",
+                "text": "Delaying execution of admin functions for safety"
+            },
+            {
+                "id": "d",
+                "text": "Calendar"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 122
+    },
+    {
+        "id": 377,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'MultiSig'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Auto"
+            },
+            {
+                "id": "b",
+                "text": "No sig"
+            },
+            {
+                "id": "c",
+                "text": "Wallet requiring M-of-N signatures to execute"
+            },
+            {
+                "id": "d",
+                "text": "Single sig 42"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 123
+    },
+    {
+        "id": 378,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'Gnosis Safe'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Bank"
+            },
+            {
+                "id": "b",
+                "text": "Safe box"
+            },
+            {
+                "id": "c",
+                "text": "Lock"
+            },
+            {
+                "id": "d",
+                "text": "Popular MultiSig wallet implementation"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 124
+    },
+    {
+        "id": 379,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'Hardhat'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Helmet"
+            },
+            {
+                "id": "b",
+                "text": "Software"
+            },
+            {
+                "id": "c",
+                "text": "Ethereum development environment (alternative to Trufle)"
+            },
+            {
+                "id": "d",
+                "text": "Tool"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 125
+    },
+    {
+        "id": 380,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'console.log' in Hardhat?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Error"
+            },
+            {
+                "id": "b",
+                "text": "JS log"
+            },
+            {
+                "id": "c",
+                "text": "Screen"
+            },
+            {
+                "id": "d",
+                "text": "Debugging print in Solidity 43"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 126
+    },
+    {
+        "id": 381,
+        "part": 2,
+        "section": "MODULE 2: SMART CONTRACTS",
+        "text": "What is 'Foundry'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Rust-based Ethereum dev tool (fast)"
+            },
+            {
+                "id": "b",
+                "text": "Metal"
+            },
+            {
+                "id": "c",
+                "text": "Factory"
+            },
+            {
+                "id": "d",
+                "text": "Place"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 127
+    },
+    {
+        "id": 382,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What does 'JSON-RPC' stand for?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Java Remote"
+            },
+            {
+                "id": "b",
+                "text": "Just Remote"
+            },
+            {
+                "id": "c",
+                "text": "JavaScript Object Notation Remote Procedure Call"
+            },
+            {
+                "id": "d",
+                "text": "Json Call"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 128
+    },
+    {
+        "id": 383,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "Which method gets block number?",
+        "options": [
+            {
+                "id": "a",
+                "text": "block()"
+            },
+            {
+                "id": "b",
+                "text": "get_block"
+            },
+            {
+                "id": "c",
+                "text": "eth_blockNumber"
+            },
+            {
+                "id": "d",
+                "text": "read_block 44"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 129
+    },
+    {
+        "id": 384,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "Which method gets balance?",
+        "options": [
+            {
+                "id": "a",
+                "text": "get_money"
+            },
+            {
+                "id": "b",
+                "text": "read_balance"
+            },
+            {
+                "id": "c",
+                "text": "balance()"
+            },
+            {
+                "id": "d",
+                "text": "eth_getBalance"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 130
+    },
+    {
+        "id": 385,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'ChainID' used for?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Password"
+            },
+            {
+                "id": "b",
+                "text": "Login"
+            },
+            {
+                "id": "c",
+                "text": "Identity"
+            },
+            {
+                "id": "d",
+                "text": "Preventing Replay Attacks between chains"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 131
+    },
+    {
+        "id": 386,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'NetworkID'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "User ID"
+            },
+            {
+                "id": "b",
+                "text": "Pass ID"
+            },
+            {
+                "id": "c",
+                "text": "P2P network identifier"
+            },
+            {
+                "id": "d",
+                "text": "Login ID 45"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 132
+    },
+    {
+        "id": 387,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Metamask' seed phrase length?",
+        "options": [
+            {
+                "id": "a",
+                "text": "1 word"
+            },
+            {
+                "id": "b",
+                "text": "5 chars"
+            },
+            {
+                "id": "c",
+                "text": "12 words usually"
+            },
+            {
+                "id": "d",
+                "text": "100 words"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 133
+    },
+    {
+        "id": 388,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "Can Metamask connect to Localhost?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Never"
+            },
+            {
+                "id": "b",
+                "text": "Maybe"
+            },
+            {
+                "id": "c",
+                "text": "No"
+            },
+            {
+                "id": "d",
+                "text": "Yes, custom RPC"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 134
+    },
+    {
+        "id": 389,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Ethers.js'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Coin"
+            },
+            {
+                "id": "b",
+                "text": "Token"
+            },
+            {
+                "id": "c",
+                "text": "Ether"
+            },
+            {
+                "id": "d",
+                "text": "Library to interact with Ethereum (lightweight alternative to Web3.js) 46"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 135
+    },
+    {
+        "id": 390,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is a 'Signer' in Ethers.js?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Pen"
+            },
+            {
+                "id": "b",
+                "text": "Viewer"
+            },
+            {
+                "id": "c",
+                "text": "User"
+            },
+            {
+                "id": "d",
+                "text": "Object that can sign transactions (has private key)"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 136
+    },
+    {
+        "id": 391,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is a 'Provider' in Ethers.js?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Signer"
+            },
+            {
+                "id": "b",
+                "text": "Writer"
+            },
+            {
+                "id": "c",
+                "text": "Wallet"
+            },
+            {
+                "id": "d",
+                "text": "Read-only connection to blockchain"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 137
+    },
+    {
+        "id": 392,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'WalletConnect'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Wifi"
+            },
+            {
+                "id": "b",
+                "text": "Bluetooth"
+            },
+            {
+                "id": "c",
+                "text": "Protocol to connect mobile wallets to DApps via QR"
+            },
+            {
+                "id": "d",
+                "text": "Connection 47"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 138
+    },
+    {
+        "id": 393,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'The Graph'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Plot"
+            },
+            {
+                "id": "b",
+                "text": "Indexing protocol for querying networks (GraphQL)"
+            },
+            {
+                "id": "c",
+                "text": "Map"
+            },
+            {
+                "id": "d",
+                "text": "Chart"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 139
+    },
+    {
+        "id": 394,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is a 'Subgraph'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Subway"
+            },
+            {
+                "id": "b",
+                "text": "Plot"
+            },
+            {
+                "id": "c",
+                "text": "Small graph"
+            },
+            {
+                "id": "d",
+                "text": "Index definition for The Graph"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 140
+    },
+    {
+        "id": 395,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'GraphQL'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Query language for APIs"
+            },
+            {
+                "id": "b",
+                "text": "Graphing tool"
+            },
+            {
+                "id": "c",
+                "text": "Math"
+            },
+            {
+                "id": "d",
+                "text": "Drawing 48"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 141
+    },
+    {
+        "id": 396,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Next.js'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Old JS"
+            },
+            {
+                "id": "b",
+                "text": "JS library"
+            },
+            {
+                "id": "c",
+                "text": "React framework for SSR/SSG (popular for DApps)"
+            },
+            {
+                "id": "d",
+                "text": "Database"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 142
+    },
+    {
+        "id": 397,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Vercel'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Hosting platform often used for DApps frontend"
+            },
+            {
+                "id": "b",
+                "text": "Token"
+            },
+            {
+                "id": "c",
+                "text": "Database"
+            },
+            {
+                "id": "d",
+                "text": "Coin"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 143
+    },
+    {
+        "id": 398,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Pinata'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "IPFS pinning service"
+            },
+            {
+                "id": "b",
+                "text": "Fruit"
+            },
+            {
+                "id": "c",
+                "text": "Candy"
+            },
+            {
+                "id": "d",
+                "text": "Game 49"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 144
+    },
+    {
+        "id": 399,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What implies 'Pinning' in IPFS?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Sewing"
+            },
+            {
+                "id": "b",
+                "text": "Telling a node to keep file and not garbage collect it"
+            },
+            {
+                "id": "c",
+                "text": "Needle"
+            },
+            {
+                "id": "d",
+                "text": "Sticking"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 145
+    },
+    {
+        "id": 400,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Filecoin'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Folder"
+            },
+            {
+                "id": "b",
+                "text": "Server"
+            },
+            {
+                "id": "c",
+                "text": "Incentivized storage network based on IPFS"
+            },
+            {
+                "id": "d",
+                "text": "File"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 146
+    },
+    {
+        "id": 401,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Arweave'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Cloth"
+            },
+            {
+                "id": "b",
+                "text": "Spider"
+            },
+            {
+                "id": "c",
+                "text": "Weave"
+            },
+            {
+                "id": "d",
+                "text": "Permanent web storage protocol 50"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 147
+    },
+    {
+        "id": 402,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Swarm'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Insects"
+            },
+            {
+                "id": "b",
+                "text": "Group"
+            },
+            {
+                "id": "c",
+                "text": "Ethereum's distributed storage"
+            },
+            {
+                "id": "d",
+                "text": "Bees"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 148
+    },
+    {
+        "id": 403,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Moralis'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Moral"
+            },
+            {
+                "id": "b",
+                "text": "Ethics"
+            },
+            {
+                "id": "c",
+                "text": "Person"
+            },
+            {
+                "id": "d",
+                "text": "Web3 development platform (backend as a service)"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 149
+    },
+    {
+        "id": 404,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Alchemy'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Potion"
+            },
+            {
+                "id": "b",
+                "text": "Web3 developer platform / Node provider"
+            },
+            {
+                "id": "c",
+                "text": "Magic"
+            },
+            {
+                "id": "d",
+                "text": "Science 51"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 150
+    },
+    {
+        "id": 405,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Trufle Dashboard'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "GUI for deploying without copying keys to config"
+            },
+            {
+                "id": "b",
+                "text": "Board"
+            },
+            {
+                "id": "c",
+                "text": "Car dashboard"
+            },
+            {
+                "id": "d",
+                "text": "Panel"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 151
+    },
+    {
+        "id": 406,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Artifacts' in Trufle?",
+        "options": [
+            {
+                "id": "a",
+                "text": "History"
+            },
+            {
+                "id": "b",
+                "text": "Items"
+            },
+            {
+                "id": "c",
+                "text": "JSON files with ABI and address"
+            },
+            {
+                "id": "d",
+                "text": "Relics"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 152
+    },
+    {
+        "id": 407,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Contract Abstraction'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Drawing"
+            },
+            {
+                "id": "b",
+                "text": "Idea"
+            },
+            {
+                "id": "c",
+                "text": "JS wrapper object to interact with contract easily"
+            },
+            {
+                "id": "d",
+                "text": "Abstract art 52"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 153
+    },
+    {
+        "id": 408,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Mocha'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Chocolate"
+            },
+            {
+                "id": "b",
+                "text": "JS Test Framework"
+            },
+            {
+                "id": "c",
+                "text": "Coffee"
+            },
+            {
+                "id": "d",
+                "text": "Tea"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 154
+    },
+    {
+        "id": 409,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Chai'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Tea"
+            },
+            {
+                "id": "b",
+                "text": "Latte"
+            },
+            {
+                "id": "c",
+                "text": "Coffee"
+            },
+            {
+                "id": "d",
+                "text": "Assertion Library"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 155
+    },
+    {
+        "id": 410,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'beforeEach'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Once"
+            },
+            {
+                "id": "b",
+                "text": "After test"
+            },
+            {
+                "id": "c",
+                "text": "Never"
+            },
+            {
+                "id": "d",
+                "text": "Runs before every test 53"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 156
+    },
+    {
+        "id": 411,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'describe' block?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Groups tests together"
+            },
+            {
+                "id": "b",
+                "text": "Writing"
+            },
+            {
+                "id": "c",
+                "text": "Reading"
+            },
+            {
+                "id": "d",
+                "text": "Description"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 157
+    },
+    {
+        "id": 412,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'it' block?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Defines a single test case"
+            },
+            {
+                "id": "b",
+                "text": "Code"
+            },
+            {
+                "id": "c",
+                "text": "It thing"
+            },
+            {
+                "id": "d",
+                "text": "Object"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 158
+    },
+    {
+        "id": 413,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "How to debug Solidity in Remix?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Console.log only"
+            },
+            {
+                "id": "b",
+                "text": "Debugger tab (step over, step into)"
+            },
+            {
+                "id": "c",
+                "text": "Praying"
+            },
+            {
+                "id": "d",
+                "text": "Guessing 54"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 159
+    },
+    {
+        "id": 414,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Event Log'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Data stored in transaction receipt"
+            },
+            {
+                "id": "b",
+                "text": "Wood"
+            },
+            {
+                "id": "c",
+                "text": "Fire"
+            },
+            {
+                "id": "d",
+                "text": "Tree log"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 160
+    },
+    {
+        "id": 415,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "Are Logs accessible to smart contracts?",
+        "options": [
+            {
+                "id": "a",
+                "text": "No, only checks (Contracts cannot read logs)"
+            },
+            {
+                "id": "b",
+                "text": "Maybe"
+            },
+            {
+                "id": "c",
+                "text": "Always"
+            },
+            {
+                "id": "d",
+                "text": "Yes"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 161
+    },
+    {
+        "id": 416,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "Who pays gas for 'view' functions called externally?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Dev"
+            },
+            {
+                "id": "b",
+                "text": "Nobody (Free)"
+            },
+            {
+                "id": "c",
+                "text": "User"
+            },
+            {
+                "id": "d",
+                "text": "Miner 55"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 162
+    },
+    {
+        "id": 417,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "Who pays gas for 'view' functions called internally (by execution)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Dev"
+            },
+            {
+                "id": "b",
+                "text": "The caller (part of execution cost)"
+            },
+            {
+                "id": "c",
+                "text": "Nobody"
+            },
+            {
+                "id": "d",
+                "text": "Miner"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 163
+    },
+    {
+        "id": 418,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Estimating Gas'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Random"
+            },
+            {
+                "id": "b",
+                "text": "Math"
+            },
+            {
+                "id": "c",
+                "text": "Simulating tx to predict gas usage"
+            },
+            {
+                "id": "d",
+                "text": "Guessing"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 164
+    },
+    {
+        "id": 419,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'eth_estimateGas'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Fuel"
+            },
+            {
+                "id": "b",
+                "text": "RPC method to estimate gas"
+            },
+            {
+                "id": "c",
+                "text": "Pump"
+            },
+            {
+                "id": "d",
+                "text": "Gas station 56"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 165
+    },
+    {
+        "id": 420,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What causes 'Out of Gas'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Transaction loop or cost exceeds limit"
+            },
+            {
+                "id": "b",
+                "text": "No money"
+            },
+            {
+                "id": "c",
+                "text": "Broken car"
+            },
+            {
+                "id": "d",
+                "text": "Empty tank"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 166
+    },
+    {
+        "id": 421,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What implies 'Front Running'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Bots seeing pending tx and submitting own with higher gas to execute first"
+            },
+            {
+                "id": "b",
+                "text": "Jogging"
+            },
+            {
+                "id": "c",
+                "text": "Race"
+            },
+            {
+                "id": "d",
+                "text": "Running fast"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 167
+    },
+    {
+        "id": 422,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'MEV'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Most Value"
+            },
+            {
+                "id": "b",
+                "text": "Maximal Extractable Value (profit miners/validators take)"
+            },
+            {
+                "id": "c",
+                "text": "More Value"
+            },
+            {
+                "id": "d",
+                "text": "My Value 57"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 168
+    },
+    {
+        "id": 423,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Sandwich Attack'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Eating"
+            },
+            {
+                "id": "b",
+                "text": "Lunch"
+            },
+            {
+                "id": "c",
+                "text": "Food"
+            },
+            {
+                "id": "d",
+                "text": "Front-running and Back-running a user trade on DEX"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 169
+    },
+    {
+        "id": 424,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Slippage'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Difference between expected price and execution price"
+            },
+            {
+                "id": "b",
+                "text": "Wet"
+            },
+            {
+                "id": "c",
+                "text": "Ice"
+            },
+            {
+                "id": "d",
+                "text": "Falling"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 170
+    },
+    {
+        "id": 425,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'ENS' suffix?",
+        "options": [
+            {
+                "id": "a",
+                "text": ".com"
+            },
+            {
+                "id": "b",
+                "text": ".net"
+            },
+            {
+                "id": "c",
+                "text": ".org"
+            },
+            {
+                "id": "d",
+                "text": ".eth 58"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 171
+    },
+    {
+        "id": 426,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What involves 'Resolve ENS'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Turning name to address"
+            },
+            {
+                "id": "b",
+                "text": "Deleting name"
+            },
+            {
+                "id": "c",
+                "text": "Buying name"
+            },
+            {
+                "id": "d",
+                "text": "Turning address to name"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 172
+    },
+    {
+        "id": 427,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Reverse Resolve'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Name to address"
+            },
+            {
+                "id": "b",
+                "text": "Walking"
+            },
+            {
+                "id": "c",
+                "text": "Backwards"
+            },
+            {
+                "id": "d",
+                "text": "Turning address to name"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 173
+    },
+    {
+        "id": 428,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "can DApp run on Mobile?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Only Android"
+            },
+            {
+                "id": "b",
+                "text": "No"
+            },
+            {
+                "id": "c",
+                "text": "Yes, via WalletConnect or DApp browser"
+            },
+            {
+                "id": "d",
+                "text": "Never 59"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 174
+    },
+    {
+        "id": 429,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Deep Linking'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Sea"
+            },
+            {
+                "id": "b",
+                "text": "Pool"
+            },
+            {
+                "id": "c",
+                "text": "Link that opens DApp inside Wallet app"
+            },
+            {
+                "id": "d",
+                "text": "Ocean"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 175
+    },
+    {
+        "id": 430,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Meta-Transaction'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Fake tx"
+            },
+            {
+                "id": "b",
+                "text": "User signs message, Relayer pays gas"
+            },
+            {
+                "id": "c",
+                "text": "Big tx"
+            },
+            {
+                "id": "d",
+                "text": "Small tx"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 176
+    },
+    {
+        "id": 431,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "Why use Meta-Transaction?",
+        "options": [
+            {
+                "id": "a",
+                "text": "More gas"
+            },
+            {
+                "id": "b",
+                "text": "Slower"
+            },
+            {
+                "id": "c",
+                "text": "Gasless experience for user"
+            },
+            {
+                "id": "d",
+                "text": "Harder 60"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 177
+    },
+    {
+        "id": 432,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'EIP-712'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Code"
+            },
+            {
+                "id": "b",
+                "text": "Law"
+            },
+            {
+                "id": "c",
+                "text": "Number"
+            },
+            {
+                "id": "d",
+                "text": "Standard for typed data signing"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 178
+    },
+    {
+        "id": 433,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Web3Modal'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Window"
+            },
+            {
+                "id": "b",
+                "text": "Modal"
+            },
+            {
+                "id": "c",
+                "text": "Popup"
+            },
+            {
+                "id": "d",
+                "text": "Library to support multiple wallet providers"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 179
+    },
+    {
+        "id": 434,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'RainbowKit'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "UI library for wallet connection"
+            },
+            {
+                "id": "b",
+                "text": "Rainbow"
+            },
+            {
+                "id": "c",
+                "text": "Kit"
+            },
+            {
+                "id": "d",
+                "text": "Color 61"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 180
+    },
+    {
+        "id": 435,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'WAGMI' library?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Code"
+            },
+            {
+                "id": "b",
+                "text": "Acronym"
+            },
+            {
+                "id": "c",
+                "text": "React Hooks for Ethereum (We're All Gonna Make It)"
+            },
+            {
+                "id": "d",
+                "text": "Slang"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 181
+    },
+    {
+        "id": 436,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Viem'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Soap"
+            },
+            {
+                "id": "b",
+                "text": "Low-level TS Interface for Ethereum"
+            },
+            {
+                "id": "c",
+                "text": "Tool"
+            },
+            {
+                "id": "d",
+                "text": "Cleaner"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 182
+    },
+    {
+        "id": 437,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'IndexedDB'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Index"
+            },
+            {
+                "id": "b",
+                "text": "Browser database to cache blockchain data"
+            },
+            {
+                "id": "c",
+                "text": "List"
+            },
+            {
+                "id": "d",
+                "text": "File 62"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 183
+    },
+    {
+        "id": 438,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'LocalStroage'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Disk"
+            },
+            {
+                "id": "b",
+                "text": "Server"
+            },
+            {
+                "id": "c",
+                "text": "Browser key-value storage"
+            },
+            {
+                "id": "d",
+                "text": "Cloud"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 184
+    },
+    {
+        "id": 439,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "Should you store Private Key in LocalStorage?",
+        "options": [
+            {
+                "id": "a",
+                "text": "If encrypted"
+            },
+            {
+                "id": "b",
+                "text": "Maybe"
+            },
+            {
+                "id": "c",
+                "text": "NEVER"
+            },
+            {
+                "id": "d",
+                "text": "Yes"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 185
+    },
+    {
+        "id": 440,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "How to handle 'Chain Changed' event?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Crash"
+            },
+            {
+                "id": "b",
+                "text": "Ignore"
+            },
+            {
+                "id": "c",
+                "text": "Close"
+            },
+            {
+                "id": "d",
+                "text": "Reload page or update provider 63"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 186
+    },
+    {
+        "id": 441,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "How to handle 'Accounts Changed' event?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Update UI with new address"
+            },
+            {
+                "id": "b",
+                "text": "Crash"
+            },
+            {
+                "id": "c",
+                "text": "Close"
+            },
+            {
+                "id": "d",
+                "text": "Ignore"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 187
+    },
+    {
+        "id": 442,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Hashed TimeLock Contract' (HTLC)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Time"
+            },
+            {
+                "id": "b",
+                "text": "Lock"
+            },
+            {
+                "id": "c",
+                "text": "Clock"
+            },
+            {
+                "id": "d",
+                "text": "Atomic swap protocol"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 188
+    },
+    {
+        "id": 443,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Faucet' drip?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Amount of free coins given"
+            },
+            {
+                "id": "b",
+                "text": "Leak"
+            },
+            {
+                "id": "c",
+                "text": "Drop"
+            },
+            {
+                "id": "d",
+                "text": "Water 64"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 189
+    },
+    {
+        "id": 444,
+        "part": 2,
+        "section": "MODULE 3: DECENTRALIZED APPLICA-",
+        "text": "What is 'Rinkeby Authenticated Faucet'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Free"
+            },
+            {
+                "id": "b",
+                "text": "Closed"
+            },
+            {
+                "id": "c",
+                "text": "Requires social media post to prevent spam"
+            },
+            {
+                "id": "d",
+                "text": "Open"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 190
+    },
+    {
+        "id": 445,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Hyperledger Besu'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Sawtooth"
+            },
+            {
+                "id": "b",
+                "text": "Fabric"
+            },
+            {
+                "id": "c",
+                "text": "Indy"
+            },
+            {
+                "id": "d",
+                "text": "Enterprise Ethereum client (Java)"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 191
+    },
+    {
+        "id": 446,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Hyperledger Indy'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Car"
+            },
+            {
+                "id": "b",
+                "text": "Identity-focused ledger"
+            },
+            {
+                "id": "c",
+                "text": "India"
+            },
+            {
+                "id": "d",
+                "text": "Race 65"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 192
+    },
+    {
+        "id": 447,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Hyperledger Sawtooth'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Teeth"
+            },
+            {
+                "id": "b",
+                "text": "Modular blockchain suite by Intel"
+            },
+            {
+                "id": "c",
+                "text": "Fish"
+            },
+            {
+                "id": "d",
+                "text": "Tool"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 193
+    },
+    {
+        "id": 448,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Quorum'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Permissioned Ethereum by JP Morgan (now ConsenSys)"
+            },
+            {
+                "id": "b",
+                "text": "Meeting"
+            },
+            {
+                "id": "c",
+                "text": "Group"
+            },
+            {
+                "id": "d",
+                "text": "Vote"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 194
+    },
+    {
+        "id": 449,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What implies 'Constellation' in Quorum?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Stars"
+            },
+            {
+                "id": "b",
+                "text": "Private transaction manager"
+            },
+            {
+                "id": "c",
+                "text": "Space"
+            },
+            {
+                "id": "d",
+                "text": "Sky 66"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 195
+    },
+    {
+        "id": 450,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Tessera'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Private transaction manager for Quorum (Java)"
+            },
+            {
+                "id": "b",
+                "text": "Game"
+            },
+            {
+                "id": "c",
+                "text": "Shape"
+            },
+            {
+                "id": "d",
+                "text": "Cube"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 196
+    },
+    {
+        "id": 451,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Corda' State objects?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Facts shared between nodes"
+            },
+            {
+                "id": "b",
+                "text": "Files"
+            },
+            {
+                "id": "c",
+                "text": "DB"
+            },
+            {
+                "id": "d",
+                "text": "Java objects"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 197
+    },
+    {
+        "id": 452,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Notary' in Corda?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Service preventing double-spends"
+            },
+            {
+                "id": "b",
+                "text": "Judge"
+            },
+            {
+                "id": "c",
+                "text": "Lawyer"
+            },
+            {
+                "id": "d",
+                "text": "Clerk 67"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 198
+    },
+    {
+        "id": 453,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Flow' in Corda?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Water"
+            },
+            {
+                "id": "b",
+                "text": "Air"
+            },
+            {
+                "id": "c",
+                "text": "River"
+            },
+            {
+                "id": "d",
+                "text": "Business logic execution path"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 199
+    },
+    {
+        "id": 454,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Cosmos SDK'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Framework for building blockchains"
+            },
+            {
+                "id": "b",
+                "text": "Space"
+            },
+            {
+                "id": "c",
+                "text": "Universe"
+            },
+            {
+                "id": "d",
+                "text": "Star"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 200
+    },
+    {
+        "id": 455,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'IBC'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Brand"
+            },
+            {
+                "id": "b",
+                "text": "Code"
+            },
+            {
+                "id": "c",
+                "text": "Inter-Blockchain Communication protocol"
+            },
+            {
+                "id": "d",
+                "text": "Beer 68"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 201
+    },
+    {
+        "id": 456,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Tendermint'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Consensus engine (BFT)"
+            },
+            {
+                "id": "b",
+                "text": "Candy"
+            },
+            {
+                "id": "c",
+                "text": "Mint"
+            },
+            {
+                "id": "d",
+                "text": "Gum"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 202
+    },
+    {
+        "id": 457,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Polkadot' Relay Chain?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Race"
+            },
+            {
+                "id": "b",
+                "text": "Central chain ensuring security/interop"
+            },
+            {
+                "id": "c",
+                "text": "Game"
+            },
+            {
+                "id": "d",
+                "text": "Sport"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 203
+    },
+    {
+        "id": 458,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Parachain'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Parachute"
+            },
+            {
+                "id": "b",
+                "text": "Plane"
+            },
+            {
+                "id": "c",
+                "text": "Sovereign chain connected to Polkadot"
+            },
+            {
+                "id": "d",
+                "text": "Sky 69"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 204
+    },
+    {
+        "id": 459,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Substrate'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Soil"
+            },
+            {
+                "id": "b",
+                "text": "Ground"
+            },
+            {
+                "id": "c",
+                "text": "Base"
+            },
+            {
+                "id": "d",
+                "text": "Framework to build Polkadot chains"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 205
+    },
+    {
+        "id": 460,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Avalanche' consensus?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Slide"
+            },
+            {
+                "id": "b",
+                "text": "Novel measuring sampling mechanism"
+            },
+            {
+                "id": "c",
+                "text": "Mountain"
+            },
+            {
+                "id": "d",
+                "text": "Snow"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 206
+    },
+    {
+        "id": 461,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Solana' POH?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Time"
+            },
+            {
+                "id": "b",
+                "text": "Proof of History (Verifiable Delay Function)"
+            },
+            {
+                "id": "c",
+                "text": "History"
+            },
+            {
+                "id": "d",
+                "text": "Book 70"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 207
+    },
+    {
+        "id": 462,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Near Protocol'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Far"
+            },
+            {
+                "id": "b",
+                "text": "Close"
+            },
+            {
+                "id": "c",
+                "text": "Distance"
+            },
+            {
+                "id": "d",
+                "text": "Sharded PoS blockchain"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 208
+    },
+    {
+        "id": 463,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Aurora'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Light"
+            },
+            {
+                "id": "b",
+                "text": "Star"
+            },
+            {
+                "id": "c",
+                "text": "EVM on Near"
+            },
+            {
+                "id": "d",
+                "text": "Sky"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 209
+    },
+    {
+        "id": 464,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Polygon' (Matic)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Math"
+            },
+            {
+                "id": "b",
+                "text": "Geometry"
+            },
+            {
+                "id": "c",
+                "text": "Shape"
+            },
+            {
+                "id": "d",
+                "text": "L2/Sidechain scaling for Ethereum 71"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 210
+    },
+    {
+        "id": 465,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Arbitrum'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Law"
+            },
+            {
+                "id": "b",
+                "text": "Optimistic Rollup L2"
+            },
+            {
+                "id": "c",
+                "text": "Court"
+            },
+            {
+                "id": "d",
+                "text": "Judge"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 211
+    },
+    {
+        "id": 466,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Optimism'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Mood"
+            },
+            {
+                "id": "b",
+                "text": "Optimistic Rollup L2"
+            },
+            {
+                "id": "c",
+                "text": "Hope"
+            },
+            {
+                "id": "d",
+                "text": "Happy"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 212
+    },
+    {
+        "id": 467,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'zkSync'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "ZK-Rollup L2"
+            },
+            {
+                "id": "b",
+                "text": "Load"
+            },
+            {
+                "id": "c",
+                "text": "Sync"
+            },
+            {
+                "id": "d",
+                "text": "Link 72"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 213
+    },
+    {
+        "id": 468,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'StarkNet'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Wolf"
+            },
+            {
+                "id": "b",
+                "text": "Iron Man"
+            },
+            {
+                "id": "c",
+                "text": "Game"
+            },
+            {
+                "id": "d",
+                "text": "ZK-Rollup using STARKs"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 214
+    },
+    {
+        "id": 469,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Validium'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Real"
+            },
+            {
+                "id": "b",
+                "text": "Data availability off-chain, Proof on-chain"
+            },
+            {
+                "id": "c",
+                "text": "True"
+            },
+            {
+                "id": "d",
+                "text": "Valid"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 215
+    },
+    {
+        "id": 470,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Volition'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Mind"
+            },
+            {
+                "id": "b",
+                "text": "User chooses data availability mode"
+            },
+            {
+                "id": "c",
+                "text": "Will"
+            },
+            {
+                "id": "d",
+                "text": "Power 73"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 216
+    },
+    {
+        "id": 471,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Gossip Protocol'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Rumor"
+            },
+            {
+                "id": "b",
+                "text": "Chat"
+            },
+            {
+                "id": "c",
+                "text": "Nodes sharing info randomly to peers"
+            },
+            {
+                "id": "d",
+                "text": "Talking"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 217
+    },
+    {
+        "id": 472,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What connects 'Metaverse' and Blockchain?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Games"
+            },
+            {
+                "id": "b",
+                "text": "Facebook"
+            },
+            {
+                "id": "c",
+                "text": "VR"
+            },
+            {
+                "id": "d",
+                "text": "Digital ownership of assets (NFTs)"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 218
+    },
+    {
+        "id": 473,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'GameFi'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Game"
+            },
+            {
+                "id": "b",
+                "text": "Play-to-Earn gaming"
+            },
+            {
+                "id": "c",
+                "text": "Fun"
+            },
+            {
+                "id": "d",
+                "text": "Finance 74"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 219
+    },
+    {
+        "id": 474,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Axie Infinity'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Famous P2E game"
+            },
+            {
+                "id": "b",
+                "text": "Game"
+            },
+            {
+                "id": "c",
+                "text": "Toy"
+            },
+            {
+                "id": "d",
+                "text": "Movie"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 220
+    },
+    {
+        "id": 475,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Scholarship' in GameFi?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Free"
+            },
+            {
+                "id": "b",
+                "text": "Lending NFT to player for share of profit"
+            },
+            {
+                "id": "c",
+                "text": "School"
+            },
+            {
+                "id": "d",
+                "text": "Uni"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 221
+    },
+    {
+        "id": 476,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Carbon Credit' on blockchain?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Gas"
+            },
+            {
+                "id": "b",
+                "text": "Tokenized offset credit"
+            },
+            {
+                "id": "c",
+                "text": "Smoke"
+            },
+            {
+                "id": "d",
+                "text": "Coal 75"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 222
+    },
+    {
+        "id": 477,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'ReFi'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Remake"
+            },
+            {
+                "id": "b",
+                "text": "Regenerative Finance"
+            },
+            {
+                "id": "c",
+                "text": "Redo"
+            },
+            {
+                "id": "d",
+                "text": "Replay"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 223
+    },
+    {
+        "id": 478,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Soulbound Token' (SBT)?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Non-transferable NFT (Identity/Reputation)"
+            },
+            {
+                "id": "b",
+                "text": "Spirit"
+            },
+            {
+                "id": "c",
+                "text": "Soul"
+            },
+            {
+                "id": "d",
+                "text": "Ghost"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 224
+    },
+    {
+        "id": 479,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'DID'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Decentralized Identifier (W3C standard)"
+            },
+            {
+                "id": "b",
+                "text": "Did"
+            },
+            {
+                "id": "c",
+                "text": "Do"
+            },
+            {
+                "id": "d",
+                "text": "Done 76"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 225
+    },
+    {
+        "id": 480,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Verifiable Credential'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Digital attestations (e.g. Uni Degree)"
+            },
+            {
+                "id": "b",
+                "text": "Password"
+            },
+            {
+                "id": "c",
+                "text": "Key"
+            },
+            {
+                "id": "d",
+                "text": "Login"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 226
+    },
+    {
+        "id": 481,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Sybil Resistance'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Preventing fake identities"
+            },
+            {
+                "id": "b",
+                "text": "Fight"
+            },
+            {
+                "id": "c",
+                "text": "Defense"
+            },
+            {
+                "id": "d",
+                "text": "War"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 227
+    },
+    {
+        "id": 482,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Quadratic Voting'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Math"
+            },
+            {
+                "id": "b",
+                "text": "Class"
+            },
+            {
+                "id": "c",
+                "text": "Cost of vote = (number of votes)2"
+            },
+            {
+                "id": "c",
+                "text": "School 77"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 228
+    },
+    {
+        "id": 483,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Gitcoin Grants'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Git"
+            },
+            {
+                "id": "b",
+                "text": "Code"
+            },
+            {
+                "id": "c",
+                "text": "Hub"
+            },
+            {
+                "id": "d",
+                "text": "Public goods funding via QF"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 229
+    },
+    {
+        "id": 484,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Retroactive Public Goods Funding'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Past"
+            },
+            {
+                "id": "b",
+                "text": "Funding after value is proven"
+            },
+            {
+                "id": "c",
+                "text": "History"
+            },
+            {
+                "id": "d",
+                "text": "Back"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 230
+    },
+    {
+        "id": 485,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Tornado Cash'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Weather"
+            },
+            {
+                "id": "b",
+                "text": "Wind"
+            },
+            {
+                "id": "c",
+                "text": "Privacy mixer (sanctioned)"
+            },
+            {
+                "id": "d",
+                "text": "Storm 78"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 231
+    },
+    {
+        "id": 486,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Monero'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Coin"
+            },
+            {
+                "id": "b",
+                "text": "Cash"
+            },
+            {
+                "id": "c",
+                "text": "Money"
+            },
+            {
+                "id": "d",
+                "text": "Privacy coin (Ring Signatures)"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "EASY",
+        "originalId": 232
+    },
+    {
+        "id": 487,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Zcash'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Coin"
+            },
+            {
+                "id": "b",
+                "text": "Privacy coin (zk-SNARKs)"
+            },
+            {
+                "id": "c",
+                "text": "Money"
+            },
+            {
+                "id": "d",
+                "text": "Cash"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 233
+    },
+    {
+        "id": 488,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'CoinJoin'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Team"
+            },
+            {
+                "id": "b",
+                "text": "Join"
+            },
+            {
+                "id": "c",
+                "text": "Mixing technique in Bitcoin"
+            },
+            {
+                "id": "d",
+                "text": "Group 79"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "HARD",
+        "originalId": 234
+    },
+    {
+        "id": 489,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Dusting Attack'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Dirt"
+            },
+            {
+                "id": "b",
+                "text": "Cleaning"
+            },
+            {
+                "id": "c",
+                "text": "Sending tiny amounts to track addresses"
+            },
+            {
+                "id": "d",
+                "text": "Sand"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 235
+    },
+    {
+        "id": 490,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Eclipse Attack'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Isolating a node from honest peers"
+            },
+            {
+                "id": "b",
+                "text": "Dark"
+            },
+            {
+                "id": "c",
+                "text": "Sun"
+            },
+            {
+                "id": "d",
+                "text": "Moon"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 236
+    },
+    {
+        "id": 491,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Vampire Attack'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Stealing liquidity from another protocol (Sushi vs Uni)"
+            },
+            {
+                "id": "b",
+                "text": "Blood"
+            },
+            {
+                "id": "c",
+                "text": "Night"
+            },
+            {
+                "id": "d",
+                "text": "Bat 80"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "HARD",
+        "originalId": 237
+    },
+    {
+        "id": 492,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Rug Pull'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Mat"
+            },
+            {
+                "id": "b",
+                "text": "Devs removing all liquidity and running away"
+            },
+            {
+                "id": "c",
+                "text": "Floor"
+            },
+            {
+                "id": "d",
+                "text": "Carpet"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 238
+    },
+    {
+        "id": 493,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Honeypot'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Contract that looks vulnerable but traps attacker"
+            },
+            {
+                "id": "b",
+                "text": "Bee"
+            },
+            {
+                "id": "c",
+                "text": "Bear"
+            },
+            {
+                "id": "d",
+                "text": "Sweet"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 239
+    },
+    {
+        "id": 494,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Ponzi Scheme'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Chart"
+            },
+            {
+                "id": "b",
+                "text": "Paying early investors with new money"
+            },
+            {
+                "id": "c",
+                "text": "Business"
+            },
+            {
+                "id": "d",
+                "text": "Game 81"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 240
+    },
+    {
+        "id": 495,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Howey Test'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "US test to determine if asset is security"
+            },
+            {
+                "id": "b",
+                "text": "Class"
+            },
+            {
+                "id": "c",
+                "text": "School"
+            },
+            {
+                "id": "d",
+                "text": "Exam"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 241
+    },
+    {
+        "id": 496,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Mica'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Name"
+            },
+            {
+                "id": "b",
+                "text": "Rock"
+            },
+            {
+                "id": "c",
+                "text": "Stone"
+            },
+            {
+                "id": "d",
+                "text": "EU Markets in Crypto-Assets regulation"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 242
+    },
+    {
+        "id": 497,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'KYC'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Food"
+            },
+            {
+                "id": "b",
+                "text": "Chicken"
+            },
+            {
+                "id": "c",
+                "text": "Name"
+            },
+            {
+                "id": "d",
+                "text": "Know Your Customer 82"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 243
+    },
+    {
+        "id": 498,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'AML'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Anti-Money Laundering"
+            },
+            {
+                "id": "b",
+                "text": "Park"
+            },
+            {
+                "id": "c",
+                "text": "Zoo"
+            },
+            {
+                "id": "d",
+                "text": "Animal"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 244
+    },
+    {
+        "id": 499,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'GDPR' challenge?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Right to be forgotten hits immutability"
+            },
+            {
+                "id": "b",
+                "text": "Rule"
+            },
+            {
+                "id": "c",
+                "text": "Court"
+            },
+            {
+                "id": "d",
+                "text": "Law"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "MEDIUM",
+        "originalId": 245
+    },
+    {
+        "id": 500,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Smart Contract Audit'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "IRS"
+            },
+            {
+                "id": "b",
+                "text": "Security review by experts"
+            },
+            {
+                "id": "c",
+                "text": "Money"
+            },
+            {
+                "id": "d",
+                "text": "Tax 83"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 246
+    },
+    {
+        "id": 501,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Bug Bounty'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Reward for finding vulnerabilities"
+            },
+            {
+                "id": "b",
+                "text": "Pest"
+            },
+            {
+                "id": "c",
+                "text": "Insect"
+            },
+            {
+                "id": "d",
+                "text": "Kill"
+            }
+        ],
+        "correctAnswer": "a",
+        "difficulty": "EASY",
+        "originalId": 247
+    },
+    {
+        "id": 502,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Formal Verification'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Test"
+            },
+            {
+                "id": "b",
+                "text": "Math proof of correctness"
+            },
+            {
+                "id": "c",
+                "text": "Paper"
+            },
+            {
+                "id": "d",
+                "text": "Form"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "MEDIUM",
+        "originalId": 248
+    },
+    {
+        "id": 503,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Slither'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Move"
+            },
+            {
+                "id": "b",
+                "text": "Snake"
+            },
+            {
+                "id": "c",
+                "text": "Game"
+            },
+            {
+                "id": "d",
+                "text": "Static analysis tool for Solidity 84"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 249
+    },
+    {
+        "id": 504,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'MythX'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Myth"
+            },
+            {
+                "id": "b",
+                "text": "Security analysis coding tool"
+            },
+            {
+                "id": "c",
+                "text": "Legend"
+            },
+            {
+                "id": "d",
+                "text": "Story"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "EASY",
+        "originalId": 250
+    },
+    {
+        "id": 505,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'ERC-4337'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Coin"
+            },
+            {
+                "id": "b",
+                "text": "NFT"
+            },
+            {
+                "id": "c",
+                "text": "Account Abstraction standard (Smart Accounts)"
+            },
+            {
+                "id": "d",
+                "text": "Token"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "MEDIUM",
+        "originalId": 251
+    },
+    {
+        "id": 506,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Bundler' in ERC-4337?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Wrapper"
+            },
+            {
+                "id": "b",
+                "text": "Node that bundles UserOps and sends to chain"
+            },
+            {
+                "id": "c",
+                "text": "Box"
+            },
+            {
+                "id": "d",
+                "text": "Package 85"
+            }
+        ],
+        "correctAnswer": "b",
+        "difficulty": "HARD",
+        "originalId": 252
+    },
+    {
+        "id": 507,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Paymaster' in ERC-4337?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Payer"
+            },
+            {
+                "id": "b",
+                "text": "Bank"
+            },
+            {
+                "id": "c",
+                "text": "Smart contract that pays for transaction fees for user"
+            },
+            {
+                "id": "d",
+                "text": "Boss"
+            }
+        ],
+        "correctAnswer": "c",
+        "difficulty": "EASY",
+        "originalId": 253
+    },
+    {
+        "id": 508,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'UserOperation'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Msg"
+            },
+            {
+                "id": "b",
+                "text": "Call"
+            },
+            {
+                "id": "c",
+                "text": "Tx"
+            },
+            {
+                "id": "d",
+                "text": "Pseudo-transaction object in Account Abstraction"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "MEDIUM",
+        "originalId": 254
+    },
+    {
+        "id": 509,
+        "part": 2,
+        "section": "MODULE 4: PLATFORMS ECOSYSTEM",
+        "text": "What is 'Social Recovery'?",
+        "options": [
+            {
+                "id": "a",
+                "text": "Party"
+            },
+            {
+                "id": "b",
+                "text": "Meeting"
+            },
+            {
+                "id": "c",
+                "text": "Chat"
+            },
+            {
+                "id": "d",
+                "text": "Recovering wallet via trusted friends/guardians 86"
+            }
+        ],
+        "correctAnswer": "d",
+        "difficulty": "HARD",
+        "originalId": 255
     }
 ];

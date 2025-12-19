@@ -3,68 +3,380 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
     <title>Human Interactions Question Bank - Interactive Test</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <style>
+        :root {
+            --bg: #0b1220;
+            --bg-2: #0f172a;
+            --text: #0f172a;
+            --muted: rgba(15, 23, 42, 0.68);
+            --card: rgba(255, 255, 255, 0.78);
+            --card-strong: rgba(255, 255, 255, 0.92);
+            --card-soft: rgba(248, 250, 252, 0.7);
+            --border: rgba(15, 23, 42, 0.10);
+            --border-strong: rgba(15, 23, 42, 0.16);
+            --primary: #2563eb;
+            --primary-strong: #1d4ed8;
+            --primary-soft: rgba(37, 99, 235, 0.12);
+            --shadow: rgba(2, 6, 23, 0.12);
+            --shadow-strong: rgba(2, 6, 23, 0.20);
+            --radius: 16px;
+            --radius-sm: 12px;
+            --radius-xs: 10px;
+
+            --success-bg: rgba(34, 197, 94, 0.14);
+            --success-border: #16a34a;
+            --success-text: #065f46;
+
+            --danger-bg: rgba(239, 68, 68, 0.14);
+            --danger-border: #dc2626;
+            --danger-text: #7f1d1d;
+
+            --warning-bg: rgba(245, 158, 11, 0.14);
+            --warning-border: #f59e0b;
+            --warning-text: #7c2d12;
+
+            --ring: rgba(37, 99, 235, 0.35);
+        }
+
+        html[data-theme="dark"] {
+            --text: rgba(203, 213, 225, 0.85);
+            --muted: rgba(148, 163, 184, 0.65);
+            --card: rgba(15, 23, 42, 0.65);
+            --card-strong: rgba(15, 23, 42, 0.85);
+            --card-soft: rgba(30, 41, 59, 0.5);
+            --border: rgba(148, 163, 184, 0.12);
+            --border-strong: rgba(148, 163, 184, 0.20);
+            --primary: #2563eb;
+            --primary-strong: #1d4ed8;
+            --primary-soft: rgba(37, 99, 235, 0.12);
+            --shadow: rgba(0, 0, 0, 0.25);
+            --shadow-strong: rgba(0, 0, 0, 0.40);
+
+            --success-bg: rgba(34, 197, 94, 0.12);
+            --success-border: #4ade80;
+            --success-text: #86efac;
+
+            --danger-bg: rgba(239, 68, 68, 0.12);
+            --danger-border: #f87171;
+            --danger-text: #fca5a5;
+
+            --warning-bg: rgba(245, 158, 11, 0.14);
+            --warning-border: #fbbf24;
+            --warning-text: #fde68a;
+
+            --ring: rgba(37, 99, 235, 0.35);
+        }
+
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
         }
-        
+
+        html, body { height: 100%; }
+
         body {
-            background-color: #f5f7fa;
-            color: #333;
-            line-height: 1.6;
-            padding: 20px;
+            background: #f8fafc;
+            color: var(--text);
+            line-height: 1.55;
+            padding: 28px 18px 44px;
+            min-height: 100vh;
+        }
+
+        html[data-theme="dark"] body {
+            background: #0f172a;
+        }
+
+        /* Отключаем transition для свойств, связанных с темой (цвет, фон, границы) для мгновенного переключения */
+        * {
+            transition-property: transform, opacity, width, height, margin, padding, gap, top, left, right, bottom, translate, scale !important;
         }
         
+        /* Восстанавливаем transition для элементов, которые не связаны с темой */
+        .lang-toggle::after {
+            transition-property: transform, opacity !important;
+            transition-duration: 0.2s !important;
+        }
+        
+        .slider,
+        .slider:before {
+            transition-property: transform !important;
+            transition-duration: 0.2s !important;
+        }
+        
+        .progress-fill {
+            transition-property: width !important;
+            transition-duration: 0.5s !important;
+        }
+
+        a { color: var(--primary); }
+
         .container {
-            max-width: 1000px;
+            max-width: 1120px;
             margin: 0 auto;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            padding: 30px;
+            border-radius: calc(var(--radius) + 6px);
+            padding: 22px;
+            background: var(--card);
+            border: 1px solid var(--border);
+            box-shadow: 0 20px 60px var(--shadow);
+            backdrop-filter: blur(14px);
+            -webkit-backdrop-filter: blur(14px);
         }
         
         header {
-            text-align: center;
-            margin-bottom: 30px;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #eaeaea;
+            margin-bottom: 18px;
+            padding: 18px 18px 14px;
+            border-radius: calc(var(--radius) + 2px);
+            border: 1px solid var(--border);
+            background: var(--card-strong);
+            box-shadow: 0 10px 28px var(--shadow);
+            position: sticky;
+            top: 14px;
+            z-index: 5;
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+            display: grid;
+            grid-template-columns: 1fr auto;
+            align-items: center;
+            gap: 12px;
         }
         
         h1 {
-            color: #2c3e50;
-            margin-bottom: 10px;
+            color: var(--text);
+            margin-bottom: 0;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+            font-weight: 800;
+            font-size: clamp(22px, 2.2vw, 34px);
+            min-width: 0;
         }
         
         .subtitle {
-            color: #7f8c8d;
-            font-size: 1.1rem;
+            color: var(--muted);
+            font-size: 1rem;
+            font-weight: 500;
         }
         
-        .section-title {
-            background-color: #3498db;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
-            margin: 25px 0 15px;
+        .header-controls {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            justify-self: end;
+        }
+
+        .theme-toggle, .lang-toggle {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 10px;
+            border-radius: 999px;
+            border: 1px solid var(--border);
+            background: var(--card-soft);
+            user-select: none;
+        }
+
+        .lang-toggle {
+            position: relative;
+            cursor: pointer;
+        }
+
+        .lang-toggle:hover {
+            background: var(--card);
+        }
+
+        .lang-toggle.active {
+            background: var(--card);
+        }
+
+        .lang-toggle .lang-display {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 0.92rem;
+            font-weight: 600;
+            color: var(--text);
+            padding: 0 24px 0 6px;
+            min-width: 140px;
+        }
+
+        .lang-toggle .lang-flag {
+            font-size: 1.1rem;
+            line-height: 1;
+        }
+
+        .lang-flag svg {
+            width: 18px;
+            height: 12px;
+            display: block;
+            border-radius: 3px;
+            box-shadow: 0 8px 18px rgba(2, 6, 23, 0.10);
+        }
+
+        .lang-toggle::after {
+            content: "";
+            position: absolute;
+            right: 12px;
+            top: 50%;
+            transform: translateY(-50%);
+            pointer-events: none;
+            width: 12px;
+            height: 12px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2394a3b8' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+            opacity: 0.7;
+        }
+
+        .lang-toggle.active::after {
+            transform: translateY(-50%) rotate(180deg);
+        }
+
+        .lang-toggle:hover::after {
+            opacity: 1;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563eb' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+        }
+
+        .lang-dropdown {
+            position: absolute;
+            top: calc(100% + 6px);
+            left: 0;
+            right: 0;
+            background: var(--card-strong);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            box-shadow: 0 12px 32px var(--shadow-strong);
+            z-index: 100;
+            display: none;
+            overflow: hidden;
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+        }
+
+        .lang-toggle.active .lang-dropdown {
+            display: block;
+        }
+
+        .lang-option {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 14px;
+            cursor: pointer;
+            font-size: 0.92rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .lang-option:hover {
+            background: var(--primary-soft);
+            color: var(--primary);
+        }
+
+        .lang-option .lang-flag {
             font-size: 1.2rem;
+            line-height: 1;
+        }
+
+        .lang-option.selected {
+            background: var(--primary-soft);
+            color: var(--primary);
+        }
+
+        .theme-toggle span {
+            font-size: 0.92rem;
+            color: var(--muted);
+            font-weight: 600;
+            white-space: nowrap;
+        }
+
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 44px;
+            height: 24px;
+            flex-shrink: 0;
+        }
+        
+        /* Выравниваем высоту theme-toggle с lang-toggle */
+        .theme-toggle {
+            min-height: 40px;
+            align-items: center;
+        }
+
+        .switch input {
+            opacity: 0;
+            width: 0;
+            height: 0;
+        }
+
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            inset: 0;
+            background-color: rgba(148, 163, 184, 0.55);
+            border-radius: 999px;
+        }
+
+        html[data-theme="dark"] .slider {
+            background-color: #334155;
+        }
+
+        .slider:before {
+            position: absolute;
+            content: "";
+            height: 18px;
+            width: 18px;
+            left: 3px;
+            top: 3px;
+            background: linear-gradient(180deg, #ffffff 0%, #e2e8f0 100%);
+            border-radius: 50%;
+            box-shadow: 0 6px 14px rgba(2, 6, 23, 0.22);
+        }
+
+        input:checked + .slider {
+            background-color: var(--primary);
+        }
+
+        input:checked + .slider:before {
+            transform: translateX(20px);
+        }
+
+        .section-title {
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.16), rgba(99, 102, 241, 0.12));
+            color: var(--text);
+            padding: 12px 14px;
+            border-radius: var(--radius);
+            margin: 18px 0 14px;
+            font-size: 1.05rem;
+            font-weight: 800;
+            border: 1px solid var(--border);
+            position: sticky;
+            top: 96px;
+            z-index: 3;
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
         }
         
         .question {
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            border-left: 4px solid #3498db;
-            transition: all 0.3s ease;
+            background: var(--card-strong);
+            border-radius: var(--radius);
+            padding: 18px;
+            margin-bottom: 14px;
+            border: 1px solid var(--border);
+            box-shadow: 0 12px 26px var(--shadow);
+            scroll-margin-top: 132px;
         }
         
         .question:hover {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-color: rgba(37, 99, 235, 0.22);
         }
         
         .question-header {
@@ -72,18 +384,84 @@
             justify-content: space-between;
             align-items: center;
             margin-bottom: 15px;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .question-section {
+            color: var(--muted);
+            font-weight: 700;
+            font-size: 0.92rem;
+            padding: 6px 10px;
+            border-radius: 999px;
+            border: 1px solid var(--border);
+            background: rgba(148, 163, 184, 0.10);
         }
         
         .question-number {
             font-weight: bold;
-            color: #3498db;
-            font-size: 1.1rem;
+            color: var(--muted);
+            font-size: 0.95rem;
+            letter-spacing: 0.01em;
         }
+
+        html[data-show-qnumber="false"] .question-number { display: none; }
+        html[data-show-qnumber="true"] .question-number { display: block; }
+
+        .question-difficulty { display: inline-flex; }
+
+        .difficulty-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 6px 10px;
+            border-radius: 999px;
+            border: 1px solid var(--border);
+            background: var(--card-soft);
+            font-weight: 800;
+            font-size: 0.82rem;
+            letter-spacing: 0.04em;
+        }
+
+        .difficulty-badge::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 999px;
+            background: rgba(148, 163, 184, 0.7);
+            box-shadow: 0 6px 14px rgba(2, 6, 23, 0.14);
+        }
+
+        .difficulty-badge.easy {
+            border-color: rgba(34, 197, 94, 0.28);
+            background: var(--success-bg);
+            color: var(--success-text);
+        }
+        .difficulty-badge.easy::before { background: var(--success-border); }
+
+        .difficulty-badge.medium {
+            border-color: rgba(245, 158, 11, 0.30);
+            background: var(--warning-bg);
+            color: var(--warning-text);
+        }
+        .difficulty-badge.medium::before { background: var(--warning-border); }
+
+        .difficulty-badge.hard {
+            border-color: rgba(239, 68, 68, 0.30);
+            background: var(--danger-bg);
+            color: var(--danger-text);
+        }
+        .difficulty-badge.hard::before { background: var(--danger-border); }
+
+        html[data-show-difficulty="false"] .question-difficulty { display: none; }
+        html[data-show-difficulty="true"] .question-difficulty { display: block; }
         
         .question-text {
-            font-weight: bold;
+            font-weight: 700;
             margin-bottom: 15px;
-            color: #2c3e50;
+            color: var(--text);
+            font-size: 1.02rem;
+            letter-spacing: -0.01em;
         }
         
         .options {
@@ -95,33 +473,34 @@
         .option {
             display: flex;
             align-items: flex-start;
-            padding: 12px 15px;
-            background-color: white;
-            border-radius: 6px;
+            padding: 12px 14px;
+            background: var(--card);
+            border-radius: var(--radius-sm);
             cursor: pointer;
-            border: 1px solid #ddd;
-            transition: all 0.2s ease;
+            border: 1px solid var(--border);
+            box-shadow: 0 10px 22px rgba(2, 6, 23, 0.06);
         }
         
         .option:hover {
-            background-color: #f0f8ff;
-            border-color: #3498db;
+            background-color: var(--primary-soft);
+            border-color: rgba(37, 99, 235, 0.30);
+            box-shadow: 0 16px 28px rgba(2, 6, 23, 0.10);
         }
         
         .option.selected {
-            background-color: #e1f5fe;
-            border-color: #3498db;
-            font-weight: bold;
+            background-color: rgba(37, 99, 235, 0.14);
+            border-color: rgba(37, 99, 235, 0.40);
+            font-weight: 700;
         }
         
         .option.correct {
-            background-color: #d4edda;
-            border-color: #28a745;
+            background-color: var(--success-bg);
+            border-color: var(--success-border);
         }
         
         .option.incorrect {
-            background-color: #f8d7da;
-            border-color: #dc3545;
+            background-color: var(--danger-bg);
+            border-color: var(--danger-border);
         }
         
         .option-label {
@@ -131,6 +510,9 @@
             margin-right: 10px;
             flex-shrink: 0;
         }
+        /* Показ/скрытие буквенных id (a/b/c/...) управляется настройкой */
+        html[data-show-letters="false"] .option-label { display: none; }
+        html[data-show-letters="true"] .option-label { display: inline-block; }
         
         .option-text {
             flex-grow: 1;
@@ -145,78 +527,94 @@
             text-align: center;
             line-height: 24px;
             font-size: 14px;
+            flex-shrink: 0;
         }
         
         .result-correct {
-            background-color: #28a745;
+            background-color: var(--success-border);
             color: white;
         }
         
         .result-incorrect {
-            background-color: #dc3545;
+            background-color: var(--danger-border);
             color: white;
         }
         
         .feedback {
             margin-top: 15px;
             padding: 12px;
-            border-radius: 6px;
+            border-radius: var(--radius-sm);
             display: none;
+            border: 1px solid var(--border);
+            font-weight: 600;
         }
         
         .correct-feedback {
-            background-color: #d4edda;
-            border: 1px solid #c3e6cb;
-            color: #155724;
+            background-color: var(--success-bg);
+            border: 1px solid var(--success-border);
+            color: var(--success-text);
         }
         
         .incorrect-feedback {
-            background-color: #f8d7da;
-            border: 1px solid #f5c6cb;
-            color: #721c24;
+            background-color: var(--danger-bg);
+            border: 1px solid var(--danger-border);
+            color: var(--danger-text);
         }
         
         .buttons {
-            display: flex;
-            justify-content: space-between;
+            display: none;
+            justify-content: flex-end;
             margin-top: 30px;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .buttons.has-answers {
+            display: flex;
         }
         
         button {
             padding: 12px 25px;
-            border: none;
-            border-radius: 6px;
+            border: 1px solid var(--border);
+            border-radius: 999px;
             cursor: pointer;
             font-size: 1rem;
             font-weight: bold;
-            transition: all 0.3s ease;
+            background: var(--card-soft);
+            color: var(--text);
+            box-shadow: 0 12px 26px rgba(2, 6, 23, 0.10);
         }
+
+        button:hover { box-shadow: 0 18px 34px rgba(2, 6, 23, 0.14); }
+        button:active { opacity: 0.9; }
         
         #showResultsBtn {
-            background-color: #2c3e50;
+            background: var(--primary);
             color: white;
+            border-color: rgba(37, 99, 235, 0.24);
         }
         
         #showResultsBtn:hover {
-            background-color: #1a252f;
+            background: var(--primary-strong);
         }
         
         #resetBtn {
-            background-color: #95a5a6;
-            color: white;
+            background: rgba(148, 163, 184, 0.22);
+            color: var(--text);
         }
         
         #resetBtn:hover {
-            background-color: #7f8c8d;
+            background: rgba(148, 163, 184, 0.30);
         }
         
         .results-container {
             display: none;
             margin-top: 40px;
             padding: 20px;
-            background-color: #f8f9fa;
-            border-radius: 8px;
-            border: 1px solid #dee2e6;
+            background: var(--card-strong);
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            box-shadow: 0 18px 44px var(--shadow);
         }
         
         .results-header {
@@ -225,17 +623,31 @@
             align-items: center;
             margin-bottom: 20px;
             padding-bottom: 15px;
-            border-bottom: 2px solid #dee2e6;
+            border-bottom: 1px solid var(--border);
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .results-header h2 {
+            font-size: 1.25rem;
+            letter-spacing: -0.01em;
+        }
+
+        .result-section-title {
+            color: var(--primary);
+            font-size: 1.05rem;
+            font-weight: 900;
+            letter-spacing: -0.01em;
         }
         
         .score {
             font-size: 1.5rem;
             font-weight: bold;
-            color: #2c3e50;
+            color: var(--text);
         }
         
         .score-value {
-            color: #3498db;
+            color: var(--primary);
         }
         
         .results-list {
@@ -246,17 +658,18 @@
         .result-item {
             margin-bottom: 20px;
             padding: 15px;
-            background-color: white;
-            border-radius: 6px;
-            border-left: 4px solid #6c757d;
+            background: var(--card);
+            border-radius: var(--radius-sm);
+            border: 1px solid var(--border);
+            box-shadow: 0 12px 26px rgba(2, 6, 23, 0.08);
         }
         
         .result-item.correct {
-            border-left-color: #28a745;
+            border-color: rgba(34, 197, 94, 0.34);
         }
         
         .result-item.incorrect {
-            border-left-color: #dc3545;
+            border-color: rgba(239, 68, 68, 0.34);
         }
         
         .result-question {
@@ -275,26 +688,33 @@
         }
         
         .user-choice {
-            background-color: #e1f5fe;
-            border: 1px solid #3498db;
+            background-color: rgba(52, 152, 219, 0.12);
+            border: 1px solid var(--primary);
         }
         
         .correct-choice {
-            background-color: #d4edda;
-            border: 1px solid #28a745;
+            background-color: var(--success-bg);
+            border: 1px solid var(--success-border);
         }
         
         .progress-bar {
             height: 8px;
-            background-color: #e0e0e0;
+            background-color: rgba(148, 163, 184, 0.24);
             border-radius: 4px;
             margin-top: 20px;
+            margin-bottom: 20px;
             overflow: hidden;
+            border: 1px solid var(--border);
+            display: none;
+        }
+
+        .progress-bar.test-started {
+            display: block;
         }
         
         .progress-fill {
             height: 100%;
-            background-color: #3498db;
+            background: linear-gradient(90deg, var(--primary) 0%, rgba(99, 102, 241, 0.95) 55%, rgba(16, 185, 129, 0.9) 100%);
             width: 0%;
             transition: width 0.5s ease;
         }
@@ -308,54 +728,87 @@
         
         .filter-btn {
             padding: 8px 16px;
-            background-color: #ecf0f1;
-            border: none;
-            border-radius: 4px;
+            background: rgba(148, 163, 184, 0.16);
+            border: 1px solid var(--border);
+            border-radius: 999px;
             cursor: pointer;
             transition: all 0.2s ease;
+            color: var(--text);
+            box-shadow: none;
+            font-weight: 700;
         }
         
         .filter-btn.active {
-            background-color: #3498db;
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.92), rgba(99, 102, 241, 0.84));
             color: white;
+            border-color: rgba(37, 99, 235, 0.26);
         }
         
         .filter-btn:hover {
-            background-color: #d5dbdb;
+            background-color: rgba(148, 163, 184, 0.22);
         }
         
         .filter-btn.active:hover {
-            background-color: #2980b9;
+            background: linear-gradient(135deg, rgba(29, 78, 216, 0.98), rgba(79, 70, 229, 0.92));
         }
         
         .stats {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-            padding: 15px;
-            background-color: #f8f9fa;
-            border-radius: 6px;
-            border: 1px solid #dee2e6;
+            display: none;
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+            gap: 10px;
+            margin: 14px 0 16px;
+        }
+
+        .stats.test-started {
+            display: grid;
         }
         
         .stat-item {
             text-align: center;
+            padding: 14px 12px;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            background: var(--card-strong);
+            box-shadow: 0 14px 34px rgba(2, 6, 23, 0.08);
         }
         
         .stat-value {
             font-size: 1.5rem;
             font-weight: bold;
-            color: #3498db;
+            color: var(--primary);
         }
         
         .stat-label {
             font-size: 0.9rem;
-            color: #7f8c8d;
+            color: var(--muted);
+            font-weight: 600;
         }
         
         @media (max-width: 768px) {
             .container {
-                padding: 15px;
+                padding: 14px;
+            }
+
+            header {
+                padding-top: 58px;
+                position: relative;
+                top: 0;
+                grid-template-columns: 1fr;
+                align-items: start;
+            }
+
+            header .header-controls {
+                justify-self: stretch !important;
+                width: 100% !important;
+                justify-content: space-between !important;
+                flex-wrap: nowrap !important;
+                display: flex !important;
+            }
+
+            .theme-toggle {
+                position: relative;
+                left: 0;
+                right: 0;
             }
             
             .buttons, .filter-buttons {
@@ -367,45 +820,694 @@
                 width: 100%;
             }
             
-            .stats {
-                flex-direction: column;
-                gap: 15px;
+            /* Кнопки навигации на одной линии: Назад слева, Дальше справа */
+            .pager .pager-actions {
+                justify-content: space-between;
+                flex-wrap: nowrap;
+                width: 100%;
             }
+            
+            .pager-actions .filter-btn {
+                width: auto;
+                flex: 1 1 0;
+                min-width: 0;
+                justify-content: center !important;
+                text-align: center !important;
+                padding-left: 14px;
+                padding-right: 14px;
+            }
+
+            /* Центрируем контент внутри кнопок */
+            #prevQuestionBtn,
+            #nextQuestionBtn {
+                justify-content: center !important;
+            }
+            
+            .stats {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .settings-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .settings-panel {
+            margin: 18px 0 10px;
+            padding: 14px;
+            border: 1px solid var(--border);
+            background: var(--card-strong);
+            border-radius: var(--radius);
+            box-shadow: 0 16px 40px rgba(2, 6, 23, 0.08);
+        }
+
+        .settings-panel h3 {
+            margin-bottom: 10px;
+            color: var(--text);
+            font-size: 1.05rem;
+            font-weight: 800;
+        }
+
+        .settings-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px 18px;
+            margin-top: 10px;
+        }
+
+        .settings-row {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 12px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            background: var(--card);
+        }
+
+        label.settings-row {
+            cursor: pointer;
+        }
+
+        .settings-row:hover {
+            border-color: rgba(37, 99, 235, 0.28);
+        }
+
+        .settings-row input[type="checkbox"] {
+            width: 20px;
+            height: 20px;
+            appearance: none;
+            -webkit-appearance: none;
+            border-radius: 6px;
+            border: 1.5px solid var(--border-strong);
+            background: var(--card-soft);
+            display: grid;
+            place-items: center;
+            flex: 0 0 auto;
+        }
+
+        .settings-row input[type="checkbox"]::after {
+            content: "";
+            width: 10px;
+            height: 6px;
+            border-left: 2px solid #ffffff;
+            border-bottom: 2px solid #ffffff;
+            transform: rotate(-45deg);
+            opacity: 0;
+        }
+
+        .settings-row input[type="checkbox"]:checked {
+            background: var(--primary);
+            border-color: rgba(37, 99, 235, 0.55);
+        }
+
+        .settings-row input[type="checkbox"]:checked::after {
+            opacity: 1;
+        }
+
+        .settings-row input[type="checkbox"]:focus-visible {
+            outline: 3px solid var(--ring);
+            outline-offset: 2px;
+        }
+
+        .settings-row b {
+            color: var(--text);
+        }
+
+        .mode-row label {
+            cursor: pointer;
+            color: var(--text);
+        }
+
+        .settings-row small {
+            color: var(--muted);
+        }
+
+        .settings-actions {
+            display: flex;
+            gap: 10px;
+            justify-content: flex-end;
+            margin-top: 12px;
+            flex-wrap: wrap;
+        }
+
+        .settings-actions:has(#startTestBtn) {
+            justify-content: stretch;
+        }
+
+        .primary-btn {
+            background: var(--primary);
+            color: white;
+            border-color: rgba(37, 99, 235, 0.26);
+        }
+
+        .primary-btn:hover {
+            background: var(--primary-strong);
+        }
+
+        #startTestBtn {
+            width: 100%;
+        }
+
+        .mode-row {
+            grid-column: 1 / -1;
+            gap: 14px;
+            flex-wrap: wrap;
+        }
+
+        .mode-row .mode-options {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 12px;
+            width: 100%;
+        }
+
+        .mode-row[data-test-type-row] .mode-options {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+
+        @media (max-width: 1024px) {
+            .mode-row[data-test-type-row] .mode-options {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        .mode-row input[type="radio"] {
+            width: 20px;
+            height: 20px;
+            appearance: none;
+            -webkit-appearance: none;
+            border-radius: 999px;
+            border: 1.5px solid var(--border-strong);
+            background: var(--card-soft);
+            display: grid;
+            place-items: center;
+            flex: 0 0 auto;
+        }
+
+        .mode-row input[type="radio"]::after {
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 999px;
+            background: var(--primary);
+            transform: scale(0);
+            transition: transform 0.12s ease;
+        }
+
+        .mode-row input[type="radio"]:checked {
+            border-color: rgba(37, 99, 235, 0.55);
+            background: rgba(37, 99, 235, 0.10);
+        }
+
+        .mode-row input[type="radio"]:checked::after {
+            transform: scale(1);
+        }
+
+        .mode-row input[type="radio"]:focus-visible {
+            outline: 3px solid var(--ring);
+            outline-offset: 2px;
+        }
+
+        .mode-card {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            padding: 16px 16px;
+            min-height: 76px;
+            border: 1px solid var(--border);
+            border-radius: var(--radius-sm);
+            background: var(--card);
+            cursor: pointer;
+            user-select: none;
+            box-shadow: 0 10px 26px rgba(2, 6, 23, 0.06);
+            width: 100%;
+            min-width: 0;
+        }
+
+        .mode-card:hover {
+            border-color: rgba(37, 99, 235, 0.28);
+        }
+
+        .mode-card.selected {
+            border-color: rgba(37, 99, 235, 0.50);
+            background: rgba(37, 99, 235, 0.09);
+            box-shadow: 0 16px 34px rgba(2, 6, 23, 0.10);
+        }
+
+        .mode-icon {
+            width: 66px;
+            height: 46px;
+            border-radius: 14px;
+            border: 1px solid rgba(37, 99, 235, 0.22);
+            background: linear-gradient(135deg, rgba(37, 99, 235, 0.14), rgba(99, 102, 241, 0.10));
+            display: grid;
+            place-items: center;
+            flex: 0 0 auto;
+            box-shadow: 0 14px 28px rgba(2, 6, 23, 0.08);
+        }
+
+        .mode-icon svg {
+            width: 44px;
+            height: 32px;
+        }
+
+        /* Улучшаем видимость иконок в темной теме - делаем темные элементы светлее */
+        html[data-theme="dark"] .mode-icon svg rect[fill="rgba(15,23,42,0.70)"],
+        html[data-theme="dark"] .mode-icon svg rect[fill="rgba(15,23,42,0.62)"],
+        html[data-theme="dark"] .mode-icon svg rect[fill="rgba(15,23,42,0.55)"],
+        html[data-theme="dark"] .mode-icon svg rect[fill="rgba(15,23,42,0.60)"],
+        html[data-theme="dark"] .mode-icon svg rect[fill="rgba(15,23,42,0.65)"],
+        html[data-theme="dark"] .mode-icon svg rect[fill="rgba(15,23,42,0.50)"],
+        html[data-theme="dark"] .mode-icon svg rect[fill="rgba(15,23,42,0.45)"] {
+            fill: rgba(203, 213, 225, 0.75) !important;
+        }
+
+        html[data-theme="dark"] .mode-icon svg rect[fill="rgba(2,6,23,0.06)"] {
+            fill: rgba(148, 163, 184, 0.15) !important;
+        }
+
+        html[data-theme="dark"] .mode-icon svg text {
+            fill: rgba(96, 165, 250, 0.95) !important;
+        }
+
+        html[data-theme="dark"] .mode-icon svg path {
+            stroke: rgba(96, 165, 250, 0.90) !important;
+        }
+
+        .mode-card span[data-i18n] {
+            font-weight: 700;
+            font-size: 1.02rem;
+            flex: 1;
+            min-width: 0;
+            white-space: normal;
+            /* default: allow wrapping but don't split words into vertical "columns" */
+            overflow-wrap: break-word;
+            word-break: normal;
+            hyphens: auto;
+            line-height: 1.25;
+        }
+
+        /* Для "Тип теста" длинные подписи должны переноситься красиво внутри карточки */
+        .mode-row[data-test-type-row] .mode-card span[data-i18n] {
+            font-size: 0.96rem;
+        }
+
+        @media (max-width: 768px) {
+            .mode-row .mode-options {
+                grid-template-columns: 1fr;
+            }
+            
+            /* Тип теста: на телефонах — по одной карточке в ряд */
+            .mode-row[data-test-type-row] .mode-options {
+                grid-template-columns: 1fr;
+            }
+
+            /* На мобильных делаем карточки компактнее и даем тексту переноситься */
+            .mode-row[data-test-type-row] .mode-card {
+                padding: 12px;
+                min-height: auto;
+                gap: 10px;
+            }
+
+            .mode-row[data-test-type-row] .mode-icon {
+                width: 56px;
+                height: 40px;
+                border-radius: 12px;
+            }
+
+            .mode-row[data-test-type-row] .mode-icon svg {
+                width: 38px;
+                height: 28px;
+            }
+        }
+        
+        @media (max-width: 420px) {
+            .mode-row[data-test-type-row] .mode-options {
+                grid-template-columns: 1fr;
+            }
+
+            .mode-row[data-test-type-row] .mode-card span[data-i18n] {
+                font-size: 0.92rem;
+            }
+        }
+
+        .pager {
+            display: none;
+            margin-top: 14px;
+            padding: 12px;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            background: var(--card-strong);
+            align-items: center;
+            justify-content: space-between;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .pager .pager-info {
+            color: var(--muted);
+            font-weight: 600;
+        }
+
+        .pager .pager-actions {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        .pager-actions .filter-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center !important;
+            gap: 8px;
+            text-align: center !important;
+        }
+        
+        .pager-actions .filter-btn span {
+            text-align: center;
+        }
+
+        .pager-actions .filter-btn:hover {
+            box-shadow: none !important;
+        }
+
+        .pager-actions .filter-btn svg {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            display: inline-block;
+            vertical-align: middle;
+            opacity: 1;
+        }
+        
+        .pager-actions .filter-btn svg path {
+            stroke: currentColor;
+            fill: none;
+            stroke-width: 2.5;
+        }
+
+        /* Общие стили кнопок */
+        button {
+            border: 1px solid transparent;
+        }
+
+        button:focus-visible {
+            outline: 3px solid var(--ring);
+            outline-offset: 2px;
+        }
+
+        .option:focus-visible,
+        .filter-btn:focus-visible {
+            outline: 3px solid var(--ring);
+            outline-offset: 2px;
+        }
+
+        /* ---------------- Mobile overrides (must be AFTER base rules) ---------------- */
+        @media (max-width: 768px) {
+            body {
+                padding: 18px 12px 28px;
+            }
+
+            /* Prevent accidental horizontal scrolling on mobile */
+            body, .container {
+                overflow-x: hidden;
+            }
+
+            header {
+                position: relative;
+                top: 0;
+                grid-template-columns: 1fr;
+                align-items: start;
+                padding-top: 16px;
+            }
+
+            header .header-controls {
+                justify-self: stretch !important;
+                width: 100% !important;
+                justify-content: space-between !important;
+                flex-wrap: nowrap !important;
+                display: flex !important;
+            }
+
+            .lang-toggle,
+            .theme-toggle {
+                width: 100%;
+                justify-content: space-between;
+            }
+
+            .lang-toggle .lang-display {
+                min-width: 0;
+            }
+
+            /* Critical: base .settings-grid rule below was overriding earlier media query */
+            .settings-grid {
+                grid-template-columns: 1fr;
+            }
+
+            button, .filter-btn {
+                width: 100%;
+            }
+
+            .stats {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .settings-row > div {
+                min-width: 0;
+            }
+
+            .mode-card span[data-i18n] {
+                font-size: 0.98rem;
+                line-height: 1.25;
+            }
+        }
+
+        @media (max-width: 420px) {
+            .stats {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        button:disabled {
+            opacity: 0.55;
+            cursor: not-allowed;
+        }
+
+        /* Уважение системных настроек */
+        @media (prefers-reduced-motion: reduce) {
+            * { transition: none !important; scroll-behavior: auto !important; }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>HUMAN INTERACTIONS QUESTION BANK - PART 2</h1>
-            <div class="subtitle">Interactive Test with 248 Questions - Answers are shown immediately after selection</div>
+            <h1 data-i18n="title">ВОПРОСЫ "BLOCKCHAIN"</h1>
+
+            <div class="header-controls">
+                <div class="lang-toggle" id="langToggle" title="Выбрать язык">
+                    <div class="lang-display">
+                        <span class="lang-flag" id="currentFlag" aria-hidden="true">
+                            <svg viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="KZ">
+                                <rect width="24" height="16" rx="3" fill="#00AFCA"/>
+                                <circle cx="12" cy="8" r="3" fill="#FECB00"/>
+                            </svg>
+                        </span>
+                        <span id="currentLang">Қазақша</span>
+                    </div>
+                    <div class="lang-dropdown">
+                        <div class="lang-option selected" data-lang="kk">
+                            <span class="lang-flag" aria-hidden="true">
+                                <svg viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="KZ">
+                                    <rect width="24" height="16" rx="3" fill="#00AFCA"/>
+                                    <circle cx="12" cy="8" r="3" fill="#FECB00"/>
+                                </svg>
+                            </span>
+                            <span>Қазақша</span>
+                        </div>
+                        <div class="lang-option" data-lang="ru">
+                            <span class="lang-flag" aria-hidden="true">
+                                <svg viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="RU">
+                                    <rect width="24" height="16" rx="3" fill="#ffffff"/>
+                                    <rect y="5.333" width="24" height="5.334" fill="#0039A6"/>
+                                    <rect y="10.666" width="24" height="5.334" fill="#D52B1E"/>
+                                    <rect width="24" height="16" rx="3" fill="none" stroke="rgba(15,23,42,0.12)"/>
+                                </svg>
+                            </span>
+                            <span>Русский</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="theme-toggle" title="Переключить тему">
+                    <span data-i18n="darkTheme">Тёмная тема</span>
+                    <label class="switch">
+                        <input id="themeToggle" type="checkbox" aria-label="Тёмная тема">
+                        <span class="slider"></span>
+                    </label>
+                </div>
+            </div>
         </header>
+
+        <div class="settings-panel" id="settingsPanel">
+            <h3 data-i18n="settingsTitle">Настройки теста (перед началом)</h3>
+            <div class="settings-grid">
+                <label class="settings-row">
+                    <input type="checkbox" id="shuffleQuestionsToggle">
+                    <div>
+                        <div><b data-i18n="shuffleQuestions">Перемешивать вопросы</b></div>
+                        <div><small data-i18n="shuffleQuestionsDesc">Порядок вопросов внутри каждой секции будет случайным</small></div>
+                    </div>
+                </label>
+
+                <label class="settings-row">
+                    <input type="checkbox" id="shuffleAnswersToggle">
+                    <div>
+                        <div><b data-i18n="shuffleAnswers">Перемешивать ответы</b></div>
+                        <div><small data-i18n="shuffleAnswersDesc">Варианты ответов в каждой карточке будут в случайном порядке</small></div>
+                    </div>
+                </label>
+
+                <label class="settings-row">
+                    <input type="checkbox" id="showLettersToggle">
+                    <div>
+                        <div><b data-i18n="showLetters">Показывать буквы (a, b, c…)</b></div>
+                        <div><small data-i18n="showLettersDesc">Показывать/скрывать буквенные метки вариантов</small></div>
+                    </div>
+                </label>
+
+                <label class="settings-row">
+                    <input type="checkbox" id="showQuestionNumberToggle">
+                    <div>
+                        <div><b data-i18n="showQuestionNumber">Показывать номер вопроса</b></div>
+                        <div><small data-i18n="showQuestionNumberDesc">Например: «Вопрос 12»</small></div>
+                    </div>
+                </label>
+
+                <label class="settings-row">
+                    <input type="checkbox" id="showDifficultyToggle">
+                    <div>
+                        <div><b data-i18n="showDifficulty">Показывать сложность</b></div>
+                        <div><small data-i18n="showDifficultyDesc">EASY / MEDIUM / HARD</small></div>
+                    </div>
+                </label>
+
+                <div class="settings-row mode-row">
+                    <div><b data-i18n="displayMode">Режим отображения</b></div>
+                    <div class="mode-options">
+                        <label class="mode-card" data-mode="scroll">
+                            <input type="radio" name="testMode" value="scroll" aria-label="Лента (скролл)">
+                            <span class="mode-icon" aria-hidden="true">
+                                <svg viewBox="0 0 48 32" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="2" y="3" width="44" height="26" rx="6" fill="rgba(2,6,23,0.06)"/>
+                                    <rect x="6" y="7" width="6" height="5" rx="2" fill="rgba(37,99,235,0.95)"/>
+                                    <rect x="14" y="8" width="28" height="3" rx="1.5" fill="rgba(15,23,42,0.70)"/>
+                                    <rect x="6" y="14" width="6" height="5" rx="2" fill="rgba(37,99,235,0.75)"/>
+                                    <rect x="14" y="15" width="28" height="3" rx="1.5" fill="rgba(15,23,42,0.62)"/>
+                                    <rect x="6" y="21" width="6" height="5" rx="2" fill="rgba(37,99,235,0.55)"/>
+                                    <rect x="14" y="22" width="22" height="3" rx="1.5" fill="rgba(15,23,42,0.55)"/>
+                                </svg>
+                            </span>
+                            <span data-i18n="modeScroll">Лента (скролл)</span>
+                        </label>
+                        <label class="mode-card" data-mode="paged">
+                            <input type="radio" name="testMode" value="paged" aria-label="По одному вопросу (переключение)">
+                            <span class="mode-icon" aria-hidden="true">
+                                <svg viewBox="0 0 48 32" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="6" y="5" width="36" height="22" rx="6" fill="rgba(37,99,235,0.10)" stroke="rgba(37,99,235,0.55)"/>
+                                    <rect x="12" y="11" width="24" height="3.5" rx="1.75" fill="rgba(15,23,42,0.65)"/>
+                                    <rect x="12" y="16.5" width="18" height="3.5" rx="1.75" fill="rgba(15,23,42,0.55)"/>
+                                    <rect x="12" y="22" width="12" height="3.5" rx="1.75" fill="rgba(15,23,42,0.45)"/>
+                                    <path d="M9 16 L6 13 M9 16 L6 19" stroke="rgba(37,99,235,0.85)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M39 16 L42 13 M39 16 L42 19" stroke="rgba(37,99,235,0.85)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            <span data-i18n="modePaged">По одному вопросу (переключение)</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="settings-row mode-row" data-test-type-row>
+                    <div><b data-i18n="testType">Тип теста</b></div>
+                    <div class="mode-options">
+                        <label class="mode-card selected" data-test-type="full">
+                            <input type="radio" name="testType" value="full" aria-label="Полный тест">
+                            <span class="mode-icon" aria-hidden="true">
+                                <svg viewBox="0 0 48 32" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4" y="4" width="40" height="24" rx="5" fill="rgba(37,99,235,0.08)" stroke="rgba(37,99,235,0.25)"/>
+                                    <rect x="8" y="8" width="8" height="4" rx="1.5" fill="rgba(37,99,235,0.85)"/>
+                                    <rect x="18" y="9" width="22" height="2" rx="1" fill="rgba(15,23,42,0.60)"/>
+                                    <rect x="8" y="14" width="8" height="4" rx="1.5" fill="rgba(37,99,235,0.70)"/>
+                                    <rect x="18" y="15" width="22" height="2" rx="1" fill="rgba(15,23,42,0.55)"/>
+                                    <rect x="8" y="20" width="8" height="4" rx="1.5" fill="rgba(37,99,235,0.55)"/>
+                                    <rect x="18" y="21" width="18" height="2" rx="1" fill="rgba(15,23,42,0.50)"/>
+                                </svg>
+                            </span>
+                            <span data-i18n="testTypeFull">Полный тест</span>
+                        </label>
+                        <label class="mode-card" data-test-type="short">
+                            <input type="radio" name="testType" value="short" aria-label="Правильные варианты, где ответ не длинный">
+                            <span class="mode-icon" aria-hidden="true">
+                                <svg viewBox="0 0 48 32" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="4" y="4" width="40" height="24" rx="5" fill="rgba(37,99,235,0.08)" stroke="rgba(37,99,235,0.25)"/>
+                                    <circle cx="10" cy="10" r="3" fill="rgba(34,197,94,0.85)"/>
+                                    <rect x="16" y="8.5" width="24" height="3" rx="1.5" fill="rgba(15,23,42,0.55)"/>
+                                    <circle cx="10" cy="16" r="3" fill="rgba(34,197,94,0.70)"/>
+                                    <rect x="16" y="14.5" width="20" height="3" rx="1.5" fill="rgba(15,23,42,0.50)"/>
+                                    <circle cx="10" cy="22" r="3" fill="rgba(34,197,94,0.55)"/>
+                                    <rect x="16" y="20.5" width="16" height="3" rx="1.5" fill="rgba(15,23,42,0.45)"/>
+                                </svg>
+                            </span>
+                            <span data-i18n="testTypeShort">Правильные варианты, где ответ не длинный</span>
+                        </label>
+                        <label class="mode-card" data-test-type="part1">
+                            <input type="radio" name="testType" value="part1" aria-label="ПАРТ 1">
+                            <span class="mode-icon" aria-hidden="true">
+                                <svg viewBox="0 0 48 32" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="6" y="6" width="36" height="20" rx="5" fill="rgba(37,99,235,0.10)" stroke="rgba(37,99,235,0.40)"/>
+                                    <text x="24" y="20" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="rgba(37,99,235,0.90)" text-anchor="middle">1</text>
+                                    <rect x="10" y="24" width="28" height="2" rx="1" fill="rgba(37,99,235,0.60)"/>
+                                </svg>
+                            </span>
+                            <span data-i18n="testTypePart1">ПАРТ 1</span>
+                        </label>
+                        <label class="mode-card" data-test-type="part2">
+                            <input type="radio" name="testType" value="part2" aria-label="ПАРТ 2">
+                            <span class="mode-icon" aria-hidden="true">
+                                <svg viewBox="0 0 48 32" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="6" y="6" width="36" height="20" rx="5" fill="rgba(37,99,235,0.10)" stroke="rgba(37,99,235,0.40)"/>
+                                    <text x="24" y="20" font-family="Arial, sans-serif" font-size="16" font-weight="bold" fill="rgba(37,99,235,0.90)" text-anchor="middle">2</text>
+                                    <rect x="10" y="24" width="28" height="2" rx="1" fill="rgba(37,99,235,0.60)"/>
+                                </svg>
+                            </span>
+                            <span data-i18n="testTypePart2">ПАРТ 2</span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="settings-actions">
+                <button id="startTestBtn" class="primary-btn" data-i18n="startTest">Начать тест</button>
+            </div>
+        </div>
         
         <div class="stats">
             <div class="stat-item">
                 <div class="stat-value" id="totalQuestions">248</div>
-                <div class="stat-label">Total Questions</div>
+                <div class="stat-label" data-i18n="totalQuestions">Всего вопросов</div>
             </div>
             <div class="stat-item">
                 <div class="stat-value" id="answeredQuestions">0</div>
-                <div class="stat-label">Answered</div>
+                <div class="stat-label" data-i18n="answered">Отвечено</div>
             </div>
             <div class="stat-item">
                 <div class="stat-value" id="correctAnswers">0</div>
-                <div class="stat-label">Correct</div>
+                <div class="stat-label" data-i18n="correct">Правильно</div>
             </div>
             <div class="stat-item">
                 <div class="stat-value" id="scorePercentage">0%</div>
-                <div class="stat-label">Score</div>
+                <div class="stat-label" data-i18n="percentage">Процент</div>
             </div>
-        </div>
-        
-        <div class="filter-buttons">
-            <button class="filter-btn active" data-filter="all">All Questions</button>
-            <button class="filter-btn" data-filter="answered">Answered</button>
-            <button class="filter-btn" data-filter="unanswered">Unanswered</button>
-            <button class="filter-btn" data-filter="correct">Correct</button>
-            <button class="filter-btn" data-filter="incorrect">Incorrect</button>
         </div>
         
         <div class="progress-bar">
@@ -415,16 +1517,33 @@
         <div id="testContainer">
             <!-- Questions will be dynamically inserted here -->
         </div>
+
+        <div class="pager" id="pager">
+            <div class="pager-info" id="pagerInfo">Вопрос 1 из 248</div>
+            <div class="pager-actions">
+                <button id="prevQuestionBtn" class="filter-btn" data-i18n="prev">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M15 18l-6-6 6-6"></path>
+                    </svg>
+                    <span>Назад</span>
+                </button>
+                <button id="nextQuestionBtn" class="filter-btn" data-i18n="next">
+                    <span>Дальше</span>
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M9 18l6-6-6-6"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
         
         <div class="buttons">
-            <button id="showResultsBtn">Show Detailed Results</button>
-            <button id="resetBtn">Reset Test</button>
+            <button id="showResultsBtn" data-i18n="showResults">Показать ответы</button>
         </div>
         
         <div class="results-container" id="resultsContainer">
             <div class="results-header">
-                <h2>Test Results Summary</h2>
-                <div class="score">Score: <span class="score-value" id="scoreValue">0/0</span></div>
+                <h2 data-i18n="resultsTitle">Ответы на вопросы</h2>
+                <div class="score"><span data-i18n="score">Счёт:</span> <span class="score-value" id="scoreValue">0/0</span></div>
             </div>
             <div class="results-list" id="resultsList">
                 <!-- Results will be dynamically inserted here -->
@@ -433,52 +1552,543 @@
     </div>
 
     <!-- Подключаем файл с вопросами -->
-    <script src="questions.js"></script>
+    <!-- cache-bust, чтобы браузер точно подтянул обновлённую базу вопросов -->
+    <script src="questions.js?v=blockchain-parts12"></script>
     
     <script>
         // State to track user answers
         let userAnswers = {};
         let totalQuestions = questions.length;
+        let orderedQuestions = [];
+        let currentIndex = 0;
+        // For testType="short": questions where the "pick the longest answer" heuristic does NOT work.
+        // (Correct answer is not strictly the longest, or there's a tie for longest.)
+
+        const SETTINGS_STORAGE_KEY = 'testSettings';
+        const defaultSettings = {
+            shuffleQuestions: true,
+            shuffleAnswers: true,
+            showLetters: false,
+            showQuestionNumber: true,
+            showDifficulty: true,
+            mode: 'scroll', // 'scroll' | 'paged'
+            testType: 'full' // 'full' | 'short' | 'part1' | 'part2'
+        };
+        let settings = { ...defaultSettings };
+
+        // ---------- Translations ----------
+        const translations = {
+            ru: {
+                darkTheme: "Тёмная тема",
+                title: "ВОПРОСЫ «BLOCKCHAIN»",
+                subtitle: "Интерактивный тест на 248 вопросов — результат показывается сразу после выбора",
+                settingsTitle: "Настройки теста (перед началом)",
+                shuffleQuestions: "Перемешивать вопросы",
+                shuffleQuestionsDesc: "Порядок вопросов внутри каждой секции будет случайным",
+                shuffleAnswers: "Перемешивать ответы",
+                shuffleAnswersDesc: "Варианты ответов в каждой карточке будут в случайном порядке",
+                showLetters: "Показывать буквы (a, b, c…)",
+                showLettersDesc: "Показывать/скрывать буквенные метки вариантов",
+                showQuestionNumber: "Показывать номер вопроса",
+                showQuestionNumberDesc: "Например: «Вопрос 12»",
+                showDifficulty: "Показывать сложность",
+                showDifficultyDesc: "EASY / MEDIUM / HARD",
+                displayMode: "Режим отображения",
+                modeScroll: "Лента (скролл)",
+                modePaged: "По одному вопросу (переключение)",
+                testType: "Тип теста",
+                testTypeFull: "Полный тест",
+                testTypeShort: "Правильные варианты, где ответ не длинный",
+                testTypePart1: "ПАРТ 1",
+                testTypePart2: "ПАРТ 2",
+                applySettings: "Применить (сбросить ответы)",
+                startTest: "Начать тест",
+                totalQuestions: "Всего вопросов",
+                answered: "Отвечено",
+                correct: "Правильно",
+                percentage: "Процент",
+                filterAll: "Все",
+                filterAnswered: "Отвеченные",
+                filterUnanswered: "Без ответа",
+                filterCorrect: "Правильные",
+                filterIncorrect: "Неправильные",
+                question: "Вопрос",
+                of: "из",
+                prev: "Назад",
+                next: "Дальше",
+                showResults: "Показать ответы",
+                hideResults: "Скрыть ответы",
+                resetTest: "Сбросить тест",
+                resultsTitle: "Ответы на вопросы",
+                score: "Счёт:",
+                details: "Подробно:",
+                total: "Всего:",
+                answeredLabel: "Отвечено:",
+                correctLabel: "Правильно:",
+                percentageLabel: "Процент:",
+                correctAnswer: "Правильно! Ответ:",
+                incorrectAnswer: "Неправильно. Правильный ответ:",
+                yourChoice: "(Ваш выбор)",
+                correctChoice: "(Правильный ответ)",
+                noAnswer: "Без ответа",
+                correctStatus: "✓ Правильно",
+                incorrectStatus: "✗ Неправильно",
+                resetConfirm: "Сбросить тест? Все ответы будут удалены.",
+                applyConfirm: "Применить настройки и сбросить ответы?"
+            },
+            kk: {
+                darkTheme: "Қараңғы тақырып",
+                title: "«BLOCKCHAIN» СҰРАҚТАР",
+                subtitle: "248 сұраққа арналған интерактивті тест — нәтиже таңдаудан кейін бірден көрсетіледі",
+                settingsTitle: "Тест параметрлері (бастамас бұрын)",
+                shuffleQuestions: "Сұрақтарды араластыру",
+                shuffleQuestionsDesc: "Әрбір бөлімдегі сұрақтардың реті кездейсоқ болады",
+                shuffleAnswers: "Жауаптарды араластыру",
+                shuffleAnswersDesc: "Әрбір карточкадағы жауап нұсқалары кездейсоқ ретпен болады",
+                showLetters: "Әріптерді көрсету (a, b, c…)",
+                showLettersDesc: "Нұсқалардың әріптік белгілерін көрсету/жасыру",
+                showQuestionNumber: "Сұрақ нөмірін көрсету",
+                showQuestionNumberDesc: "Мысалы: «Сұрақ 12»",
+                showDifficulty: "Қиындықты көрсету",
+                showDifficultyDesc: "EASY / MEDIUM / HARD",
+                displayMode: "Көріну режимі",
+                modeScroll: "Жолақ (скролл)",
+                modePaged: "Бір-бірден сұрақ (ауысу)",
+                testType: "Тест түрі",
+                testTypeFull: "Толық тест",
+                testTypeShort: "Дұрыс нұсқалар, мұнда жауап ұзын емес",
+                testTypePart1: "1-БӨЛІМ",
+                testTypePart2: "2-БӨЛІМ",
+                applySettings: "Қолдану (жауаптарды қалпына келтіру)",
+                startTest: "Тестті бастау",
+                totalQuestions: "Барлық сұрақтар",
+                answered: "Жауап берілді",
+                correct: "Дұрыс",
+                percentage: "Пайыз",
+                filterAll: "Барлығы",
+                filterAnswered: "Жауап берілгендер",
+                filterUnanswered: "Жауап жоқ",
+                filterCorrect: "Дұрыс",
+                filterIncorrect: "Қате",
+                question: "Сұрақ",
+                of: "ішінен",
+                prev: "Артқа",
+                next: "Алға",
+                showResults: "Жауаптарды көрсету",
+                hideResults: "Жауаптарды жасыру",
+                resetTest: "Тестті қалпына келтіру",
+                resultsTitle: "Сұрақтарға жауаптар",
+                score: "Ұпай:",
+                details: "Толығырақ:",
+                total: "Барлығы:",
+                answeredLabel: "Жауап берілді:",
+                correctLabel: "Дұрыс:",
+                percentageLabel: "Пайыз:",
+                correctAnswer: "Дұрыс! Жауап:",
+                incorrectAnswer: "Қате. Дұрыс жауап:",
+                yourChoice: "(Сіздің таңдауыңыз)",
+                correctChoice: "(Дұрыс жауап)",
+                noAnswer: "Жауап жоқ",
+                correctStatus: "✓ Дұрыс",
+                incorrectStatus: "✗ Қате",
+                resetConfirm: "Тестті қалпына келтіру керек пе? Барлық жауаптар жойылады.",
+                applyConfirm: "Параметрлерді қолданып, жауаптарды қалпына келтіру керек пе?"
+            }
+        };
+
+        let currentLang = 'ru';
+        const LANG_STORAGE_KEY = 'testLanguage';
+
+        function getInitialLanguage() {
+            const saved = localStorage.getItem(LANG_STORAGE_KEY);
+            return (saved === 'ru' || saved === 'kk') ? saved : 'ru';
+        }
+
+        function setLanguage(lang) {
+            currentLang = lang;
+            localStorage.setItem(LANG_STORAGE_KEY, lang);
+            
+            // Update custom dropdown display
+            const currentFlag = document.getElementById('currentFlag');
+            const currentLangText = document.getElementById('currentLang');
+            const langData = {
+                'kk': {
+                    text: 'Қазақша',
+                    flagSvg: `<svg viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="KZ">
+                        <rect width="24" height="16" rx="3" fill="#00AFCA"/>
+                        <circle cx="12" cy="8" r="3" fill="#FECB00"/>
+                    </svg>`
+                },
+                'ru': {
+                    text: 'Русский',
+                    flagSvg: `<svg viewBox="0 0 24 16" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="RU">
+                        <rect width="24" height="16" rx="3" fill="#ffffff"/>
+                        <rect y="5.333" width="24" height="5.334" fill="#0039A6"/>
+                        <rect y="10.666" width="24" height="5.334" fill="#D52B1E"/>
+                        <rect width="24" height="16" rx="3" fill="none" stroke="rgba(15,23,42,0.12)"/>
+                    </svg>`
+                }
+            };
+            const data = langData[lang] || langData['ru'];
+            if (currentFlag) currentFlag.innerHTML = data.flagSvg;
+            if (currentLangText) currentLangText.textContent = data.text;
+            
+            // Update selected state in dropdown
+            document.querySelectorAll('.lang-option').forEach(opt => {
+                opt.classList.remove('selected');
+                if (opt.dataset.lang === lang) {
+                    opt.classList.add('selected');
+                }
+            });
+            
+            applyTranslations();
+        }
+
+        function t(key) {
+            return translations[currentLang][key] || translations.ru[key] || key;
+        }
+
+        function applyTranslations() {
+            // Update all elements with data-i18n attribute
+            document.querySelectorAll('[data-i18n]').forEach(el => {
+                const key = el.getAttribute('data-i18n');
+                // Для кнопок навигации обновляем только span, чтобы не удалить SVG
+                if (el.id === 'prevQuestionBtn' || el.id === 'nextQuestionBtn') {
+                    const span = el.querySelector('span');
+                    if (span) span.textContent = t(key);
+                } else {
+                    el.textContent = t(key);
+                }
+            });
+
+            // Update dynamic content
+            updateDynamicTexts();
+        }
+
+        function updateDynamicTexts() {
+            // Update stats labels
+            const statLabels = document.querySelectorAll('.stat-label');
+            if (statLabels.length >= 4) {
+                statLabels[0].textContent = t('totalQuestions');
+                statLabels[1].textContent = t('answered');
+                statLabels[2].textContent = t('correct');
+                statLabels[3].textContent = t('percentage');
+            }
+
+            // Update pager buttons
+            const prevBtn = document.getElementById('prevQuestionBtn');
+            const nextBtn = document.getElementById('nextQuestionBtn');
+            if (prevBtn) {
+                const span = prevBtn.querySelector('span');
+                if (span) span.textContent = t('prev');
+            }
+            if (nextBtn) {
+                const span = nextBtn.querySelector('span');
+                if (span) span.textContent = t('next');
+            }
+
+            // Update main buttons
+            const showResultsBtn = document.getElementById('showResultsBtn');
+            if (showResultsBtn && showResultsBtn.textContent.includes('Скрыть') === false && showResultsBtn.textContent.includes('Жасыру') === false) {
+                showResultsBtn.textContent = t('showResults');
+            }
+
+            // Update pager info if visible
+            const pagerInfo = document.getElementById('pagerInfo');
+            if (pagerInfo && orderedQuestions.length > 0) {
+                pagerInfo.textContent = `${t('question')} ${currentIndex + 1} ${t('of')} ${orderedQuestions.length}`;
+            }
+        }
+
+        // ---------- Utils ----------
+        function shuffleArray(arr) {
+            for (let i = arr.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [arr[i], arr[j]] = [arr[j], arr[i]];
+            }
+            return arr;
+        }
+
+        function loadSettings() {
+            try {
+                const raw = localStorage.getItem(SETTINGS_STORAGE_KEY);
+                if (!raw) return { ...defaultSettings };
+                const parsed = JSON.parse(raw);
+                return {
+                    shuffleQuestions: parsed.shuffleQuestions !== undefined ? !!parsed.shuffleQuestions : defaultSettings.shuffleQuestions,
+                    shuffleAnswers: parsed.shuffleAnswers !== undefined ? !!parsed.shuffleAnswers : defaultSettings.shuffleAnswers,
+                    showLetters: parsed.showLetters !== undefined ? !!parsed.showLetters : defaultSettings.showLetters,
+                    showQuestionNumber: parsed.showQuestionNumber !== undefined ? !!parsed.showQuestionNumber : defaultSettings.showQuestionNumber,
+                    showDifficulty: parsed.showDifficulty !== undefined ? !!parsed.showDifficulty : defaultSettings.showDifficulty,
+                    mode: (parsed.mode === 'paged' || parsed.mode === 'scroll') ? parsed.mode : defaultSettings.mode,
+                    testType: (parsed.testType === 'full' || parsed.testType === 'short' || parsed.testType === 'part1' || parsed.testType === 'part2') ? parsed.testType : defaultSettings.testType
+                };
+            } catch {
+                return { ...defaultSettings };
+            }
+        }
+
+        function saveSettings(next) {
+            settings = { ...settings, ...next };
+            localStorage.setItem(SETTINGS_STORAGE_KEY, JSON.stringify(settings));
+            applyLetterVisibility();
+            applyHeaderVisibility();
+            syncSettingsUI();
+        }
+
+        function applyLetterVisibility() {
+            document.documentElement.dataset.showLetters = settings.showLetters ? 'true' : 'false';
+        }
+
+        function applyHeaderVisibility() {
+            document.documentElement.dataset.showQnumber = settings.showQuestionNumber ? 'true' : 'false';
+            document.documentElement.dataset.showDifficulty = settings.showDifficulty ? 'true' : 'false';
+        }
+
+        function syncSettingsUI() {
+            const sq = document.getElementById('shuffleQuestionsToggle');
+            const sa = document.getElementById('shuffleAnswersToggle');
+            const sl = document.getElementById('showLettersToggle');
+            const sn = document.getElementById('showQuestionNumberToggle');
+            const sd = document.getElementById('showDifficultyToggle');
+            if (sq) sq.checked = !!settings.shuffleQuestions;
+            if (sa) sa.checked = !!settings.shuffleAnswers;
+            if (sl) sl.checked = !!settings.showLetters;
+            if (sn) sn.checked = !!settings.showQuestionNumber;
+            if (sd) sd.checked = !!settings.showDifficulty;
+            const radios = document.querySelectorAll('input[name="testMode"]');
+            radios.forEach(r => r.checked = (r.value === settings.mode));
+            syncModeCards();
+            
+            const testTypeRadios = document.querySelectorAll('input[name="testType"]');
+            testTypeRadios.forEach(r => r.checked = (r.value === settings.testType));
+            syncTestTypeCards();
+        }
+
+        function syncModeCards() {
+            document.querySelectorAll('.mode-card').forEach(card => {
+                const input = card.querySelector('input[type="radio"]');
+                card.classList.toggle('selected', !!(input && input.checked));
+            });
+        }
+
+        function syncTestTypeCards() {
+            document.querySelectorAll('.mode-card[data-test-type]').forEach(card => {
+                const input = card.querySelector('input[type="radio"]');
+                card.classList.toggle('selected', !!(input && input.checked));
+            });
+        }
+
+        function getSettingsFromUI() {
+            const sq = document.getElementById('shuffleQuestionsToggle');
+            const sa = document.getElementById('shuffleAnswersToggle');
+            const sl = document.getElementById('showLettersToggle');
+            const sn = document.getElementById('showQuestionNumberToggle');
+            const sd = document.getElementById('showDifficultyToggle');
+            const mode = (document.querySelector('input[name="testMode"]:checked') || {}).value || 'scroll';
+            const testType = (document.querySelector('input[name="testType"]:checked') || {}).value || 'full';
+            return {
+                shuffleQuestions: !!(sq && sq.checked),
+                shuffleAnswers: !!(sa && sa.checked),
+                showLetters: !!(sl && sl.checked),
+                showQuestionNumber: !!(sn && sn.checked),
+                showDifficulty: !!(sd && sd.checked),
+                mode: mode === 'paged' ? 'paged' : 'scroll',
+                testType: (testType === 'full' || testType === 'short' || testType === 'part1' || testType === 'part2') ? testType : 'full'
+            };
+        }
+
+        function formatOption(option) {
+            return settings.showLetters ? `(${option.id}) ${option.text}` : option.text;
+        }
+
+        function getInitialTheme() {
+            const saved = localStorage.getItem('theme');
+            if (saved === 'dark' || saved === 'light') return saved;
+            return (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) ? 'dark' : 'light';
+        }
+
+        function applyTheme(theme) {
+            document.documentElement.dataset.theme = theme;
+            localStorage.setItem('theme', theme);
+            const toggle = document.getElementById('themeToggle');
+            if (toggle) toggle.checked = theme === 'dark';
+        }
         
+        // Build ordered questions list according to settings (keeps original `questions` intact)
+        function getFilteredQuestions() {
+            const isPart = (q, part) => (q && (q.part === part || q.part === String(part) || q.part === `part${part}`));
+            const isNotLongestCorrectAnswer = (q) => {
+                if (!q || !Array.isArray(q.options) || !q.options.length) return false;
+                const correct = q.options.find(o => o && o.id === q.correctAnswer);
+                if (!correct) return false;
+                const lens = q.options.map(o => ((o && o.text) ? String(o.text).trim().length : 0));
+                const maxLen = Math.max(...lens);
+                const correctLen = (correct.text ? String(correct.text).trim().length : 0);
+                return (correctLen < maxLen) || (lens.filter(l => l === maxLen).length > 1);
+            };
+
+            if (settings.testType === 'part1') return questions.filter(q => isPart(q, 1));
+            if (settings.testType === 'part2') return questions.filter(q => isPart(q, 2));
+            if (settings.testType === 'short') return questions.filter(isNotLongestCorrectAnswer);
+            return questions;
+        }
+
+        function getAnsweredCountForActiveQuestions() {
+            if (!orderedQuestions.length) return 0;
+            let count = 0;
+            orderedQuestions.forEach(q => {
+                if (userAnswers[q.id] !== undefined) count++;
+            });
+            return count;
+        }
+
+        function buildOrderedQuestions() {
+            const questionsBySection = {};
+            const filtered = getFilteredQuestions();
+            filtered.forEach(q => {
+                if (!questionsBySection[q.section]) questionsBySection[q.section] = [];
+                questionsBySection[q.section].push(q);
+            });
+
+            const sections = Object.keys(questionsBySection);
+            const list = [];
+            sections.forEach(sectionName => {
+                const arr = [...questionsBySection[sectionName]];
+                if (settings.shuffleQuestions) shuffleArray(arr);
+                arr.forEach(q => list.push(q));
+            });
+            return list;
+        }
+
+        function setModeUI() {
+            const pager = document.getElementById('pager');
+            if (settings.mode === 'paged') {
+                if (pager) pager.style.display = 'flex';
+            } else {
+                if (pager) pager.style.display = 'none';
+            }
+        }
+
+        function renderQuestionState(questionElement, question) {
+            const saved = userAnswers[question.id];
+            if (saved === undefined) return;
+
+            // Reuse existing selection logic visuals without changing answer
+            const options = questionElement.querySelectorAll('.option');
+            options.forEach(opt => {
+                opt.classList.remove('selected', 'correct', 'incorrect');
+                const existingIndicator = opt.querySelector('.result-indicator');
+                if (existingIndicator) existingIndicator.remove();
+            });
+
+            const selectedOption = questionElement.querySelector(`[data-option-id="${saved}"]`);
+            if (selectedOption) selectedOption.classList.add('selected');
+
+            const isCorrect = saved === question.correctAnswer;
+            options.forEach(opt => {
+                const currentOptionId = opt.dataset.optionId;
+                if (currentOptionId === question.correctAnswer) {
+                    opt.classList.add('correct');
+                    const indicator = document.createElement('span');
+                    indicator.className = 'result-indicator result-correct';
+                    indicator.textContent = '✓';
+                    opt.appendChild(indicator);
+                } else if (!isCorrect && currentOptionId === saved) {
+                    opt.classList.add('incorrect');
+                    const indicator = document.createElement('span');
+                    indicator.className = 'result-indicator result-incorrect';
+                    indicator.textContent = '✗';
+                    opt.appendChild(indicator);
+                }
+            });
+
+        }
+
+        function renderPaged() {
+            const testContainer = document.getElementById('testContainer');
+            testContainer.innerHTML = '';
+            if (!orderedQuestions.length) return;
+
+            const q = orderedQuestions[currentIndex];
+            const questionElement = createQuestionElement(q, { showSectionInCard: true });
+            testContainer.appendChild(questionElement);
+            renderQuestionState(questionElement, q);
+
+            const pagerInfo = document.getElementById('pagerInfo');
+            if (pagerInfo) pagerInfo.textContent = `${t('question')} ${currentIndex + 1} ${t('of')} ${orderedQuestions.length}`;
+
+            const prevBtn = document.getElementById('prevQuestionBtn');
+            const nextBtn = document.getElementById('nextQuestionBtn');
+            if (prevBtn) prevBtn.disabled = currentIndex <= 0;
+            if (nextBtn) nextBtn.disabled = currentIndex >= orderedQuestions.length - 1;
+            
+            // Update dynamic texts
+            updateDynamicTexts();
+        }
+
         // Initialize the test
         function initTest() {
             const testContainer = document.getElementById('testContainer');
             testContainer.innerHTML = '';
-            
-            // Group questions by section
-            const questionsBySection = {};
-            questions.forEach(question => {
-                if (!questionsBySection[question.section]) {
-                    questionsBySection[question.section] = [];
-                }
-                questionsBySection[question.section].push(question);
-            });
-            
-            // Create sections and questions
-            Object.keys(questionsBySection).forEach(sectionName => {
-                // Add section title
-                const sectionTitle = document.createElement('div');
-                sectionTitle.className = 'section-title';
-                sectionTitle.textContent = sectionName;
-                testContainer.appendChild(sectionTitle);
-                
-                // Add questions for this section
-                questionsBySection[sectionName].forEach(question => {
-                    const questionElement = createQuestionElement(question);
-                    testContainer.appendChild(questionElement);
+
+            orderedQuestions = buildOrderedQuestions();
+            totalQuestions = orderedQuestions.length;
+            currentIndex = 0;
+            setModeUI();
+
+            if (settings.mode === 'paged') {
+                renderPaged();
+            } else {
+                // Scroll mode: render grouped by section
+                const questionsBySection = {};
+                orderedQuestions.forEach(question => {
+                    if (!questionsBySection[question.section]) questionsBySection[question.section] = [];
+                    questionsBySection[question.section].push(question);
                 });
-            });
+
+                Object.keys(questionsBySection).forEach(sectionName => {
+                    // Section titles are hidden during test
+                    // const sectionTitle = document.createElement('div');
+                    // sectionTitle.className = 'section-title';
+                    // sectionTitle.textContent = sectionName;
+                    // testContainer.appendChild(sectionTitle);
+
+                    questionsBySection[sectionName].forEach(question => {
+                        const questionElement = createQuestionElement(question, { showSectionInCard: false });
+                        testContainer.appendChild(questionElement);
+                        renderQuestionState(questionElement, question);
+                    });
+                });
+            }
+            
+            // Show progress bar and stats when test starts
+            const progressBar = document.querySelector('.progress-bar');
+            if (progressBar) {
+                progressBar.classList.add('test-started');
+            }
+            
+            const statsContainer = document.querySelector('.stats');
+            if (statsContainer) {
+                statsContainer.classList.add('test-started');
+            }
             
             // Initialize progress bar and stats
             updateProgressBar();
             updateStats();
             
-            // Add event listeners to filter buttons
-            setupFilterButtons();
+            // Hide results button container when starting test
+            const buttonsContainer = document.querySelector('.buttons');
+            if (buttonsContainer) {
+                buttonsContainer.classList.remove('has-answers');
+            }
+            
+            // Update dynamic texts after rendering
+            updateDynamicTexts();
         }
         
         // Create a question element
-        function createQuestionElement(question) {
+        function createQuestionElement(question, opts = {}) {
             const questionDiv = document.createElement('div');
             questionDiv.className = 'question';
             questionDiv.id = `question-${question.id}`;
@@ -492,16 +2102,30 @@
             
             const questionNumber = document.createElement('div');
             questionNumber.className = 'question-number';
-            questionNumber.textContent = `Question ${question.id}`;
+            questionNumber.textContent = `${t('question')} ${question.id}`;
             
             const difficulty = document.createElement('div');
-            difficulty.className = 'difficulty';
-            difficulty.textContent = question.difficulty;
-            difficulty.style.color = question.difficulty === 'HARD' ? '#e74c3c' : 
-                                    question.difficulty === 'MEDIUM' ? '#f39c12' : '#27ae60';
+            difficulty.className = 'question-difficulty';
+            const diffBadge = document.createElement('span');
+            diffBadge.className = 'difficulty-badge';
+            diffBadge.textContent = question.difficulty;
+            const diff = (question.difficulty || '').toUpperCase();
+            if (diff === 'HARD') diffBadge.classList.add('hard');
+            else if (diff === 'MEDIUM') diffBadge.classList.add('medium');
+            else diffBadge.classList.add('easy');
+            difficulty.appendChild(diffBadge);
             
             questionHeader.appendChild(questionNumber);
             questionHeader.appendChild(difficulty);
+
+            if (opts.showSectionInCard) {
+                const sectionBadge = document.createElement('div');
+                sectionBadge.className = 'question-section';
+                sectionBadge.textContent = question.section;
+                sectionBadge.style.color = 'var(--muted)';
+                sectionBadge.style.fontSize = '0.9rem';
+                questionHeader.appendChild(sectionBadge);
+            }
             
             // Question text
             const questionText = document.createElement('div');
@@ -513,11 +2137,13 @@
             optionsDiv.className = 'options';
             
             // Create option elements
-            question.options.forEach(option => {
+            const optionsForRender = settings.shuffleAnswers ? shuffleArray([...question.options]) : [...question.options];
+            optionsForRender.forEach(option => {
                 const optionDiv = document.createElement('div');
                 optionDiv.className = 'option';
                 optionDiv.dataset.optionId = option.id;
                 optionDiv.dataset.questionId = question.id;
+                optionDiv.tabIndex = 0;
                 
                 // Option label (a, b, c, etc.)
                 const optionLabel = document.createElement('div');
@@ -534,19 +2160,19 @@
                 
                 // Add click event
                 optionDiv.addEventListener('click', () => selectOption(question.id, option.id));
+                optionDiv.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        selectOption(question.id, option.id);
+                    }
+                });
                 
                 optionsDiv.appendChild(optionDiv);
             });
             
-            // Feedback element
-            const feedbackDiv = document.createElement('div');
-            feedbackDiv.className = 'feedback';
-            feedbackDiv.id = `feedback-${question.id}`;
-            
             questionDiv.appendChild(questionHeader);
             questionDiv.appendChild(questionText);
             questionDiv.appendChild(optionsDiv);
-            questionDiv.appendChild(feedbackDiv);
             
             return questionDiv;
         }
@@ -562,8 +2188,6 @@
             // Update UI for this question
             const questionElement = document.getElementById(`question-${questionId}`);
             const options = questionElement.querySelectorAll('.option');
-            const feedbackElement = document.getElementById(`feedback-${questionId}`);
-            
             // Reset all options in this question
             options.forEach(option => {
                 option.classList.remove('selected', 'correct', 'incorrect');
@@ -584,9 +2208,9 @@
             
             // Mark correct and incorrect options
             options.forEach(option => {
-                const optionId = option.dataset.optionId;
+                const currentOptionId = option.dataset.optionId;
                 
-                if (optionId === question.correctAnswer) {
+                if (currentOptionId === question.correctAnswer) {
                     option.classList.add('correct');
                     
                     // Add correct indicator
@@ -595,7 +2219,7 @@
                     indicator.textContent = '✓';
                     option.appendChild(indicator);
                 } 
-                else if (optionId === optionId && !isCorrect) {
+                else if (!isCorrect && currentOptionId === optionId) {
                     option.classList.add('incorrect');
                     
                     // Add incorrect indicator
@@ -606,22 +2230,20 @@
                 }
             });
             
-            // Show feedback
-            feedbackElement.textContent = isCorrect 
-                ? `Correct! The answer is (${question.correctAnswer}): ${question.options.find(o => o.id === question.correctAnswer).text}`
-                : `Incorrect. The correct answer is (${question.correctAnswer}): ${question.options.find(o => o.id === question.correctAnswer).text}`;
-            
-            feedbackElement.className = isCorrect ? 'feedback correct-feedback' : 'feedback incorrect-feedback';
-            feedbackElement.style.display = 'block';
-            
             // Update progress bar and stats
             updateProgressBar();
             updateStats();
+            
+            // Show results button container if there are answers
+            const buttonsContainer = document.querySelector('.buttons');
+            if (buttonsContainer && Object.keys(userAnswers).length > 0) {
+                buttonsContainer.classList.add('has-answers');
+            }
         }
         
         // Update progress bar based on answered questions
         function updateProgressBar() {
-            const answeredCount = Object.keys(userAnswers).length;
+            const answeredCount = getAnsweredCountForActiveQuestions();
             const progressPercentage = (answeredCount / totalQuestions) * 100;
             
             const progressFill = document.getElementById('progressFill');
@@ -630,78 +2252,38 @@
         
         // Update statistics
         function updateStats() {
-            const answeredCount = Object.keys(userAnswers).length;
+            const answeredCount = getAnsweredCountForActiveQuestions();
             let correctCount = 0;
             
-            questions.forEach(question => {
+            orderedQuestions.forEach(question => {
                 if (userAnswers[question.id] === question.correctAnswer) {
                     correctCount++;
                 }
             });
             
-            const scorePercentage = totalQuestions > 0 ? Math.round((correctCount / answeredCount) * 100) : 0;
+            const scorePercentage = answeredCount > 0 ? Math.round((correctCount / answeredCount) * 100) : 0;
             
+            const totalEl = document.getElementById('totalQuestions');
+            if (totalEl) totalEl.textContent = String(totalQuestions);
             document.getElementById('answeredQuestions').textContent = answeredCount;
             document.getElementById('correctAnswers').textContent = correctCount;
             document.getElementById('scorePercentage').textContent = answeredCount > 0 ? `${scorePercentage}%` : "0%";
         }
         
-        // Setup filter buttons
-        function setupFilterButtons() {
-            const filterButtons = document.querySelectorAll('.filter-btn');
-            
-            filterButtons.forEach(button => {
-                button.addEventListener('click', () => {
-                    // Remove active class from all buttons
-                    filterButtons.forEach(btn => btn.classList.remove('active'));
-                    
-                    // Add active class to clicked button
-                    button.classList.add('active');
-                    
-                    // Apply filter
-                    const filter = button.dataset.filter;
-                    applyFilter(filter);
-                });
-            });
-        }
-        
-        // Apply filter to questions
-        function applyFilter(filter) {
-            const allQuestions = document.querySelectorAll('.question');
-            
-            allQuestions.forEach(question => {
-                const questionId = parseInt(question.dataset.questionId);
-                const userAnswer = userAnswers[questionId];
-                const questionObj = questions.find(q => q.id === questionId);
-                const isCorrect = userAnswer === questionObj.correctAnswer;
-                
-                let showQuestion = true;
-                
-                switch(filter) {
-                    case 'answered':
-                        showQuestion = userAnswer !== undefined;
-                        break;
-                    case 'unanswered':
-                        showQuestion = userAnswer === undefined;
-                        break;
-                    case 'correct':
-                        showQuestion = userAnswer !== undefined && isCorrect;
-                        break;
-                    case 'incorrect':
-                        showQuestion = userAnswer !== undefined && !isCorrect;
-                        break;
-                    // 'all' shows all questions
-                }
-                
-                question.style.display = showQuestion ? 'block' : 'none';
-            });
-        }
-        
         // Show results
-        function showResults() {
+        function toggleResults() {
+            const resultsContainer = document.getElementById('resultsContainer');
+            const btn = document.getElementById('showResultsBtn');
+            const isVisible = resultsContainer && resultsContainer.style.display === 'block';
+            if (isVisible) {
+                resultsContainer.style.display = 'none';
+                if (btn) btn.textContent = t('showResults');
+                return;
+            }
+
             // Calculate score
             let correctCount = 0;
-            questions.forEach(question => {
+            orderedQuestions.forEach(question => {
                 if (userAnswers[question.id] === question.correctAnswer) {
                     correctCount++;
                 }
@@ -719,7 +2301,7 @@
             
             // Create summary by section
             const sectionResults = {};
-            questions.forEach(question => {
+            orderedQuestions.forEach(question => {
                 if (!sectionResults[question.section]) {
                     sectionResults[question.section] = {
                         total: 0,
@@ -748,14 +2330,14 @@
                 const sectionDiv = document.createElement('div');
                 sectionDiv.className = 'result-item';
                 sectionDiv.innerHTML = `
-                    <div class="result-question" style="color: #3498db; font-size: 1.1rem;">
+                    <div class="result-question result-section-title">
                         ${sectionName}
                     </div>
                     <div style="display: flex; justify-content: space-between; margin-top: 10px;">
-                        <div>Total: ${sectionResult.total}</div>
-                        <div>Answered: ${sectionResult.answered}</div>
-                        <div>Correct: ${sectionResult.correct}</div>
-                        <div>Score: ${sectionPercentage}%</div>
+                        <div>${t('total')} ${sectionResult.total}</div>
+                        <div>${t('answeredLabel')} ${sectionResult.answered}</div>
+                        <div>${t('correctLabel')} ${sectionResult.correct}</div>
+                        <div>${t('percentageLabel')} ${sectionPercentage}%</div>
                     </div>
                 `;
                 resultsList.appendChild(sectionDiv);
@@ -764,11 +2346,11 @@
             // Add detailed results
             const detailedHeader = document.createElement('div');
             detailedHeader.className = 'result-question';
-            detailedHeader.textContent = 'Detailed Results:';
+            detailedHeader.textContent = t('details');
             detailedHeader.style.marginTop = '20px';
             resultsList.appendChild(detailedHeader);
             
-            questions.forEach(question => {
+            orderedQuestions.forEach(question => {
                 const userAnswer = userAnswers[question.id];
                 const isCorrect = userAnswer === question.correctAnswer;
                 
@@ -788,18 +2370,18 @@
                     const choiceDiv = document.createElement('div');
                     choiceDiv.className = 'result-choice';
                     
-                    let choiceText = `(${option.id}) ${option.text}`;
+                    let choiceText = formatOption(option);
                     
                     // Highlight user's choice
                     if (option.id === userAnswer) {
                         choiceDiv.classList.add('user-choice');
-                        choiceText += ' (Your choice)';
+                    choiceText += ` ${t('yourChoice')}`;
                     }
                     
                     // Highlight correct answer
                     if (option.id === question.correctAnswer) {
                         choiceDiv.classList.add('correct-choice');
-                        choiceText += ' (Correct answer)';
+                    choiceText += ` ${t('correctChoice')}`;
                     }
                     
                     choiceDiv.textContent = choiceText;
@@ -812,13 +2394,13 @@
                 statusDiv.style.fontWeight = 'bold';
                 
                 if (userAnswer === undefined) {
-                    statusDiv.textContent = 'Not answered';
+                    statusDiv.textContent = t('noAnswer');
                     statusDiv.style.color = '#6c757d';
                 } else if (isCorrect) {
-                    statusDiv.textContent = '✓ Correct';
+                    statusDiv.textContent = t('correctStatus');
                     statusDiv.style.color = '#28a745';
                 } else {
-                    statusDiv.textContent = '✗ Incorrect';
+                    statusDiv.textContent = t('incorrectStatus');
                     statusDiv.style.color = '#dc3545';
                 }
                 
@@ -830,6 +2412,7 @@
             
             // Show results container
             document.getElementById('resultsContainer').style.display = 'block';
+            if (btn) btn.textContent = t('hideResults');
             
             // Scroll to results
             document.getElementById('resultsContainer').scrollIntoView({ behavior: 'smooth' });
@@ -837,20 +2420,122 @@
         
         // Reset the test
         function resetTest() {
-            if (confirm('Are you sure you want to reset the test? All your answers will be lost.')) {
+            if (confirm(t('resetConfirm'))) {
                 userAnswers = {};
                 initTest();
                 document.getElementById('resultsContainer').style.display = 'none';
+                const btn = document.getElementById('showResultsBtn');
+                if (btn) btn.textContent = t('showResults');
             }
         }
         
         // Initialize when page loads
         document.addEventListener('DOMContentLoaded', () => {
-            initTest();
+            // Language init
+            currentLang = getInitialLanguage();
+            const langToggle = document.getElementById('langToggle');
+            
+            // Initialize language display
+            setLanguage(currentLang);
+            
+            if (langToggle) {
+                // Toggle dropdown
+                langToggle.addEventListener('click', (e) => {
+                    if (e.target.closest('.lang-option')) return;
+                    langToggle.classList.toggle('active');
+                });
+                
+                // Select language
+                document.querySelectorAll('.lang-option').forEach(option => {
+                    option.addEventListener('click', (e) => {
+                        const lang = option.dataset.lang;
+                        setLanguage(lang);
+                        langToggle.classList.remove('active');
+                    });
+                });
+                
+                // Close dropdown when clicking outside
+                document.addEventListener('click', (e) => {
+                    if (!langToggle.contains(e.target)) {
+                        langToggle.classList.remove('active');
+                    }
+                });
+            }
+            applyTranslations();
+
+            // Theme init
+            applyTheme(getInitialTheme());
+            const themeToggle = document.getElementById('themeToggle');
+            if (themeToggle) {
+                themeToggle.addEventListener('change', (e) => {
+                    applyTheme(e.target.checked ? 'dark' : 'light');
+                });
+            }
+
+            // Settings init
+            settings = loadSettings();
+            applyLetterVisibility();
+            applyHeaderVisibility();
+            syncSettingsUI();
+
+            // Settings UI handlers
+            const startBtn = document.getElementById('startTestBtn');
+            const settingsPanel = document.getElementById('settingsPanel');
+
+            if (startBtn) startBtn.addEventListener('click', () => {
+                const next = getSettingsFromUI();
+                saveSettings(next);
+                if (settingsPanel) settingsPanel.style.display = 'none';
+                initTest();
+            });
+
+            const sl = document.getElementById('showLettersToggle');
+            const sn = document.getElementById('showQuestionNumberToggle');
+            const sd = document.getElementById('showDifficultyToggle');
+            const radios = document.querySelectorAll('input[name="testMode"]');
+            const updateLetterAttrOnly = () => {
+                const next = getSettingsFromUI();
+                // моментально применяем только показ букв, без сброса
+                saveSettings({ ...settings, ...next, showLetters: next.showLetters });
+            };
+            if (sl) sl.addEventListener('change', updateLetterAttrOnly);
+            if (sn) sn.addEventListener('change', () => {
+                const next = getSettingsFromUI();
+                saveSettings({ ...settings, showQuestionNumber: next.showQuestionNumber });
+            });
+            if (sd) sd.addEventListener('change', () => {
+                const next = getSettingsFromUI();
+                saveSettings({ ...settings, showDifficulty: next.showDifficulty });
+            });
+            radios.forEach(r => r.addEventListener('change', () => {
+                syncModeCards();
+            }));
+            
+            const testTypeRadios = document.querySelectorAll('input[name="testType"]');
+            testTypeRadios.forEach(r => r.addEventListener('change', () => {
+                syncTestTypeCards();
+            }));
+
+            // Pager handlers
+            const prevBtn = document.getElementById('prevQuestionBtn');
+            const nextBtn = document.getElementById('nextQuestionBtn');
+            if (prevBtn) prevBtn.addEventListener('click', () => {
+                if (currentIndex > 0) {
+                    currentIndex--;
+                    renderPaged();
+                }
+            });
+            if (nextBtn) nextBtn.addEventListener('click', () => {
+                if (currentIndex < orderedQuestions.length - 1) {
+                    currentIndex++;
+                    renderPaged();
+                }
+            });
+
+            // До нажатия "Начать тест" ничего не рендерим
             
             // Add event listeners to buttons
-            document.getElementById('showResultsBtn').addEventListener('click', showResults);
-            document.getElementById('resetBtn').addEventListener('click', resetTest);
+            document.getElementById('showResultsBtn').addEventListener('click', toggleResults);
         });
     </script>
 </body>
