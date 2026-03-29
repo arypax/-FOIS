@@ -2352,7 +2352,7 @@ const questions = [
                 "text": "RADIUS"
             }
         ],
-        "correctAnswer": "c",
+        "correctAnswer": "d",
         "difficulty": "MEDIUM",
         "originalId": 76
     },
